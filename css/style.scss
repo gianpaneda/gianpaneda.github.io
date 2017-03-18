@@ -7,9 +7,9 @@ $primary-background: #F2F2F2;
 $primary-font: 'Ubuntu', sans-serif;
 $secondary-font: 'Roboto', sans-serif;
 @mixin box-shadow {
-    -webkit-box-shadow: 0px 6px 20px 0px rgba(163,163,163,1);
-    -moz-box-shadow: 0px 6px 20px 0px rgba(163,163,163,1);
-    box-shadow: 0px 6px 20px 0px rgba(163,163,163,1);
+    // -webkit-box-shadow: 0px 6px 20px 0px rgba(163,163,163,1);
+    // -moz-box-shadow: 0px 6px 20px 0px rgba(163,163,163,1);
+    // box-shadow: 0px 6px 20px 0px rgba(163,163,163,1);
 }
 
 body,
@@ -106,7 +106,7 @@ section {
     font-family: $secondary-font;
     width: 100%;
     background-color: #F74765;
-@include box-shadow;
+    @include box-shadow;
     margin: 0 auto 40px;
 }
 
@@ -122,9 +122,9 @@ section {
 
 #about {
     font-family: $secondary-font;
-    background-color: $neutral-light;
+    background-color: $primary-color;
     @include box-shadow;
-    margin: -5px auto;
+    margin: 0px auto;
 }
 
 #profile-picture {
@@ -145,6 +145,7 @@ section {
 
 #links {
     background-color: $secondary-cool;
+    margin: 40px 0px 0px 0px;
 }
 
 footer {
