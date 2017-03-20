@@ -1,15 +1,30 @@
 @import url( 'https://fonts.googleapis.com/css?family=Roboto:300,400|Ubuntu:400,700');
-$primary-color: #44E9FF;
-$secondary-cool: #007CD6;
-$secondary-warm: #F74765;
-$neutral-light: #F2F2F2;
-$primary-background: #F2F2F2;
+$primary-dark: #2F2F2F;
+$secondary-dark: #222223;
+$primary-light: #F2F2F2;
+$accent-blue: #1B27FF;
+$accent-purp: #794AD4;
+$accent-pink: #F784F7;
+$accent-turq: #5CDFDB;
 $primary-font: 'Ubuntu', sans-serif;
 $secondary-font: 'Roboto', sans-serif;
 @mixin box-shadow {
-    // -webkit-box-shadow: 0px 6px 20px 0px rgba(163,163,163,1);
-    // -moz-box-shadow: 0px 6px 20px 0px rgba(163,163,163,1);
-    // box-shadow: 0px 6px 20px 0px rgba(163,163,163,1);
+    -webkit-box-shadow: 0 5px 14px 1px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 5px 14px 1px rgba(0,0,0,0.6);
+    box-shadow: 0 5px 14px 1px rgba(0,0,0,0.6);
+}
+
+.accent {
+    color: $accent-blue;
+}
+
+.style14 {
+    border: 0;
+    height: 5px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 }
 
 body,
@@ -19,10 +34,10 @@ html {
 }
 
 body {
-    // background-color: #F2F2F2;
+    background-color: $primary-dark;
     // background-color: $primary-background;
     font-family: $primary-font, sans-serif;
-    background-image: -webkit-linear-gradient(-40deg, #f2f2f2 50%, #E7E7E7 50%);
+    // background-image: -webkit-linear-gradient(-40deg, #f2f2f2 50%, #E7E7E7 50%);
 }
 
 nav {
@@ -45,19 +60,11 @@ ul {
 
 a {
     text-decoration: none;
-    color: $neutral-light;
+    color: $primary-light;
 }
 
 a:visited {
     text-decoration: none;
-}
-
-#hero h1 {
-    font-family: $primary-font;
-    text-align: center;
-    font-size: 6em;
-    letter-spacing: 7px;
-    margin: 10px;
 }
 
 #hero {
@@ -67,17 +74,25 @@ a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $neutral-light;
-    background: #C33764;
+    color: $primary-light;
+    background: $accent-blue;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(#44E9FF, #007CD6);
+    background: -webkit-linear-gradient($accent-blue, $accent-purp, $accent-turq);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(#44E9FF, #007CD6);
+    background: linear-gradient($accent-blue, $accent-purp, $accent-turq);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    h1 {
+        font-family: $primary-font;
+        text-align: center;
+        font-size: 6em;
+        letter-spacing: 7px;
+        margin: 10px;
+    }
 }
 
 .section-header {
     font-family: $primary-font;
+    color: lighten($accent-turq, 10);
     margin: 20px;
     font-size: 2em;
     font-weight: 400;
@@ -93,21 +108,37 @@ section {
 
 #portfolio {
     padding: 0;
-}
-
-.project-img {
-    max-height: 260px;
-    max-width: 380px;
-    object-fit: cover;
+    // h2 {
+    //     color: lighten($accent-purp, 15);
+    // }
 }
 
 .project {
     display: flex;
     font-family: $secondary-font;
+    color: darken($primary-light, 5);
     width: 100%;
-    background-color: #F74765;
+    // background-color: lighten($accent-purp, 10);
+    background-color: $secondary-dark;
     @include box-shadow;
     margin: 0 auto 40px;
+
+    h3 {
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+
+    img {
+        max-height: 260px;
+        max-width: 380px;
+        object-fit: cover;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .project-description {
@@ -115,16 +146,32 @@ section {
 }
 
 .tech {
-    color: $neutral-light;
-    background-color: #007CD6;
+    text-align: left;
+    font-family: $secondary-font, serif;
+    font-size: 0.8em;
+    color: $primary-dark;
+    // border: 1px solid $accent-pink;
+    background-color: $accent-turq;
+    // background-color: $accent-pink;
     padding: 5px;
+    margin: 10px 5px 0 0;
 }
 
 #about {
     font-family: $secondary-font;
-    background-color: $primary-color;
+    color: $primary-light;
+    background-color: $secondary-dark;
     @include box-shadow;
-    margin: 0px auto;
+    margin: 0 auto;
+    // h2 {
+    //     color: lighten($accent-turq, 10);
+    // }
+    p {
+        font-size: 1.5em;
+        font-family: $secondary-font;
+        font-weight: 300;
+        margin: 20px;
+    }
 }
 
 #profile-picture {
@@ -136,25 +183,33 @@ section {
     border-radius: 50%;
 }
 
-#about p {
-    font-size: 1.5em;
-    font-family: $secondary-font;
-    font-weight: 300;
-    margin: 20px;
-}
-
 #links {
-    background-color: $secondary-cool;
-    margin: 40px 0px 0px 0px;
+    // background-color: $secondary-dark;
+    margin: 40px auto 0;
+
+    p {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    a {
+        margin: 0 10px 10px;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 0 0 -10px;
+    }
+    // @include box-shadow;
 }
 
 footer {
     font-family: $primary-font;
+    color: $primary-dark;
+    background: $accent-turq;
     margin: 20px 0 0;
     padding: 30px;
     text-align: center;
-    background: #4776E6;
-    /* fallback for old browsers */
 }
 @media screen and (max-width: 750px) {
     #hero h1 {

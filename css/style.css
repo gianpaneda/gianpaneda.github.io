@@ -1,12 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400|Ubuntu:400,700");
+.accent {
+  color: #1B27FF; }
+
+.style14 {
+  border: 0;
+  height: 5px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); }
+
 body,
 html {
   margin: 0;
   padding: 0; }
 
 body {
-  font-family: "Ubuntu", sans-serif, sans-serif;
-  background-image: -webkit-linear-gradient(-40deg, #f2f2f2 50%, #E7E7E7 50%); }
+  background-color: #2F2F2F;
+  font-family: "Ubuntu", sans-serif, sans-serif; }
 
 nav {
   font-family: "Roboto", sans-serif;
@@ -27,13 +38,6 @@ a {
 a:visited {
   text-decoration: none; }
 
-#hero h1 {
-  font-family: "Ubuntu", sans-serif;
-  text-align: center;
-  font-size: 6em;
-  letter-spacing: 7px;
-  margin: 10px; }
-
 #hero {
   height: 400px;
   width: 100%;
@@ -42,15 +46,22 @@ a:visited {
   justify-content: center;
   align-items: center;
   color: #F2F2F2;
-  background: #C33764;
+  background: #1B27FF;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(#44E9FF, #007CD6);
+  background: -webkit-linear-gradient(#1B27FF, #794AD4, #5CDFDB);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(#44E9FF, #007CD6);
+  background: linear-gradient(#1B27FF, #794AD4, #5CDFDB);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  #hero h1 {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    font-size: 6em;
+    letter-spacing: 7px;
+    margin: 10px; }
 
 .section-header {
   font-family: "Ubuntu", sans-serif;
+  color: #87e7e4;
   margin: 20px;
   font-size: 2em;
   font-weight: 400; }
@@ -65,30 +76,53 @@ section {
 #portfolio {
   padding: 0; }
 
-.project-img {
-  max-height: 260px;
-  max-width: 380px;
-  object-fit: cover; }
-
 .project {
   display: flex;
   font-family: "Roboto", sans-serif;
+  color: #e5e5e5;
   width: 100%;
-  background-color: #F74765;
+  background-color: #222223;
+  -webkit-box-shadow: 0 5px 14px 1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 5px 14px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 14px 1px rgba(0, 0, 0, 0.6);
   margin: 0 auto 40px; }
+  .project h3 {
+    font-size: 1.5em;
+    margin: 10px 0; }
+  .project img {
+    max-height: 260px;
+    max-width: 380px;
+    object-fit: cover; }
+  .project ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
 
 .project-description {
   margin: 0 15px 10px; }
 
 .tech {
-  color: #F2F2F2;
-  background-color: #007CD6;
-  padding: 5px; }
+  text-align: left;
+  font-family: "Roboto", sans-serif, serif;
+  font-size: 0.8em;
+  color: #2F2F2F;
+  background-color: #5CDFDB;
+  padding: 5px;
+  margin: 10px 5px 0 0; }
 
 #about {
   font-family: "Roboto", sans-serif;
-  background-color: #44E9FF;
-  margin: 0px auto; }
+  color: #F2F2F2;
+  background-color: #222223;
+  -webkit-box-shadow: 0 5px 14px 1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 5px 14px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 14px 1px rgba(0, 0, 0, 0.6);
+  margin: 0 auto; }
+  #about p {
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin: 20px; }
 
 #profile-picture {
   text-align: center;
@@ -98,23 +132,24 @@ section {
   height: 300px;
   border-radius: 50%; }
 
-#about p {
-  font-size: 1.5em;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  margin: 20px; }
-
 #links {
-  background-color: #007CD6;
-  margin: 40px 0px 0px 0px; }
+  margin: 40px auto 0; }
+  #links p {
+    font-size: 1.5em;
+    text-align: center; }
+  #links a {
+    margin: 0 10px 10px; }
+  #links h2 {
+    text-align: center;
+    margin: 0 0 -10px; }
 
 footer {
   font-family: "Ubuntu", sans-serif;
+  color: #2F2F2F;
+  background: #5CDFDB;
   margin: 20px 0 0;
   padding: 30px;
-  text-align: center;
-  background: #4776E6;
-  /* fallback for old browsers */ }
+  text-align: center; }
 
 @media screen and (max-width: 750px) {
   #hero h1 {
