@@ -39,17 +39,18 @@ a:visited {
   align-items: center;
   color: #F2F2F2;
   background: #1B27FF;
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(#1B27FF, #794AD4, #5CDFDB);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(#1B27FF, #794AD4, #5CDFDB);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  background: linear-gradient(#1B27FF, #794AD4, #5CDFDB); }
   #hero h1 {
     font-family: "Ubuntu", sans-serif;
     text-align: center;
     font-size: 6em;
     letter-spacing: 7px;
-    margin: 10px; }
+    margin: 10px;
+    transition: 0.5s; }
+  #hero h1:hover {
+    font-size: 6.4em;
+    letter-spacing: 14px; }
 
 .section-header {
   font-family: "Ubuntu", sans-serif;
@@ -146,6 +147,10 @@ footer {
 @media screen and (max-width: 750px) {
   #hero h1 {
     font-size: 3em; }
+
+  #hero h1:hover {
+    font-size: 3.4em;
+    letter-spacing: 10px; }
 
   .project {
     max-width: 380px;
