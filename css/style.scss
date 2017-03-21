@@ -33,18 +33,18 @@ body {
 
 nav {
     font-family: $secondary-font;
-    margin: 0px;
+    margin: 0;
     text-align: right;
+}
 
-    a {
-        padding: 10px 10px 10px 10px;
-        margin: -5px;
-    }
-    a:hover {
-        background-color: rgba(255, 255 ,255, 0.5);
-        transition: all .3s;
-    }
+.hover-link {
+    padding: 10px;
+    margin: -5px;
+}
 
+.hover-link:hover {
+    background-color: rgba(255, 255 ,255, 0.5);
+    transition: all 0.3s;
 }
 
 ul {
@@ -75,6 +75,7 @@ a:visited {
     background: $accent-blue;
     background: -webkit-linear-gradient($accent-blue, $accent-purp, $accent-turq);
     background: linear-gradient($accent-blue, $accent-purp, $accent-turq);
+
     h1 {
         font-family: $primary-font;
         text-align: center;
@@ -185,15 +186,21 @@ section {
 
 #links {
     // background-color: $secondary-dark;
-    margin: 40px auto 0;
+    margin: 40px auto 10px;
 
     p {
-        font-size: 1.5em;
+        margin: 30px;
         text-align: center;
     }
 
     a {
-        margin: 0 10px 10px;
+        font-size: 1.5em;
+        padding: 15px;
+        // margin: 0px 10px 10px 10px;
+    }
+
+    a:hover {
+        @extend .hover-link:hover;
     }
 
     h2 {
@@ -225,5 +232,11 @@ footer {
         max-width: 380px;
         flex-direction: column;
         justify-content: center;
+    }
+
+    #links {
+        a {
+            font-size: 1em;
+        }
     }
 }
