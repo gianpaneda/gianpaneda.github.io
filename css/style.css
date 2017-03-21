@@ -13,10 +13,14 @@ body {
 
 nav {
   font-family: "Roboto", sans-serif;
-  padding: 5px;
+  margin: 0px;
   text-align: right; }
-  nav li {
-    padding: 0 5px 0 0; }
+  nav a {
+    padding: 10px 10px 10px 10px;
+    margin: -5px; }
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all .3s; }
 
 ul li {
   padding: 10px;

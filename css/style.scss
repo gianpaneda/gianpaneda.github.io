@@ -33,12 +33,18 @@ body {
 
 nav {
     font-family: $secondary-font;
-    padding: 5px;
+    margin: 0px;
     text-align: right;
 
-    li {
-        padding: 0 5px 0 0;
+    a {
+        padding: 10px 10px 10px 10px;
+        margin: -5px;
     }
+    a:hover {
+        background-color: rgba(255, 255 ,255, 0.5);
+        transition: all .3s;
+    }
+
 }
 
 ul {
