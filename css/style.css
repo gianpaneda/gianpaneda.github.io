@@ -94,20 +94,22 @@ section {
     object-fit: cover; }
   .project ul {
     list-style-type: none;
-    margin: 0;
+    margin: -10px 0 0 0;
     padding: 0; }
 
 .project-description {
   margin: 0 15px 10px; }
 
 .tech {
+  display: inline-block;
   text-align: left;
   font-family: "Roboto", sans-serif, serif;
   font-size: 0.8em;
   color: #2F2F2F;
   background-color: #5CDFDB;
-  padding: 5px;
-  margin: 10px 5px 0 0; }
+  padding: 10px;
+  margin: 10px 5px 0 0;
+  line-height: 10px; }
 
 #about {
   font-family: "Roboto", sans-serif;

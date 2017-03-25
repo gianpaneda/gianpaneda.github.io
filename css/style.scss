@@ -137,9 +137,11 @@ section {
 
     ul {
         list-style-type: none;
-        margin: 0;
+        margin: -10px 0 0 0;
         padding: 0;
     }
+
+
 }
 
 .project-description {
@@ -147,6 +149,7 @@ section {
 }
 
 .tech {
+    display: inline-block;
     text-align: left;
     font-family: $secondary-font, serif;
     font-size: 0.8em;
@@ -154,8 +157,9 @@ section {
     // border: 1px solid $accent-pink;
     background-color: $accent-turq;
     // background-color: $accent-pink;
-    padding: 5px;
+    padding: 10px;
     margin: 10px 5px 0 0;
+    line-height: 10px;
 }
 
 #about {
@@ -218,6 +222,7 @@ footer {
     padding: 30px;
     text-align: center;
 }
+
 @media screen and (max-width: 750px) {
     #hero h1 {
         font-size: 3em;
