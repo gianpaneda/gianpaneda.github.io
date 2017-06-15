@@ -1,247 +1,333 @@
-@import url( 'https://fonts.googleapis.com/css?family=Roboto:300,400|Ubuntu:400,700');
-$primary-dark: #2F2F2F;
-$secondary-dark: #222223;
-$primary-light: #F2F2F2;
-$accent-blue: #1B27FF;
-$accent-purp: #794AD4;
-$accent-pink: #F784F7;
-$accent-turq: #5CDFDB;
-$primary-font: 'Ubuntu', sans-serif;
-$secondary-font: 'Roboto', sans-serif;
-@mixin box-shadow {
-    -webkit-box-shadow: 0 5px 14px 1px rgba(0,0,0,0.6);
-    -moz-box-shadow: 0 5px 14px 1px rgba(0,0,0,0.6);
-    box-shadow: 0 5px 14px 1px rgba(0,0,0,0.6);
+$primary-color: #3159ff;
+$primary-neutral: #fcfcfc;
+$main-font: 'Space Mono', Helvetica, sans-serif; 
+
+@mixin center-items() {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
-.accent {
-    color: $accent-blue;
+a {
+    color: #000;
+}
+
+a:hover {
+    color: $primary-color;
+    transition: all 0.2s ease;
 }
 
 body,
 html {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: $primary-dark;
-    // background-color: $primary-background;
-    font-family: $primary-font, sans-serif;
-    // background-image: -webkit-linear-gradient(-40deg, #f2f2f2 50%, #E7E7E7 50%);
-}
-
-nav {
-    font-family: $secondary-font;
-    margin: 0;
-    text-align: right;
-}
-
-.hover-link {
-    padding: 10px;
-    margin: -5px;
-}
-
-.hover-link:hover {
-    background-color: rgba(255, 255 ,255, 0.5);
-    transition: all 0.3s;
-}
-
-ul {
-    li {
-        padding: 10px;
-        list-style-type: none;
-        display: inline;
-    }
-}
-
-a {
-    text-decoration: none;
-    color: $primary-light;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
-#hero {
-    height: 400px;
+    font-family: $main-font;
+    font-size: 20px;
+    background-color: $primary-color;
     width: 100%;
-    margin: -90px 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $primary-light;
-    background: $accent-blue;
-    background: -webkit-linear-gradient($accent-blue, $accent-purp, $accent-turq);
-    background: linear-gradient($accent-blue, $accent-purp, $accent-turq);
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h4 {
+    margin: 10px 0;
+}
+
+#header-section {
+    background-color: $primary-color;
+    margin: -50px auto -90px;
 
     h1 {
-        font-family: $primary-font;
-        text-align: center;
-        font-size: 6em;
-        letter-spacing: 7px;
-        margin: 10px;
-        transition: 0.5s;
+        font-family: 'Poppins';
+        color: $primary-neutral;
+        font-weight: 700;
+        font-size: 120px;
+        padding: 10px 0 0 10px;
     }
 
-    h1:hover {
-        font-size: 6.4em;
-        letter-spacing: 14px;
+    h2 {
+        font-family: $main-font;
+        color: $primary-neutral;
+        font-size: 55px;
+        font-weight: 400;
+        margin: -170px 0 0;
     }
 }
 
-.section-header {
-    font-family: $primary-font;
-    color: lighten($accent-turq, 10);
-    margin: 20px;
-    font-size: 2em;
+#title {
+    font-family: $main-font;
+    color: $primary-neutral;
+    font-size: 85px;
     font-weight: 400;
+    margin: -90px 0 100px;
+    padding: 0;
+    letter-spacing: 0;
+    padding: 10px 0 0 15px;
 }
+// #background-name {
+//     font-family: $main-font;
+//     color: #1551e8;
+//     font-size: 380px;
+//     font-weight: 700;
+//     text-align: center;
+//     margin: -490px 0 300px 10px;
+//     // margin: -630px 0 0 200px;
+//     position: absolute;
+//     z-index: -1;
+// }
 
 section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 800px;
-    margin: 0 auto;
+    background-color: $primary-neutral;
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 0 0 30px;
+    width: 100%;
 }
 
-#portfolio {
+.section-title {
+    font-size: 64px;
+    color: $primary-color;
+    font-family: $main-font;
+    margin: 0 0 0 20px;
     padding: 0;
-    // h2 {
-    //     color: lighten($accent-purp, 15);
-    // }
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .project {
     display: flex;
-    font-family: $secondary-font;
-    color: darken($primary-light, 5);
-    width: 100%;
-    // background-color: lighten($accent-purp, 10);
-    background-color: $secondary-dark;
-    @include box-shadow;
-    margin: 0 auto 40px;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    margin: 10px auto;
+    min-width: 200px;
 
-    h3 {
-        font-size: 1.5em;
-        margin: 10px 0;
+    h4 {
+        margin: 0;
     }
 
     img {
-        max-height: 260px;
-        max-width: 380px;
-        object-fit: cover;
+        max-width: 250px;
+        width: 100%;
     }
 
-    ul {
-        list-style-type: none;
-        margin: -10px 0 0 0;
-        padding: 0;
-    }
-
-
-}
-
-.project-description {
-    margin: 0 15px 10px;
-}
-
-.tech {
-    display: inline-block;
-    text-align: left;
-    font-family: $secondary-font, serif;
-    font-size: 0.8em;
-    color: $primary-dark;
-    // border: 1px solid $accent-pink;
-    background-color: $accent-turq;
-    // background-color: $accent-pink;
-    padding: 10px;
-    margin: 10px 5px 0 0;
-    line-height: 10px;
-}
-
-#about {
-    font-family: $secondary-font;
-    color: $primary-light;
-    background-color: $secondary-dark;
-    @include box-shadow;
-    margin: 0 auto;
-    // h2 {
-    //     color: lighten($accent-turq, 10);
-    // }
     p {
-        font-size: 1.5em;
-        font-family: $secondary-font;
-        font-weight: 300;
-        margin: 20px;
+        margin: 5px 0;
     }
 }
 
-#profile-picture {
-    text-align: center;
+.small-projects {
+    // background-color: red;
+    max-width: 780px;
     margin: 0 auto;
-    background-color: white;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+}
+
+#aboutme-section {
+    margin: 0 auto 100px;
+
+    .about {
+        margin: 0 30px 30px;
+    }
+
+    h1 {
+        text-align: right;
+        margin: 0 20px;
+    }
+
+    p {
+        font-size: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+.project-info {
+    .project-header {
+        text-align: center;
+        color: $primary-neutral;
+
+        a:hover {
+            color: $primary-neutral;
+            transition: all 0.2s ease;
+        }
+    }
+
+    .project-description {
+        background-color: $primary-neutral;
+        padding: 20px;
+
+        h2,
+        p {
+            margin: 0 auto;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .home {
+            text-align: center;
+            margin: 0 auto;
+            width: 100px;
+
+            a:hover {
+                color: $primary-color;
+                transition: all 0.2s ease;
+            }
+        }
+    }
+
+    .project-mobile {
+        margin: -60px;
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .project-desktop {
+        margin: -30px;
+        max-width: 550px;
+        width: 100%;
+    }
 }
 
 #links {
-    // background-color: $secondary-dark;
-    margin: 40px auto 10px;
-
-    p {
-        margin: 30px;
-        text-align: center;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
 
     a {
-        font-size: 1.5em;
-        padding: 15px;
-        // margin: 0px 10px 10px 10px;
+        margin: 20px 20px 20px 25px;
+        font-size: 28px;
     }
-
-    a:hover {
-        @extend .hover-link:hover;
-    }
-
-    h2 {
-        text-align: center;
-        margin: 0 0 -10px;
-    }
-    // @include box-shadow;
 }
+@media screen and (max-width: 850px) {
+    #header-section {
+        h1 {
+            font-size: 80px;
+            text-align: center;
+            margin: 30px 0 0;
+        }
 
-footer {
-    font-family: $primary-font;
-    color: $primary-dark;
-    background: $accent-turq;
-    margin: 20px 0 0;
-    padding: 30px;
-    text-align: center;
-}
-
-@media screen and (max-width: 750px) {
-    #hero h1 {
-        font-size: 3em;
+        h2 {
+            font-size: 30px;
+            margin: -50px 0 -30px;
+            text-align: center;
+        }
     }
 
-    #hero h1:hover {
-        font-size: 3.4em;
-        letter-spacing: 10px;
-    }
-
-    .project {
-        max-width: 380px;
+    .projects {
+        display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
+        flex-wrap: nowrap;
     }
 
-    #links {
-        a {
-            font-size: 1em;
+    #project-section {
+        width: 100%;
+
+        h4 {
+            // text-align: center;
+        }
+
+        .project {
+            min-width: 300px;
+            margin: 10px;
+
+            img {
+                width: 100%;
+                // min-width: 200px;
+                max-width: 500px;
+            }
+        }
+
+        .small-projects {
+            text-align: center;
+        }
+    }
+
+    #aboutme-section {
+        width: 100%;
+    }
+}
+
+.copyright {
+    text-align: center;
+    color: $primary-neutral;
+}
+@media screen and (min-width: 570px) {
+    .p-fix {
+        letter-spacing: -10px;
+    }
+
+    .d-fix {
+        letter-spacing: -2px;
+    }
+}
+@media screen and (max-width: 570px) {
+    #header-section {
+        h1 {
+            font-size: 50px;
+            margin: 50px 0 0;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: -30px;
+        }
+
+        .p-fix {
+            letter-spacing: -5px;
+        }
+
+        .d-fix {
+            letter-spacing: 0;
+        }
+    }
+
+    section {
+        h1 {
+            text-align: center;
+        }
+    }
+}
+@media screen and (max-width: 380px) {
+    #header-section {
+        h1 {
+            font-size: 32px;
+            margin: 50px 0 0;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin: -30px;
+        }
+
+        .p-fix {
+            letter-spacing: 0;
+        }
+
+        .d-fix {
+            letter-spacing: 0;
+        }
+    }
+
+    #aboutme-section,
+    #project-section {
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            margin: 5px;
         }
     }
 }
