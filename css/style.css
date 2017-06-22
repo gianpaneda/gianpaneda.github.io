@@ -4,7 +4,8 @@ html {
   background-color: #f5f5ff;
   height: 100%;
   width: 100%;
-  margin: 0; }
+  margin: 0;
+  overflow-x: hidden; }
 
 .initials {
   font-family: "Eczar", Times, serif;
@@ -44,18 +45,19 @@ html {
     font-size: 48px;
     margin: 0 0 0 50px; }
 
+.section-title {
+  font-family: "Eczar", Times, serif;
+  font-size: 48px;
+  margin: 30px 0 0; }
+
 .projects-section {
   max-width: 1080px;
   margin: 0 auto;
   color: #282828; }
-  .projects-section .section-title {
-    font-family: "Eczar", Times, serif;
-    font-size: 48px;
-    margin: 50px; }
   .projects-section .project {
     display: flex;
     max-width: 1080px;
-    margin: 60px 0 0; }
+    margin: 40px 0 0; }
     .projects-section .project h2 {
       margin: 0; }
     .projects-section .project img {
@@ -63,20 +65,19 @@ html {
       width: 45%;
       -webkit-box-shadow: 0 10px 38px -10px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 0 10px 38px -10px rgba(0, 0, 0, 0.75);
-      box-shadow: 0 10px 38px -10px rgba(0, 0, 0, 0.75);
-      border-radius: 5px; }
+      box-shadow: 0 10px 38px -10px rgba(0, 0, 0, 0.75); }
     .projects-section .project .project-description {
       display: flex;
       flex-direction: column;
       padding: 10px 10px 10px 40px; }
       .projects-section .project .project-description p {
         color: #515151;
-        line-height: 150%; }
+        line-height: 150%;
+        width: 90%; }
       .projects-section .project .project-description .tech-used span {
         display: inline-block;
         color: #282828;
         border: solid 3px #2575fc;
-        border-radius: 5px;
         padding: 5px 10px;
         margin: 10px 10px 0 0; }
       .projects-section .project .project-description .project-links {
@@ -84,23 +85,75 @@ html {
         margin: 40px 0 0; }
         .projects-section .project .project-description .project-links .demo-button {
           background-color: #ffac38;
+          text-align: center;
+          text-decoration: none;
+          outline: none;
           font-size: 18px;
-          border-radius: 5px;
           border-style: none;
           width: 100px;
+          padding: 15px;
+          -webkit-transition-duration: 0.3s;
+          /* Safari */
+          transition-duration: 0.3s;
+          cursor: pointer; }
+        .projects-section .project .project-description .project-links .demo-button:hover {
+          color: #f2f2f2;
+          background-color: #ff8821;
+          margin: -3px 0 3px;
           padding: 15px; }
   .projects-section .project:last-child {
     margin: 60px 0 80px; }
 
-@media screen and (max-width: 1000px) {
+.links-section {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1080px;
+  margin: 50px auto;
+  padding: 0;
+  color: #282828;
+  text-align: center; }
+  .links-section a {
+    font-size: 32px;
+    padding: 20px;
+    margin: 10px;
+    transition-duration: 0.3s; }
+  .links-section a:hover {
+    color: #f2f2f2;
+    background-color: #2575fc; }
+
+a {
+  color: #282828;
+  text-decoration: none; }
+
+a:visited {
+  color: #282828; }
+
+hr {
+  max-width: 1080px;
+  width: 100%; }
+
+.copyright {
+  font-size: 18px;
+  color: #f2f2f2;
+  background-color: #2575fc;
+  letter-spacing: 4px;
+  text-align: center;
+  padding: 20px;
+  margin: 0; }
+
+@media screen and (max-width: 1100px) {
   .projects-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0; }
+    padding: 0;
+    max-width: 800px; }
     .projects-section .section-title {
-      margin: 50px 0 0 0; }
+      margin: 50px 0 0; }
     .projects-section .project {
       display: flex;
       flex-direction: column;
@@ -109,11 +162,26 @@ html {
       .projects-section .project img {
         width: 100%;
         max-width: 400px;
-        margin: 0 0 40px; } }
+        margin: 0 0 40px; }
+    .projects-section .project-description {
+      padding: 10px 10px 10px 40px; }
+
+  .links-section {
+    max-width: 800px; }
+    .links-section .section-title {
+      margin: 0 0 0 40px; }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; } }
 @media screen and (max-width: 415px) {
   .hero-header h1 {
     font-size: 0.7em; }
   .hero-header h2 {
-    font-size: 0.5em; } }
+    font-size: 0.5em; }
+
+  .section-title {
+    font-size: 36px; } }
 
 /*# sourceMappingURL=style.css.map */
