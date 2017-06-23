@@ -60,9 +60,7 @@ html {
   .projects-section .project {
     display: flex;
     max-width: 1080px;
-    margin: 40px 0 40px 0;
-    background-color: red;
-    min-height: 600px; }
+    margin: 40px 0 40px 0; }
     .projects-section .project h2 {
       margin: 0; }
     .projects-section .project img {
@@ -156,7 +154,9 @@ hr {
     align-items: center;
     justify-content: center;
     padding: 0;
-    max-width: 800px; }
+    max-width: 800px;
+    background-color: red;
+    min-height: 900px; }
     .projects-section .section-title {
       margin: 50px 0 0; }
     .projects-section .project {
