@@ -174,7 +174,8 @@ hr {
       padding: 10px 10px 10px 40px; }
 
   .links-section {
-    max-width: 800px; }
+    max-width: 800px;
+    margin: 0 auto; }
     .links-section .section-title {
       margin: 0 0 0 40px; }
 
