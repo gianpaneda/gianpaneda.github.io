@@ -55,7 +55,7 @@ html {
 
 .projects-section {
   max-width: 1080px;
-  margin: 0 auto 80px auto;
+  margin: 0 auto;
   color: #282828; }
   .projects-section .project {
     display: flex;
