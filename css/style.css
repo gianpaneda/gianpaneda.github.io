@@ -61,7 +61,7 @@ html {
     display: flex;
     max-width: 1080px;
     margin: 40px 0 100px 0;
-    background-color: red;
+    background-color: blue;
     min-height: 850px; }
     .projects-section .project h2 {
       margin: 0; }
@@ -96,7 +96,7 @@ html {
           font-size: 18px;
           border-style: none;
           width: 100px;
-          padding: 15px;
+          padding: 20px;
           margin: 0 0 30px 0;
           -webkit-transition-duration: 0.3s;
           /* Safari */
@@ -105,8 +105,7 @@ html {
         .projects-section .project .project-description .project-links .demo-button:hover {
           color: #f2f2f2;
           background-color: #ff8821;
-          margin: -3px 0 3px 0;
-          padding: 15px; }
+          margin: -3px 0 3px 0; }
   .projects-section .project:last-child {
     margin: 60px 0 80px; }
 
