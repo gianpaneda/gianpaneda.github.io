@@ -55,14 +55,14 @@ html {
 
 .projects-section {
   max-width: 1080px;
-  margin: 0 auto 80px auto;
-  color: #282828;
-  background-color: yellow; }
+  margin: 0 auto 80px;
+  color: #282828; }
   .projects-section .project {
     display: flex;
     max-width: 1080px;
     margin: 40px 0 140px 0;
-    min-height: 600px; }
+    background-color: red;
+    min-height: 1000px; }
     .projects-section .project h2 {
       margin: 0; }
     .projects-section .project img {
@@ -156,21 +156,18 @@ hr {
     align-items: center;
     justify-content: center;
     padding: 0;
-    max-width: 800px;
-    min-height: 1000px; }
+    max-width: 800px; }
     .projects-section .section-title {
       margin: 50px 0 0; }
     .projects-section .project {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100%;
-      margin: 40px 0 240px 0;
-      background-color: purple; }
+      width: 100%; }
       .projects-section .project img {
         width: 100%;
         max-width: 400px;
-        margin: 0 0 40px 0; }
+        margin: 0 0 40px; }
     .projects-section .project-description {
       padding: 10px 10px 10px 40px; }
 
