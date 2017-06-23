@@ -61,8 +61,7 @@ html {
     display: flex;
     max-width: 1080px;
     margin: 40px 0 80px 0;
-    min-height: 600px;
-    background-color: red; }
+    min-height: 600px; }
     .projects-section .project h2 {
       margin: 0; }
     .projects-section .project img {
@@ -164,7 +163,7 @@ hr {
       flex-direction: column;
       align-items: center;
       width: 100%;
-      margin: 40px 0 40px 0;
+      margin: 40px 0 0 0;
       min-height: 1000px;
       max-width: 800px; }
       .projects-section .project img {
