@@ -61,7 +61,7 @@ html {
     display: flex;
     max-width: 1080px;
     margin: 40px 0 0 0;
-    min-height: 600px; }
+    min-height: 400px; }
     .projects-section .project h2 {
       margin: 0; }
     .projects-section .project img {
