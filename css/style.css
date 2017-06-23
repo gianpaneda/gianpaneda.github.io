@@ -60,9 +60,9 @@ html {
   .projects-section .project {
     display: flex;
     max-width: 1080px;
-    margin: 40px 0 100px 0;
+    margin: 40px 0 80px 0;
     background-color: blue;
-    min-height: 1000px; }
+    min-height: 950px; }
     .projects-section .project h2 {
       margin: 0; }
     .projects-section .project img {
