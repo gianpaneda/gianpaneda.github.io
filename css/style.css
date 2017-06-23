@@ -156,9 +156,6 @@ hr {
     align-items: center;
     justify-content: center;
     padding: 0;
-    margin: 40px 0 40px 0;
-    background-color: green;
-    min-height: 1000px;
     max-width: 800px; }
     .projects-section .section-title {
       margin: 50px 0 0; }
@@ -166,7 +163,10 @@ hr {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100%; }
+      width: 100%;
+      margin: 40px 0 80px 0;
+      min-height: 1000px;
+      max-width: 800px; }
       .projects-section .project img {
         width: 100%;
         max-width: 400px;
