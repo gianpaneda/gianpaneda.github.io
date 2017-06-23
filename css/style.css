@@ -55,12 +55,12 @@ html {
 
 .projects-section {
   max-width: 1080px;
-  margin: 0 auto 80px;
+  margin: 0 auto 80px auto;
   color: #282828; }
   .projects-section .project {
     display: flex;
     max-width: 1080px;
-    margin: 40px 0 80px 0;
+    margin: 40px 0 40px 0;
     min-height: 600px; }
     .projects-section .project h2 {
       margin: 0; }
