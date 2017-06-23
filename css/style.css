@@ -60,7 +60,7 @@ html {
   .projects-section .project {
     display: flex;
     max-width: 1080px;
-    margin: 40px 0 40px 0;
+    margin: 40px 0 0 0;
     min-height: 600px; }
     .projects-section .project h2 {
       margin: 0; }
