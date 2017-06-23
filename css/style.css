@@ -60,7 +60,8 @@ html {
   .projects-section .project {
     display: flex;
     max-width: 1080px;
-    margin: 40px 0 40px 0; }
+    margin: 40px 0 140px 0;
+    background-color: green; }
     .projects-section .project h2 {
       margin: 0; }
     .projects-section .project img {
