@@ -164,11 +164,12 @@ hr {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100%; }
+      width: 100%;
+      margin: 40px 0 140px 0; }
       .projects-section .project img {
         width: 100%;
         max-width: 400px;
-        margin: 0 0 40px; }
+        margin: 0 0 40px 0; }
     .projects-section .project-description {
       padding: 10px 10px 10px 40px; }
 
