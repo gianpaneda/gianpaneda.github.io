@@ -55,8 +55,9 @@ html {
 
 .projects-section {
   max-width: 1080px;
-  margin: 0 auto 80px;
-  color: #282828; }
+  margin: 0 auto 80px auto;
+  color: #282828;
+  background-color: yellow; }
   .projects-section .project {
     display: flex;
     max-width: 1080px;
@@ -156,7 +157,7 @@ hr {
     justify-content: center;
     padding: 0;
     max-width: 800px;
-    min-height: 900px; }
+    min-height: 1000px; }
     .projects-section .section-title {
       margin: 50px 0 0; }
     .projects-section .project {
