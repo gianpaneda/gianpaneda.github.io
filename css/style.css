@@ -1,6 +1,7 @@
 body,
 html {
   font-family: "Work Sans", Helvetica, sans-serif;
+  font-size: 16px;
   background-color: #f5f5ff;
   height: 100%;
   width: 100%;
@@ -9,6 +10,9 @@ html {
 
 * {
   -webkit-overflow-scrolling: touch; }
+
+section {
+  margin: 0 auto 40px; }
 
 .initials {
   font-family: "Eczar", Times, serif;
@@ -51,7 +55,7 @@ html {
 .section-title {
   font-family: "Eczar", Times, serif;
   font-size: 48px;
-  margin: 30px 0 0; }
+  margin: 40px 0 10px; }
 
 .projects-section {
   max-width: 1080px;
@@ -60,7 +64,7 @@ html {
   .projects-section .project {
     display: flex;
     max-width: 1080px;
-    margin: 40px 0 0 0;
+    margin: 40px 0 10px;
     min-height: 400px; }
     .projects-section .project h2 {
       margin: 0; }
@@ -86,7 +90,7 @@ html {
         margin: 10px 10px 0 0; }
       .projects-section .project .project-description .project-links {
         display: flex;
-        margin: 40px 0 0; }
+        margin: 40px 0 10px; }
         .projects-section .project .project-description .project-links .demo-button {
           background-color: #ffac38;
           text-align: center;
@@ -96,7 +100,7 @@ html {
           border-style: none;
           width: 100px;
           padding: 20px;
-          margin: 0 0 30px 0;
+          margin: 0px;
           min-height: 24px;
           -webkit-transition-duration: 0.3s;
           /* Safari */
@@ -108,7 +112,16 @@ html {
           min-height: 24px;
           margin: -3px 0 3px 0; }
   .projects-section .project:last-child {
-    margin: 40px 0 80px 0; }
+    margin: 40px 0; }
+
+.designs-section {
+  max-width: 1080px;
+  margin: 0 auto 60px;
+  text-align: center; }
+  .designs-section a:hover {
+    color: #2575fc; }
+  .designs-section p {
+    margin: 0 0 40px; }
 
 .links-section {
   font-size: 20px;
@@ -121,16 +134,15 @@ html {
   padding: 0;
   color: #282828;
   text-align: center; }
-  .links-section a {
-    font-size: 32px;
-    padding: 20px;
-    margin: 10px;
-    transition-duration: 0.3s; }
   .links-section a:hover {
     color: #f2f2f2;
     background-color: #2575fc; }
 
 a {
+  font-size: 32px;
+  padding: 20px;
+  margin: 10px;
+  transition-duration: 0.3s;
   color: #282828;
   text-decoration: none; }
 
@@ -165,8 +177,8 @@ hr {
       flex-direction: column;
       align-items: center;
       width: 100%;
-      margin: 40px 0 0 0;
-      min-height: 850px;
+      margin: 40px 0 40px 0px;
+      min-height: 800px;
       max-width: 800px; }
       .projects-section .project img {
         width: 100%;
@@ -178,20 +190,24 @@ hr {
   .links-section {
     max-width: 800px;
     margin: 0 auto; }
-    .links-section .section-title {
-      margin: 0 0 0 40px; }
 
   .links {
     display: flex;
     flex-direction: column;
     justify-content: center; } }
+@media screen and (max-width: 700px) {
+  .tech-used {
+    font-size: 12px; } }
 @media screen and (max-width: 415px) {
   .hero-header h1 {
     font-size: 0.7em; }
   .hero-header h2 {
     font-size: 0.5em; }
 
+  .designs-section {
+    text-align: center; }
+
   .section-title {
-    font-size: 36px; } }
+    font-size: 32px; } }
 
 /*# sourceMappingURL=style.css.map */
