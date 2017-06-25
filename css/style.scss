@@ -5,15 +5,30 @@ $primary-dark: #282828;
 $secondary-dark: #515151;
 $color-light: #2575fc;
 $background-light: #f5f5ff;
+@mixin min-margin() {
+    margin: 40px 0 10px;
+}
+@mixin max-width() {
+    max-width: 1080px;
+}
 
 body,
 html {
     font-family: $font-sans;
+    font-size: 16px;
     background-color: $background-light;
     height: 100%;
     width: 100%;
     margin: 0;
     overflow-x: hidden;
+}
+
+* {
+    -webkit-overflow-scrolling: touch;
+}
+
+section {
+    margin: 0 auto 40px;
 }
 
 .initials {
@@ -43,7 +58,7 @@ html {
 
     .hero-text {
         width: 100%;
-        max-width: 1080px;
+        @include max-width();
         margin: 0 auto;
     }
 
@@ -65,18 +80,19 @@ html {
 .section-title {
     font-family: $font-serif;
     font-size: 48px;
-    margin: 30px 0 0;
+    @include min-margin();
 }
 
 .projects-section {
-    max-width: 1080px;
+    @include max-width();
     margin: 0 auto;
     color: $primary-dark;
 
     .project {
         display: flex;
-        max-width: 1080px;
-        margin: 40px 0 0;
+        @include max-width();
+        @include min-margin();
+        min-height: 400px;
 
         h2 {
             margin: 0;
@@ -113,7 +129,7 @@ html {
 
             .project-links {
                 display: flex;
-                margin: 40px 0 0;
+                @include min-margin();
 
                 .demo-button {
                     background-color: #ffac38;
@@ -123,7 +139,9 @@ html {
                     font-size: 18px;
                     border-style: none;
                     width: 100px;
-                    padding: 15px;
+                    padding: 20px;
+                    margin: 0px;
+                    min-height: 24px;
                     -webkit-transition-duration: 0.3s;
                     /* Safari */
                     transition-duration: 0.3s;
@@ -133,15 +151,29 @@ html {
                 .demo-button:hover {
                     color: $primary-light;
                     background-color: #ff8821;
-                    margin: -3px 0 3px;
-                    padding: 15px;
+                    min-height: 24px;
+                    margin: -3px 0 3px 0;
                 }
             }
         }
     }
 
     .project:last-child {
-        margin: 60px 0 80px;
+        margin: 40px 0;
+    }
+}
+
+.designs-section {
+    @include max-width();
+    margin: 0 auto 60px;
+    text-align: center;
+
+    a:hover {
+        color: $color-light;
+    }
+
+    p {
+        margin: 0 0 40px;
     }
 }
 
@@ -151,28 +183,23 @@ html {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1080px;
+    @include max-width();
     margin: 50px auto;
     padding: 0;
     color: $primary-dark;
     text-align: center;
 
-    a {
-        font-size: 32px;
-        padding: 20px;
-        margin: 10px;
-        transition-duration: 0.3s;
-    }
-
     a:hover {
         color: $primary-light;
         background-color: $color-light;
     }
-
-    .links {}
 }
 
 a {
+    font-size: 32px;
+    padding: 20px;
+    margin: 10px;
+    transition-duration: 0.3s;
     color: $primary-dark;
     text-decoration: none;
 }
@@ -182,7 +209,7 @@ a:visited {
 }
 
 hr {
-    max-width: 1080px;
+    @include max-width();
     width: 100%;
 }
 
@@ -213,6 +240,9 @@ hr {
             flex-direction: column;
             align-items: center;
             width: 100%;
+            margin: 40px 0 40px 0px;
+            min-height: 800px;
+            max-width: 800px;
 
             img {
                 width: 100%;
@@ -228,10 +258,7 @@ hr {
 
     .links-section {
         max-width: 800px;
-
-        .section-title {
-            margin: 0 0 0 40px;
-        }
+        margin: 0 auto;
     }
 
     .links {
@@ -240,6 +267,14 @@ hr {
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .tech-used {
+        font-size: 12px;
+    }
+}
+
+
 @media screen and (max-width: 415px) {
     .hero-header {
         h1 {
@@ -251,7 +286,11 @@ hr {
         }
     }
 
+    .designs-section {
+        text-align: center;
+    }
+
     .section-title {
-        font-size: 36px;
+        font-size: 32px;
     }
 }
