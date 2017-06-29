@@ -62,6 +62,7 @@ section {
   margin: 0 auto;
   color: #282828; }
   .projects-section .project {
+    background-color: red;
     display: flex;
     max-width: 1080px;
     margin: 40px 0 10px;
@@ -172,14 +173,15 @@ hr {
     max-width: 800px;
     margin: 40px 0 40px 0; }
     .projects-section .section-title {
-      margin: 50px 0 0; }
+      margin: 50px 0 0 0; }
     .projects-section .project {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
       margin: 40px 0 40px 0px;
-      min-height: 800px;
+      padding: 0 0 20px 0;
+      min-height: 900px;
       max-width: 800px; }
       .projects-section .project img {
         width: 100%;
@@ -198,7 +200,7 @@ hr {
     justify-content: center; } }
 @media screen and (max-width: 700px) {
   .tech-used {
-    font-size: 12px; }
+    font-size: 10px; }
 
   .project {
     margin: 40px 0 40px 0; } }
