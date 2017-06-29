@@ -62,7 +62,6 @@ section {
   margin: 0 auto;
   color: #282828; }
   .projects-section .project {
-    background-color: red;
     display: flex;
     max-width: 1080px;
     margin: 40px 0 10px;
