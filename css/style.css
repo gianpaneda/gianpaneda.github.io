@@ -169,7 +169,8 @@ hr {
     align-items: center;
     justify-content: center;
     padding: 0;
-    max-width: 800px; }
+    max-width: 800px;
+    margin: 40px 0 40px 0; }
     .projects-section .section-title {
       margin: 50px 0 0; }
     .projects-section .project {
@@ -197,7 +198,10 @@ hr {
     justify-content: center; } }
 @media screen and (max-width: 700px) {
   .tech-used {
-    font-size: 12px; } }
+    font-size: 12px; }
+
+  .project {
+    margin: 40px 0 40px 0; } }
 @media screen and (max-width: 415px) {
   .hero-header h1 {
     font-size: 0.7em; }
@@ -208,6 +212,9 @@ hr {
     text-align: center; }
 
   .section-title {
-    font-size: 32px; } }
+    font-size: 32px; }
+
+  .project {
+    margin: 40px 0 40px 0; } }
 
 /*# sourceMappingURL=style.css.map */
