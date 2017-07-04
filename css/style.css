@@ -38,14 +38,15 @@ section {
   background-repeat: no-repeat;
   z-index: -1; }
   .hero-header .hero-text {
+    max-width: 800px;
     width: 100%;
     max-width: 1080px;
-    margin: 0 auto; }
+    margin: 0 auto 10px; }
   .hero-header h1 {
     font-family: "Eczar", Times, serif;
-    line-height: 90%;
     width: 100px;
-    padding: 36vh 0 0 0;
+    line-height: 90%;
+    padding: 32vh 0 0;
     margin: 0; }
   .hero-header h2 {
     font-family: "Work Sans", Helvetica, sans-serif;
@@ -100,7 +101,7 @@ section {
           border-style: none;
           width: 100px;
           padding: 20px;
-          margin: 0px;
+          margin: 0;
           min-height: 24px;
           -webkit-transition-duration: 0.3s;
           /* Safari */
@@ -110,7 +111,7 @@ section {
           color: #f2f2f2;
           background-color: #ff8821;
           min-height: 24px;
-          margin: -3px 0 3px 0; }
+          margin: -3px 0 3px; }
   .projects-section .project:last-child {
     margin: 40px 0; }
 
@@ -162,11 +163,13 @@ hr {
   padding: 20px;
   margin: 0; }
 
+@media screen and (max-width: 1200px) {
+  .hero-text {
+    text-align: center;
+    margin: 50px; }
+    .hero-text h1 {
+      width: 100%; } }
 @media screen and (max-width: 1100px) {
-   .hero-header h1 {
-    font-size: 0.85em; }
-  .hero-header h2 {
-    font-size: 0.6em; }
   .projects-section {
     display: flex;
     flex-direction: column;
@@ -174,16 +177,16 @@ hr {
     justify-content: center;
     padding: 0;
     max-width: 800px;
-    margin: 40px auto 40px auto; }
+    margin: 40px auto; }
     .projects-section .section-title {
-      margin: 50px 0 0 0; }
+      margin: 50px 0 0; }
     .projects-section .project {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
-      margin: 40px 0 40px 0px;
-      padding: 0 0 20px 0;
+      margin: 40px 0;
+      padding: 0 0 20px;
       min-height: 900px;
       max-width: 800px; }
       .projects-section .project img {
@@ -206,7 +209,12 @@ hr {
     font-size: 10px; }
 
   .project {
-    margin: 40px 0 40px 0; } }
+    margin: 40px 0; } }
+@media screen and (max-width: 650px) {
+  .hero-text h1 {
+    font-size: 0.85em; }
+  .hero-text h2 {
+    font-size: 0.5em; } }
 @media screen and (max-width: 415px) {
   .hero-header h1 {
     font-size: 0.7em; }
@@ -220,6 +228,6 @@ hr {
     font-size: 32px; }
 
   .project {
-    margin: 40px 0 40px 0; } }
+    margin: 40px 0; } }
 
 /*# sourceMappingURL=style.css.map */
