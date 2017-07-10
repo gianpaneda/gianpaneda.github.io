@@ -1,2 +1,2 @@
 # gianpaneda.github.io
-personal site
+Personal website showing web projects. Always updating.
