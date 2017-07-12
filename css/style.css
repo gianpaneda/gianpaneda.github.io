@@ -158,9 +158,10 @@ section {
     background-color: #2575fc; }
 
 a {
+  display: inline-block;
   font-size: 32px;
   padding: 20px;
-  margin: 30px 10px 10px 10px;
+  margin: 10px;
   transition-duration: 0.3s;
   color: #282828;
   text-decoration: none; }
