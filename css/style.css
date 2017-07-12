@@ -91,7 +91,7 @@ section {
         margin: 10px 10px 0 0; }
       .projects-section .project .project-description .project-links {
         display: flex;
-        margin: 40px 10px 10px 10px; }
+        margin: 40px 0 0 0; }
         .projects-section .project .project-description .project-links .demo-button {
           background-color: #ffac38;
           text-align: center;
