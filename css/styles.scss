@@ -1,0 +1,22 @@
+$primary-text-color: #000000;
+$primary-background-color: #FFEDAD;
+
+body {
+	color: $primary-text-color;
+}
+
+.project-section {
+	position: relative;
+	&:hover {
+		color: red;
+	}
+}
+
+span {
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+}

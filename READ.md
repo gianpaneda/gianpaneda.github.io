@@ -1,2 +1,2 @@
 # gianpaneda.github.io
-My website that shows some of my web projects. Currently in the process of revamping it.
+My website that shows some of my past work and projects.

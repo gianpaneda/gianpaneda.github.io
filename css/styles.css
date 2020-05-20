@@ -1,0 +1,17 @@
+body {
+  color: #000000; }
+
+.project-section {
+  position: relative; }
+  .project-section:hover {
+    color: red; }
+
+span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+
+/*# sourceMappingURL=styles.css.map */
