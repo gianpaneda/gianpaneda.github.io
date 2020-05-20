@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 $primary-text-color: #000000;
 $primary-background-color: #FFEDAD;
+$header-font: "Archivo Black", Arial, sans-serif;
+$body-font: "Archivo", Arial, sans-serif;
 
 body {
+	font-family: "Archivo", Arial, sans-serif;
 	color: $primary-text-color;
+	max-width: 800px;
+	margin: 0 auto;
 }
 
 .project-section {
