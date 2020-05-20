@@ -3,6 +3,8 @@ body {
 
 .project-section {
   position: relative; }
+  .project-section:hover {
+    color: red; }
 
 span {
   position: absolute;

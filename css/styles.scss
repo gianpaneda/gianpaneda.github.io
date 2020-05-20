@@ -7,6 +7,9 @@ body {
 
 .project-section {
 	position: relative;
+	&:hover {
+		color: red;
+	}
 }
 
 span {
