@@ -1,21 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:wght@700&family=Archivo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 $primary-text-color: #000000;
+$link-color: #1144F5;
+$visited-link-color: #8216A8;
 $primary-background-color: #FFEDAD;
-$header-font: "Archivo Black", Arial, sans-serif;
-$body-font: "Archivo", Arial, sans-serif;
+$header-font-family: "Archivo Black", Arial, sans-serif;
+$body-font-family: "Archivo", Arial, sans-serif;
+$subheader-font-size: 26px;
+$body-font-size: 18px;
+$section-margin-bottom: 60px;
+$subsection-margin-bottom: 5px;
+
+#navigation {
+	display: flex;
+	margin: 45px 0 45px 0;
+	justify-content: space-between;
+}
+
+a {
+	color: $link-color;
+	&:visited {
+		color: $visited-link-color;
+	}
+	&:hover {
+		font-style: italic;
+	}
+}
+
+.navigation-links {
+	a {
+		margin-left: 10px;
+	}
+}
+
+h1 {
+	margin-bottom: 10px;
+}
+
+h2 {
+	margin-bottom: 0px;
+}
+
+h1, h2 {
+	font-family: $header-font-family;
+}
+
+p {
+	margin-top: 0;
+}
+
+#logo {
+	width: 50px;
+}
+
+#header-section {
+	margin-bottom: $section-margin-bottom;
+	h1 {
+		font-size: 40px;
+	}
+}
+
+.subheader {
+	font-size: $subheader-font-size;
+}
+
+a {
+	font-weight: bold;
+}
 
 body {
 	font-family: "Archivo", Arial, sans-serif;
+	font-size: $body-font-size;
+	background-color: #FFEDAD;
 	color: $primary-text-color;
-	max-width: 800px;
+	padding: 30px;
+	max-width: 700px;
 	margin: 0 auto;
+	line-height: 1.6;
 }
 
 .project-section {
 	position: relative;
+	line-height: 1.4;
+}
+
+.project {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	line-height: 1.4;
+	margin: 0 -30px $subsection-margin-bottom -30px;
+	padding: 30px;
+	h3 {
+		margin-top: 0;
+	}
 	&:hover {
-		color: red;
+		color: $link-color;
+		font-style: italic;
+		img {
+			outline: 2px solid $link-color;
+		}
+	}
+	.project-description {
+		margin-right: 30px;
 	}
 }
 

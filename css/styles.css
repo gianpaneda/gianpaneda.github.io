@@ -1,14 +1,75 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:wght@700&family=Archivo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+#navigation {
+  display: flex;
+  margin: 45px 0 45px 0;
+  justify-content: space-between; }
+
+a {
+  color: #1144F5; }
+  a:visited {
+    color: #8216A8; }
+  a:hover {
+    font-style: italic; }
+
+.navigation-links a {
+  margin-left: 10px; }
+
+h1 {
+  margin-bottom: 10px; }
+
+h2 {
+  margin-bottom: 0px; }
+
+h1, h2 {
+  font-family: "Archivo Black", Arial, sans-serif; }
+
+p {
+  margin-top: 0; }
+
+#logo {
+  width: 50px; }
+
+#header-section {
+  margin-bottom: 60px; }
+  #header-section h1 {
+    font-size: 40px; }
+
+.subheader {
+  font-size: 26px; }
+
+a {
+  font-weight: bold; }
+
 body {
   font-family: "Archivo", Arial, sans-serif;
+  font-size: 18px;
+  background-color: #FFEDAD;
   color: #000000;
-  max-width: 800px;
-  margin: 0 auto; }
+  padding: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6; }
 
 .project-section {
-  position: relative; }
-  .project-section:hover {
-    color: red; }
+  position: relative;
+  line-height: 1.4; }
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  line-height: 1.4;
+  margin: 0 -30px 5px -30px;
+  padding: 30px; }
+  .project h3 {
+    margin-top: 0; }
+  .project:hover {
+    color: #1144F5;
+    font-style: italic; }
+    .project:hover img {
+      outline: 2px solid #1144F5; }
+  .project .project-description {
+    margin-right: 30px; }
 
 span {
   position: absolute;
