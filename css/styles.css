@@ -126,7 +126,8 @@ body {
 .section-link-footer {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: 18px; }
   .section-link-footer p {
     margin: 0; }
 
