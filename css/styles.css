@@ -14,7 +14,8 @@
     transform: scale(2); }
 
 footer {
-  padding: 90px 0 50px 0; }
+  padding: 90px 0 50px 0;
+  text-align: center; }
 
 .project-image {
   min-width: 135%;
