@@ -1,14 +1,209 @@
-$primary-text-color: #000000;
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:wght@700&family=Archivo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$primary-text-color: #06140F;
+$secondary-text-color: #2B5546; 
+$link-color: #1144F5;
+$visited-link-color: #8216A8;
 $primary-background-color: #FFEDAD;
+$header-font-family: "Archivo Black", Arial, sans-serif;
+$body-font-family: "Archivo", Arial, sans-serif;
+$subheader-font-size: 26px;
+$body-font-size: 18px;
+$section-margin-bottom: 60px;
+$subsection-margin-bottom: 5px;
+
+.image-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.image-container-two {
+	@extend .image-container;
+	flex-direction: row;
+	img {
+	    transition:transform 0.2s ease;
+	}
+	img:hover {
+	    -webkit-transform:scale(2.0); /* or some other value */
+	    transform:scale(2.0);
+	}
+}
+
+.project-image {
+	min-width: 135%;
+  	height: auto;
+}
+
+.project-image-two {
+	min-width: 67.5%;
+	margin: 5px;
+	height: auto;
+}
+
+.image-caption {
+	margin-top: 10px;
+	text-align: center;
+	font-style: italic;
+}
+
+#navigation {
+	display: flex;
+	margin: 45px 0 45px 0;
+	justify-content: space-between;
+/*	outline: 1px solid red;*/
+	align-items: center;
+}
+
+#logo {
+	width: 50px;
+	height: 36px;
+	margin-right: 10px;
+}
+
+#logo-and-name {
+	margin: 0;
+	padding: 0;
+	a {
+		margin: 0;
+		height: 36px;
+	}
+}
+
+a {
+	color: $link-color;
+	&:visited {
+		color: $visited-link-color;
+	}
+	&:hover {
+		font-style: italic;
+	}
+}
+
+.margin-x-zero {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.navigation-links {
+	a {
+		margin-left: 10px;
+	}
+}
+
+h1, h2 {
+	font-family: $header-font-family;
+}
+
+
+h1 {
+	margin-bottom: 10px;
+}
+
+h2 {
+	margin-bottom: 8px;
+}
+
+h3 {
+	margin-top: 5px;
+	margin-bottom: 18px;
+}
+
+h4 {
+	font-size: 24px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+p {
+	margin-top: 0;
+}
+
+ul {
+	margin-top: 0;
+}
+
+
+#header-section {
+	margin-bottom: $section-margin-bottom;
+	h1 {
+		font-size: 40px;
+	}
+}
+
+.subheader {
+	font-size: $subheader-font-size;
+}
+
+.callout {
+	font-size: $subheader-font-size;
+	font-style: italic;
+	margin-bottom: 12px;
+}
+
+.callout-metrics {
+	font-size: $subheader-font-size;
+	font-style: italic;
+	margin-bottom: 12px;
+}
+
+a {
+	font-weight: bold;
+}
 
 body {
+	font-family: "Archivo", Arial, sans-serif;
+	font-size: $body-font-size;
+	background-color: #FFEDAD;
 	color: $primary-text-color;
+	padding: 30px;
+	max-width: 700px;
+	margin: 0 auto;
+	line-height: 1.8;
+}
+
+.section {
+	margin-bottom: $section-margin-bottom;
+}
+
+.section-link-footer {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	p {
+		margin: 0;
+	}
+}
+
+.footer-link-right {
+	text-align: right;
 }
 
 .project-section {
 	position: relative;
+	line-height: 1.8;
+}
+
+.project {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	line-height: 1.4;
+	margin: 20px -30px $subsection-margin-bottom -30px;
+	padding: 0 30px 15px 30px;
+	h3 {
+		margin-top: 0;
+	}
 	&:hover {
-		color: red;
+		color: $link-color;
+		font-style: italic;
+		img {
+			outline: 2px solid $link-color;
+		}
+	}
+	.project-description {
+		margin-right: 30px;
 	}
 }
 

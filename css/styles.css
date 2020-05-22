@@ -1,10 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:wght@700&family=Archivo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.image-container, .image-container-two {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; }
+
+.image-container-two {
+  flex-direction: row; }
+  .image-container-two img {
+    transition: transform 0.2s ease; }
+  .image-container-two img:hover {
+    -webkit-transform: scale(2);
+    /* or some other value */
+    transform: scale(2); }
+
+.project-image {
+  min-width: 135%;
+  height: auto; }
+
+.project-image-two {
+  min-width: 67.5%;
+  margin: 5px;
+  height: auto; }
+
+.image-caption {
+  margin-top: 10px;
+  text-align: center;
+  font-style: italic; }
+
+#navigation {
+  display: flex;
+  margin: 45px 0 45px 0;
+  justify-content: space-between;
+  /*	outline: 1px solid red;*/
+  align-items: center; }
+
+#logo {
+  width: 50px;
+  height: 36px;
+  margin-right: 10px; }
+
+#logo-and-name {
+  margin: 0;
+  padding: 0; }
+  #logo-and-name a {
+    margin: 0;
+    height: 36px; }
+
+a {
+  color: #1144F5; }
+  a:visited {
+    color: #8216A8; }
+  a:hover {
+    font-style: italic; }
+
+.margin-x-zero {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0; }
+
+.navigation-links a {
+  margin-left: 10px; }
+
+h1, h2 {
+  font-family: "Archivo Black", Arial, sans-serif; }
+
+h1 {
+  margin-bottom: 10px; }
+
+h2 {
+  margin-bottom: 8px; }
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 18px; }
+
+h4 {
+  font-size: 24px;
+  margin-top: 5px;
+  margin-bottom: 0px; }
+
+p {
+  margin-top: 0; }
+
+ul {
+  margin-top: 0; }
+
+#header-section {
+  margin-bottom: 60px; }
+  #header-section h1 {
+    font-size: 40px; }
+
+.subheader {
+  font-size: 26px; }
+
+.callout {
+  font-size: 26px;
+  font-style: italic;
+  margin-bottom: 12px; }
+
+.callout-metrics {
+  font-size: 26px;
+  font-style: italic;
+  margin-bottom: 12px; }
+
+a {
+  font-weight: bold; }
+
 body {
-  color: #000000; }
+  font-family: "Archivo", Arial, sans-serif;
+  font-size: 18px;
+  background-color: #FFEDAD;
+  color: #06140F;
+  padding: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8; }
+
+.section {
+  margin-bottom: 60px; }
+
+.section-link-footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between; }
+  .section-link-footer p {
+    margin: 0; }
+
+.footer-link-right {
+  text-align: right; }
 
 .project-section {
-  position: relative; }
-  .project-section:hover {
-    color: red; }
+  position: relative;
+  line-height: 1.8; }
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  line-height: 1.4;
+  margin: 20px -30px 5px -30px;
+  padding: 0 30px 15px 30px; }
+  .project h3 {
+    margin-top: 0; }
+  .project:hover {
+    color: #1144F5;
+    font-style: italic; }
+    .project:hover img {
+      outline: 2px solid #1144F5; }
+  .project .project-description {
+    margin-right: 30px; }
 
 span {
   position: absolute;
