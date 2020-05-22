@@ -1,0 +1,155 @@
+<head>
+	<meta charset="utf-8">
+	<title>Gian Paneda | Product Designer</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+	<div id="navigation">
+		<div id="logo-and-name">
+			<a href="index.html">
+				<img id="logo" src="img/logo.png">
+			</a>	
+		</div>
+		<nav class="navigation-links">
+			<a href="index.html">Work</a>
+			<a href="index.html">About</a>	
+		</nav>
+	</div>
+	<div>
+		<div class="section">
+			<h1>Stakeholder Data Updates</h1>
+		<div class="image-container">
+			<img class="project-image" src="img/pending updates.png">
+		</div>
+			<p class="image-caption">
+				List of stakeholder data updates coming from an integrated HR system. Users can review the changes and confirm them in bulk.	
+			</p>
+				<div class="image-container">
+			<img class="project-image" src="img/pending terms.png">
+		</div>
+			<p class="image-caption">
+				List of pending employee terminations coming from an integrated HR system. Clicking "Terminate" will take the user to a workflow where they can confirm the termination of that individual's employment.
+			</p>
+		</div>
+		<div class="section">
+			<h2>Overview</h2>
+				<p class="callout">
+					<a href="https://carta.com/">Carta</a> helps companies and investors manage their cap tables, valuations, investments, and equity plans.
+				</p>
+				<p>
+					My team was focused on improving the experience for company administrators of enterprise companies. These users often maintain employee data for large companies across multiple systems, including Carta.
+				</p>
+				<p>
+					We created <em>Stakeholder Data Updates</em> to improve the admin experience. By allowing the customer to sync their company’s HR system with Carta, they can keep their employee’s data in sync between both systems. This minimizes the repetitive work involved in maintaining employee data on Carta and eliminates input errors.
+				</p>
+				<p>
+					I was the sole designer on this project from end-to-end. I worked with a team of 4-5 engineers and a product manager. 
+				</p>
+				<p>
+					We worked on this project for about 9 months (from March 2019 to December 201)
+				</p>
+		</div>
+		<div class="section">
+		<h2>Problem</h2>
+			<p class="callout">
+				Updating personal data for employees as a company administrator is cumbersome, error-prone, and doesn’t scale well. 
+			</p>
+			<p>
+				These updates, such as a change in employment status or personal address, are typically first made in the company’s HR system of choice. The exact same updates must then be made on Carta to keep both their systems current.	
+			</p>
+			<p>
+				The problem of maintaining these systems are magnified for our enterprise company customers, who manage data for hundreds to thousands of employees.
+			<p>
+			<p>
+				This process is additional, unnecessary work for the user and we sought to make this process easier.
+			</p>
+				</div>
+		<div class="section">
+		<h2>Solution</h2>
+			<p class="callout">
+				HR integrations between Carta and commonly used HR systems.
+			</p>
+				With our solution, company administrators can now:
+			<ul>
+				<li>Set up an integration in a few steps.</li>
+				<li>Review employee data changes from their HR systems within Carta.</li>
+				<li>Confirm changes from their HR systems to update employee data within Carta.</li>
+				<li>Trigger a data sync to get the latest updates from their HR system.</li>
+			</ul>
+		</div>
+		<div class="section">
+				<p class="image-caption">
+					First steps of the guided integrations set up workflow. The user inputs credentials from their HR provider to establish a connection with Carta.
+				</p>
+			<div class="image-container">
+				<img class="project-image" src="img/integrations setup.png">
+			</div>
+			<div class="image-container">
+				<img class="project-image" src="img/integrations setup step 2.png">
+			</div>
+			<div class="image-container">
+				<img class="project-image" src="img/integrations setup step 3.png">
+			</div>
+		</div>
+		<div class="section">
+		<h2>Metrics (2 months post-launch)</h2>
+			<p class="callout-metrics">
+				<b>• 18 Enterprise companies</b> created an HR integration.
+			</p>
+			<p class="callout-metrics">
+				• Personal employee data for <b>13k+ employees are being synced.</b>	
+			</p>
+		</div>
+		<div class="section">
+
+		<h2>Process (highlights)</h2>
+		<h4><em>Key Insights from Research</em></h4>
+		<p>
+			During the design process, I created a high-fidelity interactive prototype of the integrations set-up process to test with prospective users. Through some user interviews and usability testing, we were able to gain key insights that informed our design decisions:
+		</p>
+		<p>
+			<b>Employee ID is a must:</b> Pairing Employee ID, a unique numerical identifier in HR systems, with employee names would make it easier for users to identify specific individuals across between systems. We ensured that Employee ID was displayed wherever alongside employee records.
+		</p>
+		<p>
+			<b>Bulk actions are high value:</b> Manually inputting and updating data is low on our users’ priority list, but is highly time consuming due to the volume of employee data changes to deal with. This pain point reinforced our hypothesis that bulk actions would be valuable to develop, so we prioritized their implementation.
+		</p>
+		<p>
+			<b>Our users lack trust in the system:</b> Some of the users the team surveyed and interviewed said they wouldn’t trust Carta to update their employee data accurately, even via an integration. We sought to build trust by being explicit about what updates were going to be made and allowing them to review updates before confirming them
+		</p>
+
+		<h4><em>Challenge: SFTP Integration vs. API Integration</em></h4>
+		<p>
+			We initially began building an <a href=https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol>SFTP</a> integration for the HR provider most commonly used by our customers. It made sense at the time to try and support the largest percentage of our Enterprise customers with the first solution. The problem arose when we actually tried setting up an SFTP integration ourselves: the process ended up being highly complex and involved. Unfortunately, this would result in a lot of work for both the customer and Carta relationship managers.
+		</p>
+		<p>
+			Partway though development, we changed our approach and decided to build support for HR providers that weren’t as commonly used by our customers, but that could support API integrations, which are easier to set up. This decision resulted in some work that was thrown away, both in design and engineering. Ultimately, this path was less risky, and resulted in a better user experience.
+		</p>
+						</div>
+		<div class="section">
+		<h2>Reflection</h2>
+		<p>
+			I'm really proud of this project! It was my first time taking a project from end-to-end as the only designer on the team. I was able to take what I learned from past projects to really improve the quality of my work.
+		</p>
+		<h3><em>What I would have done differently</em></h3>
+		<p>
+			<b>Develop a better understanding about integrations at the start of the project:</b> Starting out, it seemed like SFTP integrations was the most correct approach to solving the problem, because it would allow us to support the most commonly used HR provider. I didn’t fully grasp the tradeoff we were making with this approach, and wasn’t aware that API integrations were an option. In hindsight, I would have sought to understand data integrations more and the UX implications of either type.
+		</p>
+		<p>
+			<b>Follow up after launch:</b>
+We had defined success metrics a few times throughout development, but we never really measured them post-launch. As soon as we shipped, we moved onto a different project. I would have liked for the team to go back and measure against our success metrics to see how we did.
+		</p>
+		<p>
+			<b>Get more user interviews and usability tests:</b>
+We had trouble finding our specific user type (Company/HR/Stock administrator) for user research, partially because of how uncommon the role is. This made it difficult to get many user interviews and usability tests done.  We could have done more usability tests with other people, not necessarily ones that fit our exact user type. The insights yielded from these tests would still have some value. Decision making around the design and prioritization may have been easier with more data and information about our users.
+		</p>
+				</div>
+<div class="section-link-footer">
+	<div class="footer-link-right">
+		<p><b>Next: Public company transactions</b></p>
+		<a href="puma.html">View project &#8702;</a>
+	</div>
+</body>
+
+</html>
