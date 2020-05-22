@@ -1,9 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:wght@700&family=Archivo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.image-container, .image-container-two {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; }
+
+.image-container-two {
+  flex-direction: row; }
+  .image-container-two img {
+    transition: transform 0.2s ease; }
+  .image-container-two img:hover {
+    -webkit-transform: scale(2);
+    /* or some other value */
+    transform: scale(2); }
+
+.project-image {
+  min-width: 135%;
+  height: auto; }
+
+.project-image-two {
+  min-width: 67.5%;
+  margin: 5px;
+  height: auto; }
+
+.image-caption {
+  margin-top: 10px;
+  text-align: center;
+  font-style: italic; }
+
 #navigation {
   display: flex;
   margin: 45px 0 45px 0;
   justify-content: space-between;
-  outline: 1px solid red;
+  /*	outline: 1px solid red;*/
   align-items: center; }
 
 #logo {
@@ -71,7 +99,7 @@ ul {
   margin-bottom: 12px; }
 
 .callout-metrics {
-  font-size: 22px;
+  font-size: 26px;
   font-style: italic;
   margin-bottom: 12px; }
 

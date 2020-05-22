@@ -12,11 +12,46 @@ $body-font-size: 18px;
 $section-margin-bottom: 60px;
 $subsection-margin-bottom: 5px;
 
+.image-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.image-container-two {
+	@extend .image-container;
+	flex-direction: row;
+	img {
+	    transition:transform 0.2s ease;
+	}
+	img:hover {
+	    -webkit-transform:scale(2.0); /* or some other value */
+	    transform:scale(2.0);
+	}
+}
+
+.project-image {
+	min-width: 135%;
+  	height: auto;
+}
+
+.project-image-two {
+	min-width: 67.5%;
+	margin: 5px;
+	height: auto;
+}
+
+.image-caption {
+	margin-top: 10px;
+	text-align: center;
+	font-style: italic;
+}
+
 #navigation {
 	display: flex;
 	margin: 45px 0 45px 0;
 	justify-content: space-between;
-	outline: 1px solid red;
+/*	outline: 1px solid red;*/
 	align-items: center;
 }
 
@@ -108,7 +143,7 @@ ul {
 }
 
 .callout-metrics {
-	font-size: 22px;
+	font-size: $subheader-font-size;
 	font-style: italic;
 	margin-bottom: 12px;
 }
