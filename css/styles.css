@@ -13,6 +13,9 @@
     /* or some other value */
     transform: scale(2); }
 
+footer {
+  padding: 90px 0 50px 0; }
+
 .project-image {
   min-width: 135%;
   height: auto; }
