@@ -24,6 +24,14 @@ $visited-link-color: #8216A8;*/
     /* or some other value */
     transform: scale(2); }
 
+.no-bullet {
+  /*list-style-type: none !important;*/
+  margin: 0;
+  padding: 0 0 0 18px; }
+
+.red {
+  color: red; }
+
 .center {
   margin: 0 auto; }
 
@@ -63,6 +71,8 @@ footer {
 .project-section {
   /*position: relative;*/
   line-height: 1.8; }
+  .project-section ul {
+    list-style-position: none; }
 
 .project {
   display: flex;
@@ -170,7 +180,7 @@ h4 {
 p {
   margin-top: 0; }
 
-ul {
+.bullet-list {
   margin-top: 0; }
 
 #header-section {
@@ -200,7 +210,9 @@ a {
 body {
   font-family: "Archivo", Arial, sans-serif;
   font-size: 18px;
-  background-color: #BBFFE7;
+  background-image: linear-gradient(#BBFFE7, #7EAAFF, #22FFAF);
+  /*background-color: linear-gradient(red, blue);*/
+  /*background-color: red;*/
   color: #060638;
   padding: 18px;
   margin: 0 auto;
