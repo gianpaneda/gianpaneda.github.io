@@ -6,6 +6,7 @@ $link-color: #1144F5;
 $visited-link-color: #8216A8;*/
 $primary-text-color: #060638;
 $primary-background-color: #BBFFE7;
+$secondary-background-color: #7EAAFF;
 $primary-background-color-saturated: #22FFAF;
 $link-color: #1144F5;
 $visited-link-color: #8216A8;
@@ -45,6 +46,16 @@ $subsection-margin-bottom: 5px;
 	    -webkit-transform:scale(2.0); /* or some other value */
 	    transform:scale(2.0);
 	}
+}
+
+.no-bullet {
+	/*list-style-type: none !important;*/
+	margin: 0;
+	padding: 0 0 0 18px;
+}
+
+.red {
+	color: red;
 }
 
 .center {
@@ -93,6 +104,9 @@ footer {
 .project-section {
 	/*position: relative;*/
 	line-height: 1.8;
+	ul {
+		list-style-position: none;
+	}
 }
 
 .project {
@@ -228,7 +242,7 @@ p {
 	margin-top: 0;
 }
 
-ul {
+.bullet-list {
 	margin-top: 0;
 }
 
@@ -267,7 +281,9 @@ a {
 body {
 	font-family: "Archivo", Arial, sans-serif;
 	font-size: $body-font-size;
-	background-color: $primary-background-color;
+	background-image: linear-gradient($primary-background-color, $secondary-background-color, $primary-background-color-saturated);
+	/*background-color: linear-gradient(red, blue);*/
+	/*background-color: red;*/
 	color: $primary-text-color;
 	padding: 18px;
 	margin: 0 auto;
