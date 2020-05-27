@@ -10,11 +10,7 @@ $visited-link-color: #8216A8;*/
   display: flex;
   justify-content: center;
   margin-top: 30px;
-  max-width: 770px; }
-  .image-container img, .image-container-two img {
-    -webkit-box-shadow: 10px 10px 22px -5px rgba(147, 157, 173, 0.51);
-    -moz-box-shadow: 10px 10px 22px -5px rgba(147, 157, 173, 0.51);
-    box-shadow: 10px 10px 22px -5px rgba(147, 157, 173, 0.51); }
+  /*	max-width: 770px;*/ }
 
 .spacer {
   margin-top: 18px; }
@@ -53,10 +49,58 @@ footer {
   padding: 90px 0 50px 0;
   text-align: center; }
 
+.tag {
+  background-color: #060638;
+  color: #BBFFE7;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap; }
+
+.tag-group {
+  margin-bottom: 20px; }
+
+.project-section {
+  /*position: relative;*/
+  line-height: 1.8; }
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  position: relative;
+  padding-bottom: 40px;
+  line-height: 1.4;
+  /*border: solid 1px red;*/ }
+  .project h3 {
+    margin-top: 0; }
+  .project:hover {
+    color: #1144F5;
+    font-style: italic; }
+    .project:hover img {
+      outline: 2px solid #1144F5; }
+
+.project-description {
+  margin-right: 30px; }
+
 .project-image {
-  /*	min-width: 100%;*/
+  /*	max-height: 534px;
+  	max-width: 770px;
+  	width: auto;
+  	height: auto;*/
+  width: 100%;
+  min-width: 240px;
+  height: auto; }
+
+.project-image-small {
+  max-width: 340px;
+  min-width: 340px;
+  max-height: 255px;
+  width: auto;
   height: auto;
-  max-width: 800px; }
+  -webkit-box-shadow: 10px 10px 22px -5px rgba(147, 157, 173, 0.51);
+  -moz-box-shadow: 10px 10px 22px -5px rgba(147, 157, 173, 0.51);
+  box-shadow: 10px 10px 22px -5px rgba(147, 157, 173, 0.51); }
 
 .project-image-two {
   min-width: 67.5%;
@@ -158,7 +202,7 @@ body {
   font-size: 18px;
   background-color: #BBFFE7;
   color: #060638;
-  padding: 30px;
+  padding: 18px;
   margin: 0 auto;
   line-height: 1.9;
   max-width: 800px; }
@@ -196,28 +240,7 @@ body {
 .footer-link-right {
   text-align: right; }
 
-.project-section {
-  position: relative;
-  line-height: 1.8; }
-
-.project {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  line-height: 1.4;
-  margin: 20px -30px 5px -30px;
-  padding: 0 30px 15px 30px; }
-  .project h3 {
-    margin-top: 0; }
-  .project:hover {
-    color: #1144F5;
-    font-style: italic; }
-    .project:hover img {
-      outline: 2px solid #1144F5; }
-  .project .project-description {
-    margin-right: 30px; }
-
-span {
+.link-span {
   position: absolute;
   width: 100%;
   height: 100%;
