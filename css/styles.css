@@ -6,10 +6,16 @@ $visited-link-color: #8216A8;*/
 #my-work h2, #my-work h3 {
   max-width: 400px; }
 
+.result-bullet {
+  margin: -18px 0 0 0;
+  padding: 0 0 0 44px;
+  color: purple; }
+
 .image-container, .image-container-two {
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  margin-bottom: 18px;
   /*	max-width: 770px;*/ }
 
 .spacer {
@@ -94,13 +100,15 @@ footer {
   margin-right: 30px; }
 
 .project-image {
-  /*	max-height: 534px;
-  	max-width: 770px;
-  	width: auto;
-  	height: auto;*/
   width: 100%;
   min-width: 240px;
-  height: auto; }
+  height: auto;
+  /*	-webkit-box-shadow: 10px 10px 37px -14px rgba(255,33,33,0.75);
+  	-moz-box-shadow: 10px 10px 37px -14px rgba(255,33,33,0.75);
+  	box-shadow: 10px 10px 37px -14px rgba(255,33,33,0.75);*/
+  -webkit-box-shadow: 10px 13px 37px -10px rgba(255, 33, 33, 0.75);
+  -moz-box-shadow: 10px 13px 37px -10px rgba(255, 33, 33, 0.75);
+  box-shadow: 10px 13px 37px -10px rgba(255, 33, 33, 0.75); }
 
 .project-image-small {
   max-width: 340px;
@@ -201,6 +209,12 @@ p {
   font-style: italic;
   margin-bottom: 12px; }
 
+.indent {
+  margin-left: 18px; }
+
+.remove-indent {
+  padding-left: 16px; }
+
 .top-margin {
   margin: 60px 0; }
 
@@ -217,7 +231,7 @@ body {
   padding: 18px;
   margin: 0 auto;
   line-height: 1.9;
-  max-width: 800px; }
+  max-width: 900px; }
 
 .section {
   margin-bottom: 60px;
