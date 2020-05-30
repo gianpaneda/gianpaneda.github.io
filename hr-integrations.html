@@ -45,25 +45,22 @@
 			<p class="callout">
 				<a href="https://carta.com/">Carta</a> is a B2B SaaS company that helps companies and investors manage their cap tables, valuations, investments, and equity plans.
 			</p>
-				<div class="flex-column">
-					<p>
-						<b>Role:</b>
-						Product designer
-					</p>
-				</div>
-				<div class="flex-column">
-					<p><b>Tools:</b>
-					Figma, Lucidchart, Google Sheets
-					</p>
-				</div>
-				<div class="flex-column">
-					<p>
-						<b>Team: </b>Product designer (me!), 4-5 engineers, product manager
-					</p>	
-				</div>
+			<p>
+				<b>Role:</b>
+				Product designer
+			</p>
 			<p>
 				<b>Responsibilities: </b>Design, User interviews, Usability testing
 			</p>
+				<p><b>Tools:</b>
+				Figma, Lucidchart, Google Sheets
+				</p>
+				<p>
+					<b>Team: </b>Product designer (me!), 4-5 engineers, product manager
+				</p>
+			<p>
+				<b>Platform </b>Web
+			</p>	
 			<p>
 				<b>Timespan: </b>March 2019 to November 2019 (~9 months)
 			</p>
@@ -78,15 +75,29 @@
 
 		<div class="section">
 			<div class="section-text ">
-				<h2>Metrics (2 months post-launch)</h2>
-				<p class="callout-metrics">
-					<b>• 18 Enterprise companies</b> created an HR integration.
-				</p>
-				<p class="callout-metrics">
-					• Syncing personal employee data for <b>13k+ employees.</b>
-				</p>
-			</div>		
-		</div>
+					<h2>Results and metrics (2 months post-launch)</h2>
+					<p class="callout-metrics">
+						<b>• 18 Enterprise companies</b> created an HR integration.
+					</p>
+					<p class="callout-metrics">
+						• Syncing personal employee data for <b>13k+ employees.</b>
+					</p>
+					<p class="callout-metrics">
+						• Users can now:
+					</p>
+				<div class="indent">
+					<p class="callout-metrics">
+						• <b>Create</b> data integrations with 2 HR providers.
+					</p>
+					<p class="callout-metrics">
+						• <b>Review and confirm</b> data changes from HR systems.
+					</p>
+					<p class="callout-metrics">
+						• <b>Manually sync</b> to get the latest updates from HR system.
+					</p>
+				</div>
+			</div>	
+		</div>		
 
 		<div class="section">
 			<div class="section-text">
@@ -105,24 +116,27 @@
 				</p>
 			</div>	
 		</div>
+
 		<div class="section">
 			<div class="section-text">
-			<h2>Solution</h2>
-			<p class="callout">
-				Data integrations between Carta and commonly used HR systems.
-			</p>
-				With our solution, company administrators can now:
-			<ul>
-				<li>Set up a data integration, allowing Carta to detect changes in their HR system.</li>
-				<li>Review employee data changes from their HR systems within Carta.</li>
-				<li>Confirm changes from their HR systems to update employee data within Carta.</li>
-				<li>Trigger a data sync to get the latest updates from their HR system.</li>
-			</ul>
+				<h2>Solution</h2>
+				<p class="callout">
+					Data integrations between Carta and commonly used HR systems.
+				</p>
+					With our solution, company administrators can now:
+				<ul class="remove-indent">
+					<li>Set up a data integration, allowing Carta to detect changes in their HR system.</li>
+					<li>Review employee data changes from their HR systems within Carta.</li>
+					<li>Confirm changes from their HR systems to update employee data within Carta.</li>
+					<li>Trigger a data sync to get the latest updates from their HR system.</li>
+				</ul>
+			</div>
 		</div>
+
 		<div class="section">
 			<div class="section-text">
 				<p class="image-caption">
-					First steps of the guided integrations set up workflow. The user inputs credentials from their HR provider to establish a connection with Carta.
+					First steps of the <b>guided integrations set up</b> workflow. The user inputs credentials from their HR provider to establish a connection with Carta.
 				</p>
 			</div>
 			<div class="image-container">
@@ -133,8 +147,9 @@
 			</div>
 			<div class="image-container">
 				<img class="project-image" src="img/integrations setup step 3.png">
+			</div>
 		</div>
-	</div>
+
 		<div class="section">
 			<div class="section-text">
 				<h2>Process (highlights)</h2>
@@ -143,27 +158,43 @@
 					I created a high-fidelity interactive prototype of the integrations set-up process to test with prospective users.
 				</p>
 				<p>
-					Through some user interviews and usability testing, we were able to gain key insights that informed our design decisions.
+					Through some user interviews and usability testing, we were able to gain key insights that informed our design decisions:
 				</p>
+			</div>
+			<div class="image-container">
+				<img class="project-image" src="img/employeeid.png">
+			</div>
+			<div class="section-text">
 				<p>
 					<b>1. Employee ID is a must:</b> Pairing Employee ID, a unique numerical identifier found in HR systems, with employee names would make it easier for users to identify specific individuals across systems.
 					<p>
 						We chose to display Employee ID in our UI alongside employee names to make finding the correct individual record easier.
 					</p>
 				</p>
+			</div>
+			<div class="image-container">
+				<img class="project-image" src="img/bulk.png">
+			</div>
+			<div class="section-text">
 				<p>
-					<b>2. Bulk actions are high value:</b> Manually inputting and updating data is low on our users’ priority list, but is time-consuming due to the volume of employee data changes they have to deal with. 
-					<p>
-						This pain point reinforced our hypothesis that bulk actions would be valuable to develop, so we prioritized their implementation.
-					</p>
+					<b>2. Bulk actions are high value:</b> Manually inputting and updating data is a time-consuming task due to the volume of employee data changes they have to deal with. Users we talked to emphasized that data maintenace was important, but low-priority compared to their other tasks. 
 				</p>
+				<p>
+					This pain point reinforced our hypothesis that bulk actions would be valuable to develop, so we prioritized their implementation.
+				</p>
+			</div>
+			<div class="image-container">
+				<img class="project-image" src="img/showchange.png">
+			</div>
+			<div class="section-text">
 				<p>
 					<b>3. Our users lack trust in the system:</b> Some of our users said they wouldn’t trust Carta to update their employee data accurately, even via an integration. 
-					<p>
-						We sought to build trust by being explicit about what updates we were going to make and allowing them to review updates before confirming them.
-					</p>
+				<p>
+					We sought to build trust by being explicit about what updates we were going to make and allowing them to review updates before confirming them.
 				</p>
-
+				</p>
+			</div>
+			<div class="section-text">
 				<h4><em>Pivot: SFTP Integration vs. API Integration</em></h4>
 				<p>
 					We initially began building an <a href=https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol target="_blank">SFTP</a> integration for the HR provider most commonly used by our customers. It made sense at the time to try and support the largest percentage of our enterprise customers with the first solution. The problem arose when we actually tried setting up an SFTP integration ourselves; the process ended up being highly complex and involved. Unfortunately, this would result in a lot of work for both the customer and Carta relationship managers.
@@ -175,24 +206,25 @@
 		</div>
 		<div class="section">
 			<div class="section-text">
-		<h2>Reflection</h2>
-		<p>
-			I'm really proud of this project! It was my first time taking a project from end-to-end as the only designer on the team. I was able to take what I learned from working on the public markets team to work more efficiently and improve the quality of my work.
-		</p>
-		<h3><em>What I would have done differently</em></h3>
-		<p>
-			<b>Develop a better understanding about integrations at the start of the project:</b> Starting out, it seemed like developing for an SFTP integration was the most correct approach to solving the problem, because it would allow us to support the HR provider most commonly used by our customers. I didn’t fully grasp the tradeoff we were making with this approach, and wasn’t aware that API integrations were an option. In hindsight, I would have sought to understand data integrations more and the UX implications of both types.
-		</p>
-		<p>
-			<b>Follow up after launch:</b>
-We had defined success metrics a few times throughout development, but we never really measured them post-launch. As soon as we shipped, we moved onto a different project. I would have liked for the team to go back and measure against our success metrics to see how we did.
-		</p>
-		<p>
-			<b>More user research:</b>
-We had trouble finding our specific user type (Company/HR/Stock administrator) for user research, in part because of how uncommon the role is. This made it difficult to get many user interviews and usability tests done.  We could have done more usability tests with other people and I don't think they have had to match our user type exactly. The insights yielded from these tests would still have some value. Decision making around the design and prioritization may have been easier with more data and information about our users.
-		</p>
-				</div>
-					</div>
+				<h2>Reflection</h2>
+				<p>
+					I'm really proud of this project! It was my first time taking a project from end-to-end as the only designer on the team. I was able to take what I learned from working on the prior projects to work more efficiently and improve the quality of my work.
+				</p>
+				<h3><em>What I would have done differently</em></h3>
+				<p>
+					<b>Develop a better understanding about integrations at the start of the project:</b> Starting out, it seemed like developing for an SFTP integration was the most correct approach to solving the problem, because it would allow us to support the HR provider most commonly used by our customers. I didn’t fully grasp the tradeoff we were making with this approach, and wasn’t aware that API integrations were an option. In hindsight, I would have sought to understand data integrations more and the UX implications of both types.
+				</p>
+				<p>
+					<b>Follow up after launch:</b>
+		We had defined success metrics a few times throughout development, but we never really measured them post-launch. As soon as we shipped, we moved onto a different project. I would have liked for the team to go back and measure against our success metrics to see how we did.
+				</p>
+				<p>
+					<b>More user research:</b>
+		We had trouble finding our specific user type (Company/HR/Stock administrator) for user research, in part because of how uncommon the role is. This made it difficult to get many user interviews and usability tests done.  We could have done more usability tests with other people and I don't think they have had to match our user type exactly. The insights yielded from these tests would still have some value. Decision making around the design and prioritization may have been easier with more data and information about our users.
+				</p>
+			</div>
+		</div>
+
 <div class="section-link-footer">
 	<div class="footer-link-right">
 		<p><b>Next: Public company transactions</b></p>
@@ -204,5 +236,3 @@ We had trouble finding our specific user type (Company/HR/Stock administrator) f
 	<footer>
 		<em>Gian Paneda</em> | <a href="https://www.linkedin.com/in/gianpaneda/">LinkedIn</a> | <a href="mailto: panedagian@gmail.com>">panedagian@gmail.com</a>
 	</footer>
-
-</html>
