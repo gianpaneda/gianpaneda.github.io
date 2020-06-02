@@ -3,6 +3,7 @@
 $primary-background-color: #D8EEE1;
 $link-color: #1144F5;
 $visited-link-color: #8216A8;*/
+/*$visited-link-color: #8216A8;*/
 #my-work h2, #my-work h3 {
   max-width: 400px; }
 
@@ -15,7 +16,7 @@ $visited-link-color: #8216A8;*/
   display: flex;
   justify-content: center;
   margin-top: 30px;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   /*	max-width: 770px;*/ }
 
 .spacer {
@@ -116,9 +117,9 @@ footer {
   max-height: 255px;
   width: auto;
   height: auto;
-  -webkit-box-shadow: 10px 10px 22px -5px rgba(147, 157, 173, 0.51);
-  -moz-box-shadow: 10px 10px 22px -5px rgba(147, 157, 173, 0.51);
-  box-shadow: 10px 10px 22px -5px rgba(147, 157, 173, 0.51); }
+  -webkit-box-shadow: 10px 13px 37px -10px rgba(255, 33, 33, 0.75);
+  -moz-box-shadow: 10px 13px 37px -10px rgba(255, 33, 33, 0.75);
+  box-shadow: 10px 13px 37px -10px rgba(255, 33, 33, 0.75); }
 
 .project-image-two {
   min-width: 67.5%;
@@ -153,7 +154,7 @@ footer {
 a {
   color: #1144F5; }
   a:visited {
-    color: #8216A8; }
+    color: #1144F5; }
   a:hover {
     font-style: italic; }
 
