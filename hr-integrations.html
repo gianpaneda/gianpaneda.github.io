@@ -109,7 +109,7 @@
 					Updating personal data for employees as a company administrator is cumbersome, error-prone, and doesn’t scale. 
 				</p>
 				<p>
-					These updates, such as a change in employment status or personal address, are first made in the company’s HR system of choice. The exact same updates must then be made on Carta to keep both systems current.
+					These updates, such as a change in employment status or personal address, are first made in the company’s HR system of choice. The same updates must then be made on Carta to keep both systems current.
 				</p>
 				<p>
 					The problem of maintaining these systems worsens for our enterprise company customers, who manage data for hundreds to thousands of employees.
@@ -180,7 +180,7 @@
 			</div>
 			<div class="section-text">
 				<p>
-					<b>2. Bulk actions are high value:</b> Manually inputting and updating data is a time-consuming task due to the volume of employee data changes they have to deal with. Users we talked to emphasized that data maintenace was important, but low-priority compared to their other tasks. 
+					<b>2. Bulk actions are high value:</b> Manually inputting and updating data is a time-consuming task due to the volume of employee data changes they have to deal with. Users we talked to emphasized that data maintenance  was important, but low-priority compared to their other tasks. 
 				</p>
 				<p>
 					This pain point reinforced our hypothesis that bulk actions would be valuable to develop, so we prioritized their implementation.
@@ -200,10 +200,10 @@
 			<div class="section-text">
 				<h4><em>Pivot: SFTP Integration vs. API Integration</em></h4>
 				<p>
-					We initially began building an <a href=https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol target="_blank">SFTP</a> integration for the HR provider most commonly used by our customers. It made sense at the time to try and support the largest percentage of our enterprise customers with the first solution. The problem arose when we actually tried setting up an SFTP integration ourselves; the process ended up being highly complex and involved. Unfortunately, this would result in a lot of work for both the customer and Carta relationship managers.
+					We initially began building an <a href=https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol target="_blank">SFTP</a> integration for the HR provider most commonly used by our customers. It made sense at the time to try and support the largest percentage of our enterprise customers with the first solution. The problem arose when we tried setting up an SFTP integration ourselves; the process ended up being highly complex and involved. Unfortunately, this would result in a lot of work for both the customer and Carta relationship managers.
 				</p>
 				<p>
-					Partway though development, we changed our approach and decided to build support for HR providers that weren’t as commonly used by our customers, but that could support API integrations, which are easier to set up. This decision resulted in some work that was thrown away, both in design and engineering. In the end, this path was less risky, and resulted in a better user experience.
+					Partway through development, we changed our approach and decided to build support for HR providers that weren’t as commonly used by our customers, but that could support API integrations, which are easier to set up. This decision resulted in some work that was thrown away, both in design and engineering. In the end, this path was less risky and resulted in a better user experience.
 				</p>
 			</div>
 		</div>
@@ -211,11 +211,11 @@
 			<div class="section-text">
 				<h2>Reflection</h2>
 				<p>
-					I'm really proud of this project! It was my first time taking a project from end-to-end as the only designer on the team. I was able to take what I learned from working on the prior projects to work more efficiently and improve the quality of my work.
+					I'm proud of this project! It was my first time taking a project from end-to-end as the only designer on the team. I was able to take what I learned from working on the prior projects to work more efficiently and improve the quality of my work.
 				</p>
 				<h3><em>What I would have done differently</em></h3>
 				<p>
-					<b>Develop a better understanding about integrations at the start of the project:</b> Starting out, it seemed like developing for an SFTP integration was the most correct approach to solving the problem, because it would allow us to support the HR provider most commonly used by our customers. I didn’t fully grasp the tradeoff we were making with this approach, and wasn’t aware that API integrations were an option. In hindsight, I would have sought to understand data integrations more and the UX implications of both types.
+					<b>Develop a better understanding of integrations at the start of the project:</b> At first, it seemed like developing for an SFTP integration was the most correct approach to solving the problem, because it would allow us to support the HR provider most commonly used by our customers. I didn’t fully grasp the tradeoff we were making with this approach, and wasn’t aware that API integrations were an option. In hindsight, I would have sought to understand data integrations more and the UX implications of both types.
 				</p>
 				<p>
 					<b>Follow up after launch:</b>
