@@ -32,9 +32,9 @@
 			<p class="image-caption">
 				List of stakeholder data updates coming from an integrated HR system. Users can review the changes and confirm them in bulk.	
 			</p>
-				<div class="image-container">
-			<img class="project-image" src="img/pending terms.png">
-		</div>
+			<div class="image-container">
+				<img class="project-image" src="img/pending terms.png">
+			</div>
 			<p class="image-caption">
 				List of pending employee terminations coming from an integrated HR system. Clicking "Terminate" will take the user to a workflow where they can confirm the termination of that individual's employment.
 			</p>
@@ -199,11 +199,23 @@
 			</div>
 			<div class="section-text">
 				<h4><em>Pivot: SFTP Integration vs. API Integration</em></h4>
-				<p>
-					We initially began building an <a href=https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol target="_blank">SFTP</a> integration for the HR provider most commonly used by our customers. It made sense at the time to try and support the largest percentage of our enterprise customers with the first solution. The problem arose when we tried setting up an SFTP integration ourselves; the process ended up being highly complex and involved. Unfortunately, this would result in a lot of work for both the customer and Carta relationship managers.
+				<div class="image-container">
+					<img class="project-image-no-shadow" src="img/sftp.png">
+				</div>
+				<p class="image-caption">
+					SFTP integration workflow	
 				</p>
 				<p>
-					Partway through development, we changed our approach and decided to build support for HR providers that weren’t as commonly used by our customers, but that could support API integrations, which are easier to set up. This decision resulted in some work that was thrown away, both in design and engineering. In the end, this path was less risky and resulted in a better user experience.
+					We initially began building an <a href=https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol target="_blank">SFTP</a> integration for the HR provider most commonly used by our customers. It made sense at the time to try and support the largest percentage of our enterprise customers with the first solution. SFTP was the only option if we wanted to build support for this provider. A problem arose when we tried setting up an SFTP integration ourselves; the process ended up being highly complex and involved. Unfortunately, this would result in a lot of work for both the customer and Carta relationship managers. 
+				</p>
+				<div class="image-container">
+					<img class="project-image-no-shadow" src="img/api.png">
+				</div>
+				<p class="image-caption">
+					API integration workflow	
+				</p>
+				<p>
+					Partway through development, we changed our approach and decided to build support for HR providers that weren’t as commonly used by our customers, but that could support API integrations, which are easier to set up. This decision allowed us to meet our target launch date on time. It also resulted in some work that was thrown away, both in design and engineering. In the end, this path was less risky and resulted in a better user experience.
 				</p>
 			</div>
 		</div>
