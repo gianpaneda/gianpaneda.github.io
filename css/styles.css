@@ -111,6 +111,10 @@ footer {
   -moz-box-shadow: 10px 13px 37px -10px rgba(255, 33, 33, 0.75);
   box-shadow: 10px 13px 37px -10px rgba(255, 33, 33, 0.75); }
 
+.project-image-no-shadow {
+  width: 100%;
+  min-width: 240px; }
+
 .project-image-small {
   max-width: 340px;
   min-width: 340px;
