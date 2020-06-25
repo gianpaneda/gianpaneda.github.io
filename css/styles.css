@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:wght@700&family=Archivo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 /*$primary-text-color: #06140F;
 $primary-background-color: #D8EEE1;
 $link-color: #1144F5;
@@ -67,7 +68,7 @@ footer {
 .tag {
   background-color: #060638;
   color: #BBFFE7;
-  font-size: 14px;
+  font-size: 16px;
   padding: 5px;
   border-radius: 5px;
   white-space: nowrap; }
@@ -88,12 +89,11 @@ footer {
   position: relative;
   padding-bottom: 40px;
   line-height: 1.4;
-  /*border: solid 1px red;*/ }
+  transition: all 0.2s ease; }
   .project h3 {
     margin-top: 0; }
   .project:hover {
-    color: #1144F5;
-    font-style: italic; }
+    color: #1144F5; }
     .project:hover img {
       outline: 2px solid #1144F5; }
 
@@ -156,11 +156,13 @@ footer {
     height: 36px; }
 
 a {
-  color: #1144F5; }
+  color: #1144F5;
+  transition: all 0.2s ease; }
   a:visited {
     color: #1144F5; }
   a:hover {
-    font-style: italic; }
+    /*font-style: italic;*/
+    /*		color: red;*/ }
 
 .margin-x-zero {
   margin-top: 0;
@@ -204,6 +206,31 @@ p {
 .subheader {
   font-size: 26px; }
 
+.overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*background-color: yellow;*/
+  /*background: rgb(249,255,250);
+  background: linear-gradient(180deg, rgba(249,255,250,1) 35%, rgba(34,255,175,0) 100%);*/
+  margin: 0 auto;
+  /*padding: 0 10px 0 10px;*/
+  padding-bottom: 20px;
+  width: 100%; }
+
+.overview-pair {
+  display: flex;
+  flex-direction: row;
+  text-align: left; }
+
+.overview-text-left {
+  padding: 10px 20px 0px 0px;
+  min-width: 220px;
+  font-weight: bold; }
+
+.overview-text-right {
+  padding: 10px 20px 5px 10px; }
+
 .callout {
   font-size: 26px;
   font-style: italic;
@@ -227,11 +254,9 @@ a {
   font-weight: bold; }
 
 body {
-  font-family: "Archivo", Arial, sans-serif;
-  font-size: 18px;
+  font-family: "IBM Plex Serif", Arial, sans-serif;
+  font-size: 22px;
   background-image: linear-gradient(#BBFFE7, #58d0ff, #22FFAF);
-  /*background-color: linear-gradient(red, blue);*/
-  /*background-color: red;*/
   color: #060638;
   padding: 18px;
   margin: 0 auto;
@@ -260,7 +285,6 @@ body {
 .section-link-footer {
   width: 100%;
   margin: 0 auto;
-  max-width: 700px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
