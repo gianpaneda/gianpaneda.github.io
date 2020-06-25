@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:wght@700&family=Archivo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /*$primary-text-color: #06140F;
 $primary-background-color: #D8EEE1;
 $link-color: #1144F5;
@@ -12,10 +12,10 @@ $link-color: #1144F5;
 /*$visited-link-color: #8216A8;*/
 $secondary-text-color: #2B5546; 
 $header-font-family: "Archivo Black", Arial, sans-serif;
-$body-font-family: "Archivo", Arial, sans-serif;
+$body-font-family: "IBM Plex Serif", Arial, sans-serif;
 $subheader-font-size: 26px;
-$body-font-size: 18px;
-$body-font-size-smaller: 14px;
+$body-font-size: 22px;
+$body-font-size-smaller: 16px;
 $section-margin-bottom: 60px;
 $subsection-margin-bottom: 5px;
 
@@ -123,13 +123,12 @@ footer {
 	position: relative;
 	padding-bottom: 40px;
 	line-height: 1.4;
-	/*border: solid 1px red;*/
+	transition: all 0.2s ease;
 	h3 {
 		margin-top: 0;
 	}
 	&:hover {
 		color: $link-color;
-		font-style: italic;
 		img {
 			outline: 2px solid $link-color;
 		}
@@ -206,11 +205,13 @@ footer {
 
 a {
 	color: $link-color;
+	transition: all 0.2s ease;
 	&:visited {
 		color: $link-color;
 	}
 	&:hover {
-		font-style: italic;
+		/*font-style: italic;*/
+/*		color: red;*/
 	}
 }
 
@@ -272,6 +273,36 @@ p {
 	font-size: $subheader-font-size;
 }
 
+.overview {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/*background-color: yellow;*/
+	/*background: rgb(249,255,250);
+	background: linear-gradient(180deg, rgba(249,255,250,1) 35%, rgba(34,255,175,0) 100%);*/
+	margin: 0 auto;
+	/*padding: 0 10px 0 10px;*/
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+.overview-pair {
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+}
+
+.overview-text-left {
+	padding: 10px 20px 0px 0px;
+	min-width: 220px;
+	font-weight: bold;
+}
+
+.overview-text-right {
+	padding: 10px 20px 5px 10px;
+}
+
+
 .callout {
 	font-size: $subheader-font-size;
 	font-style: italic;
@@ -301,11 +332,9 @@ a {
 }
 
 body {
-	font-family: "Archivo", Arial, sans-serif;
+	font-family: $body-font-family;
 	font-size: $body-font-size;
 	background-image: linear-gradient($primary-background-color, $secondary-background-color, $primary-background-color-saturated);
-	/*background-color: linear-gradient(red, blue);*/
-	/*background-color: red;*/
 	color: $primary-text-color;
 	padding: 18px;
 	margin: 0 auto;
@@ -337,7 +366,6 @@ body {
 .section-link-footer {
 	width: 100%;
 	margin: 0 auto;
-	max-width: 700px;
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-between;
