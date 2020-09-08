@@ -185,7 +185,7 @@ footer {
   height: auto; }
 
 .image-caption {
-  margin: 10px auto 10px auto;
+  margin: 14px auto 14px auto;
   max-width: 700px;
   text-align: center;
   font-style: italic; }
@@ -348,7 +348,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  margin-top: 18px; }
+  margin-top: 54px; }
   .section-link-footer p {
     margin: 0; }
 
