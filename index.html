@@ -9,158 +9,102 @@
 	<link rel="icon" href="favicon.ico?" type="image/x-icon">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
-
 <body>
-	<div id="navigation">
-		<div>
-			<a href="index.html"><img id="logo" src="img/logo.png"></a>	
-		</div>
-		<nav class="navigation-links">
-			<a href="https://docs.google.com/document/d/1zE9jwqzhyu-PIvRkU4uxCExN5Jv-vr0GJGPdGCpW7mI/edit?usp=sharing" target="_blank">Resume</a>
-			<a href="#my-work">My Work</a>
-			<a href="#aboutme">About Me</a>	
+	<div class="navigation-span">	
+		<nav id="navigation" class="flex-container-align-center font-sans">
+			<div id="logo-and-name">	
+				<a href="index.html"><img id="logo" src="img/newlogo.png"></a>
+				<p class="font-light">Gian Paneda</p>
+			</div>
+		  	<ul class="navigation-links flex-container-align-center flex-justify-right">
+			  	<li class="navigation-current-page"><a class="navigation-link" href="index.html">Home</a></li>
+			    <li><a class="navigation-link" href="about.html">About</a></li>
+		  	</ul>
 		</nav>
 	</div>
-	<div id="header-section">
-		<h1>Gian Paneda</h1>
-		<div class="subheader">
-			<p>
-				🌞 Hey! I’m a <b>product designer</b> who loves solving interesting and challenging problems for people. I'm inspired by well-designed products and experiences and I have fun when I'm creating.
-			</p>
-			<p class="spacer">
-				📍 I’m based in <b>Palo Alto, California.</b>
-			</p>
+	<div class="page-content">
+		<div id="header-section">
+			<h1>Gian Paneda</h1>
+			<h4 class="font-serif">Welcome to gianpaneda.com ☻</h4>
+			<div class="subheader">
+				<p>
+					I’m Gian, a product designer based in Palo Alto, California.
+				</p>
+				<p>
+					I’m currently at <a href="https://www.presencelearning.com/" target="_blank">PresenceLearning</a>, improving teletherapy for special education therapists and students.
+				</p>
+				<p>
+					Previously, I worked at <a href="https://carta.com/" target="_blank">Carta</a>, designing equity-related features for public and private companies. 
+				</p>
+				<p>
+					If you wanna chat, message me on <a href="https://www.linkedin.com/in/gianpaneda/" target="_blank">LinkedIn</a> or email me at panedagian@gmail.com. View my <a href="https://docs.google.com/document/d/1zE9jwqzhyu-PIvRkU4uxCExN5Jv-vr0GJGPdGCpW7mI/edit?usp=sharing" target="_blank">resume</a> here.
+				</p>
+				<button class="primary-button" href="about.html"><b>Learn more about me ➞</b></button>
+			</div>
 		</div>
-		<nav></nav>
-      		<p><b>Currently: </b><a href="https://www.presencelearning.com/" target="_blank">PresenceLearning</a>, improving teletherapy for providers and students.</p>
-		<p><b>Previously: </b><a href="https://carta.com/" target="_blank">Carta</a>, working on products for public and private companies.</p>
-		<p>
-			<b>Contact me: </b><a href="https://www.linkedin.com/in/gianpaneda/" target="_blank">LinkedIn</a>
-			|
-			<a href="mailto: panedagian@gmail.com>">panedagian@gmail.com</a>
-		</p>
-	</div>
-	<div id="my-work" class="project-section">
-		<h2>My Work</h2>
-		<div class="project">
-			<div class="project-description">
-				<h3>HR Integrations for Employee Data</h3>
-				<p>Expediting employee data maintenance via HR integrations.</p>
+
+
+		<div class="flex-column project-cards">
+			<h2>Select Projects</h2>
+			<div class="project-card flex-column" href="hr-integrations.html">
+				<img src="img/pending updates.png" alt="Integrations project screenshot">
+				<h3 class="font-sans">HR Integrations<span class="tag">Platform: Web</span></h3>
 				<p><b>Carta (2019)</b></p>
-				<p class="tag-group">
-					<span class="tag">Platform: Web</span>
-					<span class="tag">Tools: Figma, Lucidchart</span>
-				</p>
-				<a href="hr-integrations.html"><span class="link-span"></span>View case study &#8702;</a>
+				<p class="project-description">Expediting employee data maintenance with HR integrations.</p>
+				<button class="primary-button" href="hr-integrations.html"><b>View Case Study ➞</b></button>
+				<a href="hr-integrations.html"><span class="link-span"></span></a>
 			</div>
-				<img class="project-image-small" src="img/pending updates.png" alt="Integrations project screenshot">
-		</div>
-		<div class="project">
-			<div class="project-description">
-				<h3>Public Company Equity Transactions</h3>
-				<p>Exercising stock options and selling stock for public employees.</p>
-				<p><b>Carta (2017 - 2018)</b></p>
-				<p class="tag-group">
-					<span class="tag">Platform: Web</span>
-					<span class="tag">Tool: Sketch</span>
-				</p>
-				<a href="puma.html"><span class="link-span"></span>View case study &#8702;</a>
-			</div>
-			<img class="project-image-small" src="img/holdings.png" alt="Integrations project screenshot">
-		</div>
-		<div class="project">
-			<div class="project-description">
-				<h3>SEC form Generation</h3>
-				<p>Easily generate SEC forms for company insiders.</p>
+			<div class="project-card flex-column flex-container-align-left" href="hr-integrations.html">
+				<img src="img/holdings.png" alt="Public company transactions screenshot">
+				<h3 class="font-sans">Public Equity Transactions <span class="tag">Platform: Web</span></h3>
 				<p><b>Carta (2018)</b></p>
-				<p class="tag-group">
-					<span class="tag">Platform: Web</span>
-					<span class="tag">Tool: Sketch</span>
-				</p>
-				<a href="secforms.html"><span class="link-span"></span>View case study &#8702;</a>
+				<p class="project-description">Exercising stock options and selling stock for public employees.</p>
+				<button class="primary-button" href="hr-integrations.html"><b>View Case Study ➞</b></button>
+				<a href="puma.html"><span class="link-span"></span></a>
 			</div>
-			<img class="project-image-small" src="img/secforms.png" alt="SEC forms project screenshot">
+			<div class="project-card flex-column flex-container-align-left" href="hr-integrations.html">
+				<img src="img/secforms.png" alt="SEC Forms screenshot">
+				<h3 class="font-sans">SEC Form Generation <span class="tag">Platform: Web</span></h3>
+				<p><b>Carta (2018)</b></p>
+				<p class="project-description">Easily generate SEC forms for company insiders.</p>
+				<button class="primary-button" href="hr-integrations.html"><b>View Case Study ➞</b></button>
+				<a href="secforms.html"><span class="link-span"></span></a>
+			</div>
 		</div>
+<!-- 		<div class="project-section">
+			<h2>Side Projects</h2>
+			<div class="project">
+				<div class="project-description">
+					<h3>lexico</h3>
+					<p>Visualize and analyze inputted text. Made with Javascript and CanvasJS.</p>
+					<p><b>Personal project (May 2017)</b></p>
+					<p class="tag-group">
+						<span class="tag">Platforms: Web (Mobile-responsive)</span>
+						<span class="tag">Languages: HTML/CSS/JS</span>
+					</p>
+					<a href="lexico.html" target="_blank" rel="noopener noreferrer"><span class="link-span"></span>View details &#8702;</a>
+				</div>
+				<img class="project-image-small" src="img/lexicolarge.png" alt="Integrations project screenshot">
+			</div> -->
+	<!-- 		<div class="project">
+				<div class="project-description">
+					<h3>lexico</h3>
+					<p>Visualize and analyze inputted text. Made with Javascript and CanvasJS.</p>
+					<p><b>Personal project (May 2017)</b></p>
+					<p class="tag-group">
+						<span class="tag">Platform: Web</span>
+						<span class="tag">Tools: Sketch</span>
+					</p>
+					<a href="lexico.html" target="_blank" rel="noopener noreferrer"><span class="link-span"></span>View details &#8702;</a>
+				</div>
+				<img class="project-image" src="img/lexicolarge.png" alt="Integrations project screenshot">
+			</div> -->
+<!-- 		</div> -->
 	</div>
-	<div class="project-section">
-		<h2>Side Projects</h2>
-		<div class="project">
-			<div class="project-description">
-				<h3>lexico</h3>
-				<p>Visualize and analyze inputted text. Made with Javascript and CanvasJS.</p>
-				<p><b>Personal project (May 2017)</b></p>
-				<p class="tag-group">
-					<span class="tag">Platforms: Web (Mobile-responsive)</span>
-					<span class="tag">Languages: HTML/CSS/JS</span>
-				</p>
-				<a href="lexico.html" target="_blank" rel="noopener noreferrer"><span class="link-span"></span>View details &#8702;</a>
-			</div>
-			<img class="project-image-small" src="img/lexicolarge.png" alt="Integrations project screenshot">
-		</div>
-<!-- 		<div class="project">
-			<div class="project-description">
-				<h3>lexico</h3>
-				<p>Visualize and analyze inputted text. Made with Javascript and CanvasJS.</p>
-				<p><b>Personal project (May 2017)</b></p>
-				<p class="tag-group">
-					<span class="tag">Platform: Web</span>
-					<span class="tag">Tools: Sketch</span>
-				</p>
-				<a href="lexico.html" target="_blank" rel="noopener noreferrer"><span class="link-span"></span>View details &#8702;</a>
-			</div>
-			<img class="project-image" src="img/lexicolarge.png" alt="Integrations project screenshot">
-		</div> -->
-	</div>
-	<div id="aboutme" class="project-section">
-		<h2>About Me</h2>
-		<div class="flex-row">
-			<div class="spacer-right">
-				<img class="portrait" src="img/me.JPG">
-			</div>
-			<div class="max-width-text">
-				<p>
-					I'm a designer living in Palo Alto, California.
-				</p>
-				<p>
-					I began my journey in design by building a few side projects in HTML/CSS/Javascript in my spare time. Coupled with my almost-lifelong interests in technology and creativity, working on these projects evolved into a passion for creating useful, enjoyable, and accessible digital experiences.
-				</p>
-				<p>
-					Soon after, I started my design career at <a href="https://carta.com/">Carta</a>, where I designed and shipped multiple features for public and private enterprise companies. I'm passionate about design and I strive to create high-quality work by effectively addressing user and business needs, and developing a thorough understanding of the problems I'm solving.
-				</p>
-			</div>	
-		</div>
-<!-- 		<div class="flex-row">
-			<div class="border">
-				<img class="portrait" src="img/me.JPG">
-			</div>
-			<div class="border">
-				<p>
-					I'm a designer living in Palo Alto, California.
-				</p>
-				<p>
-					I began my journey in design by building a few side projects in HTML/CSS/Javascript in my spare time. Working on these projects evolved into a passion for creating useful, enjoyable, and accessible digital experiences.
-				</p>
-				<p>
-					Soon after, I started my design career at <a href="https://carta.com/">Carta</a>, where I designed and shipped multiple features for public and private enterprise companies. I'm passionate about design and I strive to create high-quality work by effectively balancing user and business needs, and developing a thorough understanding of the problems I'm solving.
-				</p>
-			</div>	
-		</div> -->
-			<p>I'm a curious person 🧐 and I seek to understand how people and things work.</p> 
-			<p>When I'm not working I'm probably...</p>
-			
-			<ul class="no-bullet">
-				<li>👨🏽‍🎨 Drawing (on paper and iPad)</li>
-				<li>👾 Exploring digital worlds (Currently playing Dark Souls 2</a>) </li>
-				<li>📓 Expanding on ideas and concepts in a notebook</li>
-				<li>🏃‍♂ Going for a run</li>
-				<li>📚 Reading books (recommendation: <a href="https://www.goodreads.com/book/show/40745.Mindset?ac=1&from_search=true&qid=ej7eEve862&rank=1">Mindset</a>)</li>
-				<li>🧠 Learning how my favorite forms of entertainment are made</li>
-				<li>🧘‍♂️ Making time and space to do nothing</li>
-			</ul>
-	</div>	
-	<footer>
+		
+<!-- 	<footer>
 		<em>Gian Paneda</em> | <a href="https://www.linkedin.com/in/gianpaneda/">LinkedIn</a> | <a href="mailto: panedagian@gmail.com>">panedagian@gmail.com</a>
-	</footer>
+	</footer> -->
 	<!-- <div id="aboutme" class="section">
 		<h2>About me</h2>
 		<p>
