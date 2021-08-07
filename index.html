@@ -8,6 +8,7 @@
 <!-- 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> -->
 	<link rel="icon" href="favicon.ico?" type="image/x-icon">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 	<div class="navigation-span">	
@@ -21,9 +22,19 @@
 			    <li><a class="navigation-link" href="about.html">About</a></li>
 		  	</ul>
 		</nav>
+		<nav id="navigation-small" class="flex-container-align-center font-sans">
+			<div id="logo-and-name">	
+				<a href="index.html"><img id="logo" src="img/newlogo.png"></a>
+			</div>
+		  	<ul class="navigation-links flex-container-align-center flex-justify-right">
+			  	<li class="navigation-current-page"><a class="navigation-link" href="index.html">Home</a></li>
+			    <li><a class="navigation-link" href="about.html">About</a></li>
+		  	</ul>
+		</nav>
 	</div>
 	<div class="page-content">
 		<div id="header-section">
+			<h1>(this website is under construction! some stuff may be broken)</h1>
 			<h1>Gian Paneda</h1>
 			<h4 class="font-serif">Welcome to gianpaneda.com ☻</h4>
 			<div class="subheader">
@@ -36,22 +47,22 @@
 				<p>
 					Previously, I worked at <a href="https://carta.com/" target="_blank">Carta</a>, designing equity-related features for public and private companies. 
 				</p>
-				<p>
-					If you wanna chat, message me on <a href="https://www.linkedin.com/in/gianpaneda/" target="_blank">LinkedIn</a> or email me at panedagian@gmail.com. View my <a href="https://docs.google.com/document/d/1zE9jwqzhyu-PIvRkU4uxCExN5Jv-vr0GJGPdGCpW7mI/edit?usp=sharing" target="_blank">resume</a> here.
+				<p class="large-margin-bottom">
+					If you'd like to connect, message me on <a href="https://www.linkedin.com/in/gianpaneda/" target="_blank">LinkedIn</a> or email me at panedagian@gmail.com. Get my resume <a href="https://docs.google.com/document/d/1zE9jwqzhyu-PIvRkU4uxCExN5Jv-vr0GJGPdGCpW7mI/edit?usp=sharing" target="_blank">here</a>.
 				</p>
-				<button class="primary-button" href="about.html"><b>Learn more about me ➞</b></button>
+				<a class="primary-button" href="about.html">Learn more about me ⟶</a>
 			</div>
 		</div>
 
 
-		<div class="flex-column project-cards">
-			<h2>Select Projects</h2>
+		<div class="flex-column project-cards" id="work">
+			<h2>Professional Work</h2>
 			<div class="project-card flex-column" href="hr-integrations.html">
 				<img src="img/pending updates.png" alt="Integrations project screenshot">
-				<h3 class="font-sans">HR Integrations<span class="tag">Platform: Web</span></h3>
+				<div class="flex-row justify-content-center"><h3 class="font-sans">HR Integrations <span class="tag">Platform: Web</span></h3></div>
 				<p><b>Carta (2019)</b></p>
 				<p class="project-description">Expediting employee data maintenance with HR integrations.</p>
-				<button class="primary-button" href="hr-integrations.html"><b>View Case Study ➞</b></button>
+				<button class="primary-button" href="hr-integrations.html"><b>View Case Study ⟶</b></button>
 				<a href="hr-integrations.html"><span class="link-span"></span></a>
 			</div>
 			<div class="project-card flex-column flex-container-align-left" href="hr-integrations.html">
@@ -59,7 +70,7 @@
 				<h3 class="font-sans">Public Equity Transactions <span class="tag">Platform: Web</span></h3>
 				<p><b>Carta (2018)</b></p>
 				<p class="project-description">Exercising stock options and selling stock for public employees.</p>
-				<button class="primary-button" href="hr-integrations.html"><b>View Case Study ➞</b></button>
+				<button class="primary-button" href="hr-integrations.html"><b>View Case Study ⟶</b></button>
 				<a href="puma.html"><span class="link-span"></span></a>
 			</div>
 			<div class="project-card flex-column flex-container-align-left" href="hr-integrations.html">
@@ -67,9 +78,10 @@
 				<h3 class="font-sans">SEC Form Generation <span class="tag">Platform: Web</span></h3>
 				<p><b>Carta (2018)</b></p>
 				<p class="project-description">Easily generate SEC forms for company insiders.</p>
-				<button class="primary-button" href="hr-integrations.html"><b>View Case Study ➞</b></button>
+				<button class="primary-button" href="hr-integrations.html"><b>View Case Study ⟶</b></button>
 				<a href="secforms.html"><span class="link-span"></span></a>
 			</div>
+			<h2>Personal Work</h2>
 		</div>
 <!-- 		<div class="project-section">
 			<h2>Side Projects</h2>

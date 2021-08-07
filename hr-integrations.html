@@ -8,19 +8,30 @@
 </head>
 
 <body>
-	<div id="navigation">
-		<div id="logo-and-name">
-			<a href="index.html">
-				<img id="logo" src="img/logo.png">
-			</a>	
-		</div>
-		<nav class="navigation-links">
-			<a href="https://docs.google.com/document/d/1zE9jwqzhyu-PIvRkU4uxCExN5Jv-vr0GJGPdGCpW7mI/edit?usp=sharing" target="_blank">Resume</a>
-			<a href="index.html">My Work</a>
-			<a href="index.html#aboutme">About Me</a>
+	<div class="navigation-span">	
+		<nav id="navigation" class="flex-container-align-center font-sans">
+			<div id="logo-and-name">	
+				<a href="index.html"><img id="logo" src="img/newlogo.png"></a>
+				<p class="font-light">Gian Paneda</p>
+			</div>
+		  	<ul class="navigation-links flex-container-align-center flex-justify-right">
+			  	<li><a class="navigation-link" href="index.html">Home</a></li>
+			    <li><a class="navigation-link" href="about.html">About</a></li>
+		  	</ul>
 		</nav>
-	</div>
-	<div>
+		<nav id="navigation-small" class="flex-container-align-center font-sans">
+			<div id="logo-and-name">	
+				<a href="index.html"><img id="logo" src="img/newlogo.png"></a>
+			</div>
+		  	<ul class="navigation-links flex-container-align-center flex-justify-right">
+			  	<li><a class="navigation-link" href="index.html">Home</a></li>
+			    <li><a class="navigation-link" href="about.html">About</a></li>
+		  	</ul>
+		</nav>
+	</div>	
+	<div class="project-page-content">
+<!-- 		<a><- Back to my work</a> -->
+		<a href=""></a>
 		<div class="section">
 				<h1>HR Integrations for Employee Data</h1>
 				<p>Expediting employee data maintenance via HR integrations.</p>
@@ -28,7 +39,7 @@
 				<img class="project-image" src="img/pending updates.png">
 			</div>
 			<p class="image-caption">
-				List of stakeholder data updates coming from an integrated HR system. Users can review the changes and confirm them in bulk.	
+				List of stakeholder data updates coming from an integrated HR system. The changes are staged here and can be confirmed to make the changes effective.	
 			</p>
 			<div class="image-container">
 				<img class="project-image" src="img/pending terms.png">
@@ -93,10 +104,17 @@
 					<div class="overview-values"></div>
 				</div>
 				<p>
-					My team was focused on improving the experience for company administrators of enterprise companies. These users often maintain employee data for large companies across multiple systems, including Carta.
+					The Enterprise Team was formed to improve the experience for company administrators of enterprise companies. Shortly after, we started on this project.
 				</p>
 				<p>
-					We created <em>Stakeholder Data Updates</em> to improve the admin experience. By allowing the customer to integrate their company’s HR system with Carta, they can keep their employee’s data in sync between both systems. This minimizes the repetitive work involved in maintaining employee data on Carta and eliminates input errors.
+					Company administrators are often responsible for maintaining personal employee data (e.g. emails, addresses, and ID numbers) for large companies across multiple systems, including Carta.
+				</p>
+				<p>
+					We created <em>Employee Data HR Integrations</em> to improve this process for them. 
+				</p>
+				<p>
+					With this new feature, customers can integrate their company's HR system with Carta to keep their employee data in sync.
+					This functionality minimizes the repetitive work involved in maintaining employee data and eliminates input errors on Carta.
 				</p>
 			</div>
 		</div>
@@ -130,18 +148,12 @@
 		<div class="section">
 			<div class="section-text">
 			<h2>Problem</h2>
-				<p class="callout">
-					Updating personal data for employees as a company administrator is cumbersome, error-prone, and doesn’t scale. 
-				</p>
-				<p>
-					These updates, such as a change in employment status or personal address, are first made in the company’s HR system of choice. The same updates must then be made on Carta to keep both systems current.
-				</p>
-				<p>
-					The problem of maintaining these systems worsens for our enterprise company customers, who manage data for hundreds to thousands of employees.
-				</p>
-				<p>
-					This process is additional, unnecessary work for the user and we sought to make this process easier.
-				</p>
+				<p class="callout">Updating employee personal data as a company administrator is cumbersome, error-prone, and doesn’t scale.</p>
+
+				<p>These updates, including changes in employment status or personal address, are typically first made in the company’s HR system of choice.</p> 
+
+				<p>The same updates must then be made on Carta to keep both systems current. The problem of maintaining these systems worsens for our Enterprise customers, who have hundreds or thousands of employees.</p>
+				<p>This process creates additional, unnecessary work for company admins and we sought to make this process easier.</p>
 			</div>	
 		</div>
 
@@ -149,14 +161,14 @@
 			<div class="section-text">
 				<h2>Solution</h2>
 				<p class="callout">
-					Data integrations between Carta and commonly used HR systems.
+					Data integrations between Carta and commonly used HR systems to reduce manual work in updating employee personal data.
 				</p>
 					With our solution, company administrators can now:
 				<ul class="remove-indent">
-					<li>Set up a data integration, allowing Carta to detect changes in their HR system.</li>
-					<li>Review employee data changes from their HR systems within Carta.</li>
-					<li>Confirm changes from their HR systems to update employee data within Carta.</li>
-					<li>Trigger a data sync to get the latest updates from their HR system.</li>
+					<li>Set up a data integration, allowing Carta to detect changes in HR systems.</li>
+					<li>View employee data changes from HR systems through the Carta app.</li>
+					<li>Sync Carta employee data to match HR systems.</li>
+					<li>Trigger data syncing with HR systems to stage the latest updates in-app.</li>
 				</ul>
 			</div>
 		</div>
@@ -164,7 +176,7 @@
 		<div class="section">
 			<div class="section-text">
 				<p class="image-caption">
-					First steps of the <b>guided integrations set up</b> workflow. The user inputs credentials from their HR provider to establish a connection with Carta.
+					First steps of the <b>integrations set up</b> workflow. The user inputs credentials from their HR provider to establish a connection with Carta.
 				</p>
 			</div>
 			<div class="image-container">
@@ -181,7 +193,7 @@
 		<div class="section">
 			<div class="section-text">
 				<h2>Process (highlights)</h2>
-			</div>
+<!-- 			</div>
 				<div class="image-container">
 					<img class="project-image" src="img/earlymock1.png">
 				</div>
@@ -191,17 +203,19 @@
 				<div class="image-container">
 					<img class="project-image" src="img/earlymock2.png">
 				</div>
-			<div class="section-text">
-				<p class="image-caption">
+			<div class="section-text"> -->
+<!-- 				<p class="image-caption">
 					Low-fidelity mocks used for feedback sessions	
-				</p>
+				</p> -->
+
+				<p>
+				I find it's more effective to gain as much context as possible surrounding the problem and project before jumping into design tools and that's what I did here.</p>
+
+				<p>I worked closely with my product manager and engineers throughout the project to ensure I understood the problem, requirements, and constraints. I created low-fidelity designs to explore initial ideas after our project kicked off. I refined them as our requirements changed after the engineers did exploratory work around data integrations.</p>
+
+				<p class="xlarge-margin-bottom">After getting early design feedback from various teammates, including designers outside of my team, I created a high-fidelity interactive prototype to test with prospective customers. Through both user interviews and usability testing, we gained key insights that informed my design decisions.</p>
+
 				<h3><em>Key Insights and Design Decisions</em></h3>
-				<p>
-					I created a high-fidelity interactive prototype of the integrations set-up and data review process to test with prospective users.
-				</p>
-				<p>
-					Through some user interviews and usability testing, we were able to gain key insights that informed our design decisions:
-				</p>
 			</div>	
 			<div class="image-container">
 				<img class="project-image" src="img/showchange.png">
@@ -211,13 +225,13 @@
 					<b>1. Our users lack trust in Carta:</b> Some of our users said they wouldn’t trust Carta to update their employee data accurately, even via an integration. 
 				</p>
 				<p>
-					I sought to build trust by designing a page that explicitly displays and highlights the changes to be made to an employees data, rather than having it be an automated, background process.
+					I sought to build trust with our users by designing a page that explicitly displays and highlights staged changes, instead of an automated, background process.
 				</p>
 				<p>
 					This page gives the users the chance to review updates before manually confirming the updates themselves and gives them confidence that the integration is pulling the correct changes.
 				</p>
-				<p>
-					I chose to visually highlight incoming data changes to make it easy for the user to visually distinguish changes from non-changes.
+				<p class="large-margin-bottom">
+					I chose to visually highlight incoming data changes to make it easy for the user to visually distinguish changes from existing data.
 				</p>
 			</div>
 			<div class="image-container">
@@ -225,80 +239,40 @@
 			</div>
 			<div class="section-text">
 				<p>
-					<b>2. Employee ID is a must:</b> Pairing Employee ID, a unique numerical identifier found in HR systems, with employee names would make it easier for users to identify specific individuals across systems.
-					<p>
-						We chose to display Employee ID in our UI alongside employee names to make finding the correct individual record easier.
-					</p>
+					<b>2. Employee ID is important for employee records:</b> Pairing employee IDs with employee names makes it easy for users to identify specific employee records across systems. Employee IDs are unique numerical identifiers associated with people in HR systems. Users expect to see an employee ID whenever they're dealing with employee data.					
 				</p>
+					<p>I chose to display Employee ID in our UI alongside employee names to match user expectations and to make finding the specific individual records easier.</p>
 			</div>
 			<div class="image-container">
 				<img class="project-image" src="img/bulkgif.gif">
 			</div>
 			<div class="section-text">
 				<p>
-					<b>3. Bulk actions are high value:</b> Manually inputting and updating data is a time-consuming task due to the volume of employee data changes they have to deal with. Users we talked to emphasized that data maintenance  was important, but low-priority compared to their other tasks. 
+					<b>3. Bulk actions are high value:</b> Manually inputting and updating data is a time-consuming task due to the volume of employee data changes company administrators often deal with. They emphasized that data maintenance was important, but low-priority compared to their other task They want to update the data as quickly as possible without making mistakes so they can move on to other parts of their job.
 				</p>
 				<p>
 					This pain point reinforced our hypothesis that bulk actions would be valuable to develop, so we prioritized their implementation.
 				</p>
 			</div>
-			<div class="section-text spacer">
-				<h4><em>Pivot: SFTP Integration vs. API Integration</em></h4>
-				<div class="image-container">
-					<img class="project-image-no-shadow" src="img/sftp.png">
-				</div>
-				<p class="image-caption">
-					Integration setup workflow (before)
-				</p>
-				<p>
-					We initially began building an <a href=https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol target="_blank">SFTP</a> integration for the HR provider most commonly used by our customers. It made sense at the time to try and support the largest percentage of our enterprise customers with the first solution. SFTP was the only option if we wanted to build support for this provider.
-				</p>
-				<p>
-					 A problem arose when we tried setting up an SFTP integration ourselves; the process ended up being highly complex and involved. Unfortunately, this would result in a lot of work for both the customer and Carta relationship managers. 
-				</p>
-				<div class="image-container">
-					<img class="project-image-no-shadow" src="img/api.png">
-				</div>
-				<p class="image-caption">
-					Integration setup workflow (after)
-				</p>
-				<p>
-					Partway through development, we changed our approach and decided to build support for HR providers that weren’t as commonly used by our customers, but that could support API integrations, which are easier to set up.
-				</p>
-				<p>
-					This decision allowed us to meet our target launch date on time. I adjusted the designs to fit this new, simplified workflow. This path was ultimately less risky and resulted in a better user experience, one where the customer can set up an integration independently and without communicating with various parties.
-				</p>
-			</div>
-		</div>
 		<div class="section">
 			<div class="section-text">
 				<h2>Reflection</h2>
-				<p>
-					I'm proud of this project! It was my first time taking a project from end-to-end as the only designer on the team. I was able to take what I learned from working on prior projects to work more efficiently and improve the quality of my work.
-				</p>
-				<h3><em>What I would have done differently</em></h3>
-				<p>
-					<b>Develop a better understanding of integrations at the start of the project:</b> At first, it seemed like developing for an SFTP integration was the most correct approach to solving the problem, because it would allow us to support the HR provider most commonly used by our customers. I didn’t fully grasp the tradeoff we were making with this approach, and wasn’t aware that API integrations were an option. In hindsight, I would have sought to understand data integrations more and the UX implications of both types.
-				</p>
-				<p>
-					<b>Follow up after launch:</b>
-		We had defined success metrics a few times throughout development, but we never really measured them post-launch. As soon as we shipped, we moved onto a different project. I would have liked for the team to go back and measure against our success metrics to see how we did.
-				</p>
-				<p>
-					<b>More usability tests:</b>
-		We had trouble finding our specific user type (Company/HR/Stock administrator) for usability tests, in part because of how uncommon the role is. This made it difficult to get many usability tests done with our user type. In hindsight, I could have ran some tests with just about anyone and still gained some valuable feedback on the UX that I could apply to my design iterations.
-				</p>
+				<h3>What I would do differently</h3>
+
+					<p><b>Follow up after launch:</b> We had defined different success metrics a few times throughout development, but we never reviewed them post-launch. As soon as we shipped, we moved onto a different project. I would have liked for the team to go back and review our success metrics and reflect on the project and our work together.</p>
+
+					<p><b>More usability tests:</b> We had trouble finding our specific user type (Company/HR/Stock administrator) for usability tests, in part because of how uncommon the role is. This made it difficult to get many usability tests done with our specific user type. In hindsight, I could have run additional tests with just about anyone and still gained some valuable insights that I could have applied to the design.</p>
+
+					<h3>Further design improvements</h3>
+					<p>A more ideal experience would be to let individuals decide whether they want their data to be synced automatically or manually and have the ability to toggle between the two. This option was something the team considered but we decided to save it for a later release.</p>
+					<p>This option would allow each person to choose the setting that works best based on their workflow, preference, and comfort level. </p>
 			</div>
 		</div>
 
 <div class="section-link-footer">
 	<div class="footer-link-right">
 		<p><b>Next: Public Company Equity Transactions</b></p>
-		<a href="puma.html">View project &#8702;</a>
+		<a href="puma.html">View project ⟶</a>
 	</div>
 </div>
 </body>
-
-	<footer>
-		<em>Gian Paneda</em> | <a href="https://www.linkedin.com/in/gianpaneda/">LinkedIn</a> | <a href="mailto: panedagian@gmail.com>">panedagian@gmail.com</a>
-	</footer>
