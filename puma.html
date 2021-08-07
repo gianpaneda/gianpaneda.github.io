@@ -8,19 +8,38 @@
 </head>
 
 <body>
-	<div id="navigation">
-		<div id="logo-and-name">
-			<a href="index.html">
-				<img id="logo" src="img/logo.png">
-			</a>	
+	<head>
+		<meta charset="utf-8">
+		<title>Gian Paneda | Product Designer</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+		<link rel="icon" href="favicon.ico?" type="image/x-icon">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+	</head>
+
+	<body>
+		<div class="navigation-span">	
+			<nav id="navigation" class="flex-container-align-center font-sans">
+				<div id="logo-and-name">	
+					<a href="index.html"><img id="logo" src="img/newlogo.png"></a>
+					<p class="font-light">Gian Paneda</p>
+				</div>
+			  	<ul class="navigation-links flex-container-align-center flex-justify-right">
+				  	<li><a class="navigation-link" href="index.html">Home</a></li>
+				    <li><a class="navigation-link" href="about.html">About</a></li>
+			  	</ul>
+			</nav>
+			<nav id="navigation-small" class="flex-container-align-center font-sans">
+				<div id="logo-and-name">	
+					<a href="index.html"><img id="logo" src="img/newlogo.png"></a>
+				</div>
+			  	<ul class="navigation-links flex-container-align-center flex-justify-right">
+				  	<li><a class="navigation-link" href="index.html">Home</a></li>
+				    <li><a class="navigation-link" href="about.html">About</a></li>
+			  	</ul>
+			</nav>
 		</div>
-		<nav class="navigation-links">
-			<a href="https://docs.google.com/document/d/1zE9jwqzhyu-PIvRkU4uxCExN5Jv-vr0GJGPdGCpW7mI/edit?usp=sharing" target="_blank">Resume</a>
-			<a href="index.html">My Work</a>
-			<a href="index.html#aboutme">About</a>
-		</nav>
-	</div>
-	<div>
+	<div class="project-page-content">
 		<div class="section">
 			<div class="section-text">
 				<h1>Public Company Equity Transactions</h1>
@@ -33,7 +52,7 @@
 				First step of a "Cashless exercise and hold" transaction.
 			</p>
 		</div>
-				<div class="section">
+		<div class="section">
 			<div class="section-text">
 			<h2>Overview</h2>
 			<p class="callout">
@@ -91,13 +110,17 @@
 					<div class="overview-values"></div>
 				</div>
 				<p>
-					My team was tasked with building equity administration support for public companies. Essentially, our goal was to take some of our existing private company features and rebuild them for public companies. These features include tracking and managing employee equity, exercising of stock options, and selling stocks. 
+					I joined the newly formed public markets team when I joined Carta.
+					Our teams goal was to take some of our existing private company features and expand them to be inclusive of public companies. These features include tracking and managing employee equity (stocks and options), exercising stock options, and selling stocks.
 				</p>
 				<p>
 					Up to this point, Carta only supported private companies. Public company support was a high priority to prevent customer churn.
 				</p>
 				<p>
-					The team built support for stock option exercises and sales for public employees. With this functionality, we hoped to retain large, enterprise company customers as they go public.
+					The team built support for stock option exercises and sales for public employees. With this functionality, we hoped to retain our large, enterprise company customers as they went public. 
+				</p>
+				<p>
+					We worked quickly to mitigate lost customers.
 				</p>
 			</div>
 		</div>
@@ -141,7 +164,7 @@
 					Carta lacked support for public companies.
 				</p>
 				<p>
-					As private companies went public, and as the Carta platform could no longer support them, they would transition to other equity admin solutions, resulting in Carta losing their biggest customers. 
+					As private companies went public, and as the Carta platform could no longer support them, they would transition to other equity admin solutions, resulting in losses of our large customers.
 				</p>
 			</div>
 		</div>
@@ -150,7 +173,7 @@
 			<div class="section-text">
 				<h2>Solution</h2>
 					<p class="callout">
-						Support public company employees by allowing them to exercise options and sell stock on Carta.
+						Support public companies by allowing their employees to exercise options and sell stock on Carta.
 					</p>
 			</div>
 		</div>
@@ -161,7 +184,7 @@
 			</div>
 			<div class="section-text">
 				<p class="image-caption">
-					Employee portfolio. Here the user can view their equity holdings and take actions, such as exercising their option grants and selling their stock.
+					Employee portfolio. Here users can view their equity holdings and take actions, such as exercising their option grants and selling their stock.
 				</p>
 			</div>
 			<div class="image-container">
@@ -181,21 +204,16 @@
 			<div class="section-text">
 			<h2>Process (highlights)</h2>
 			<h4><em>Challenge: Ambiguity</em></h4>
-				<p>
-					All we knew about our users when starting was that many of them would be employees at large public companies who probably know little to nothing about equity.
-				</p>
-				<p>
-					Given how constrained we were on time, it didn't feel feasible to recruit users and do formal user interviews and usability tests (although, in hindsight, it wouldn't have been <em>that</em> difficult).
-				</p>
-				<p>
-					Still, it was easy enough to do some lightweight user testing internally. I tested a high-fidelity prototype with Carta employees whose roles didn't involve extensive knowledge about equity. This strategy was to more closely align our testing with the user we were designing for. Through these tests, we were able to identify problem areas in the prototype, such as unclear instructions, and address them.
-				</p>
-				<p>
-					I also tested the prototype with Carta employees with high-levels of equity knowledge. These employees were experienced with these types of transactions and some have done them in other apps. They were able to point out some key areas of improvement in the design based on their past experiences.
-				</p>
-				<p>
-					These tests helped inform key decisions on the design
-				</p>
+				<p>We didn't know much about our users aside from them being employees at large public companies. We made the assumption that most may know little to nothing about equity.</p>
+
+				<p>Given how constrained we were on time, it didn't feel feasible to recruit users and do formal user interviews and usability tests. Still, it was easy enough for me to do some lightweight internal testing. </p>
+
+				<p>I tested a high-fidelity prototype with Carta employees whose roles didn't require extensive knowledge about equity. This strategy was to more closely align our testing with the user we were designing for. </p>
+
+				<p>I also tested the prototype with Carta employees with extensive equity knowledge. These employees had experience with equity transactions and had done them in other apps. They were able to point out some key areas of improvement in the design based on their past experiences.</p>
+
+				<p>These tests helped inform my design decisions</p>
+
 				<h3>Design decisions</h3>
 			</div>
 				<div class="image-container">
@@ -204,23 +222,23 @@
 				<div class="image-container">
 					<img class="project-image" src="img/notaxes.png">
 				</div>
-				<div class="section-text">
+				<div class="section-text xlarge-margin-bottom">
 					<p>
-						<b>1. Dynamic, transaction-relevant information.</b> I added useful information to help users make decisions regarding their transaction. The information and different subsections displayed are dynamic and based on a few different factors, including equity type and transaction type.
+						<b>1. Dynamic, transaction-relevant information.</b> I added useful information to help users better understand transactions. The information and different subsections displayed are dynamic and based on a few different factors, including equity type and transaction type.
 					</p>
 				</div>
 				<div class="image-container">
 					<img class="project-image" src="img/taxes.png">
 				</div>
-				<div class="section-text">
+				<div class="section-text xlarge-margin-bottom">
 					<p>
-						<b>2. A tax breakdown for each transaction.</b> Taxes can have a high impact on exercises and sales. I included this detailed tax breakdown to help the user understand the true value of their transactions and ultimately make informed decisions.
+						<b>2. A tax breakdown for each transaction.</b> Taxes can have a high impact onb both exercises and sales. I included this detailed tax breakdown to help the user understand the true value of their transactions and make more informed decisions regarding their transaction.
 					</p>
 				</div>
 				<div class="image-container">
 					<img class="project-image" src="img/orders.png">
 				</div>
-				<div class="section-text">
+				<div class="section-text xlarge-margin-bottom">
 					<p>
 						<b>3. A transaction history where the user can view order status.</b> These orders can take multiple days, up to a month, to complete. Displaying a transaction history and order statuses gives the user visibility into their various orders.
 					</p>
@@ -232,69 +250,45 @@
 					<img class="project-image" src="img/mobile.png">
 				</div>
 				<p class="image-caption">
-					Mobile app concept that was demoed to key customers	
+					Mobile app concept that was demoed to key customers. Mobile support was a common customer request.
 				</p>
 			<div class="section-text">
+				<p>Part of the team’s strategy in maintaining our pre-IPO customers was meeting with them and discussing what they needed out of Carta.</p>
 
-				<p>
-					Part of the team’s strategy in maintaining our pre-IPO customers was meeting with them and discussing what we needed to build to keep them on the platform post-IPO.
-				</p>
-				<p>
-					Maintaining these relationships was a high priority, but ultimately constrained the time and effort we could spend developing the real product. Our requirements changed often, making it difficult to plan for the long term. A percentage of our time was spent ensuring we had something interesting to demo each meeting.
-				</p>
-				<p>
-					As customer’s IPO dates approached, we worked at an increasingly fast pace. The loss of large, enterprise customers was significant, as many of them were recognizable names that strengthened the Carta brand and their contracts were high value.
-				</p>
-				<p>
-					This situation led to some tradeoffs in the design, namely the amount of time we could spend researching and iterating versus implementing.
+				<p>Maintaining these relationships was a high priority, but ultimately constrained the time and effort we could spend developing the real product. Our requirements changed often, making it difficult to plan for the long-term. A percentage of our time was spent ensuring we had something interesting to demo each meeting. </p>
+
+
+				<p>This situation led to some tradeoffs in the design, namely the amount of time we could spend researching and iterating on designs versus implementing. Often, I would be designing side-by-side with our front-end engineers as they built the UI and we would iterate together. </p> 
+				<p>I did my best to help the team move as fast as possible without sacrificing too much design quality. I even jumped in and did some front-end code to make sure things were polished!
 				</p>
 			</div>
-			<div class="image-container">
-				<img class="project-image" src="img/earlyportconcept.png">
-			</div>
-			<p class="image-caption">
-				Early high-fidelity mocks exploring grouping different equity types
-			</p>
 			<div class="section-text">
-				<p>
-					With our goals in mind, I sought to keep the design as simple as possible without excluding helpful context and information for the user. Reusing existing UI components and patterns where it made sense allowed us to decrease development time and deliver value more quickly.
-				</p>
-				<p>
-					I kept a tight feedback loop with our PM and engineers to ensure they understood the latest changes and updates to the designs as I made them. I hoped that it would keep the team more in sync, to make any pivots and sudden requests less jarring.
-				</p>
-				<p>
-					Having some knowledge and experience with front-end web development allowed me to jump in and make updates to the front-end code where needed. This allowed me to ensure the front-end was polished without taking additional time from the engineers.
-				</p>
-				<p>
-					These strategies helped the team move more quickly and reach our goals sooner. 
-				</p>
-			</div>
 		</div>
 		<div class="section">
 			<div class="section-text">
 				<h2>Reflection</h2>
-				<p>In the end, we were able to keep some of our biggest enterprise customers and even gain some new ones. I was happy the team was able to deliver something given how constrained we were on time. I found that proactivity within the team was highly valuable in making meaningful progress with this project.</p>
-				<h3><em>What I would have done differently</em></h3>
+				<p>In the end, we were able to keep some of our biggest enterprise customers and even gain some new ones. I was happy the team was able to deliver something given our strict timelines. I found that proactivity within the team was valuable in moving things along at a good pace. </p>
+				<p>This was my first professional project and I learned a lot from the experience.</p>
+				<h3>What I would have done differently</h3>
+				<p><b>Talk and test with external users.</b> In hindsight, it would have been easy to find and test the product with our user type, which was simply any equity-holding public company employee. This additional work would have helped me to speed up decision-making around the design.</p>
+
+				<p><b>Get more value out of customer meetings.</b> We met with our customers regularly, but we didn’t get much helpful information to inform development. I wish we had sought specific and appropriate feedback from our customers to better inform our decision-making.</p>
+
+				<h3>Further design improvements</h3>
+				<p><b>Improved visual design.</b> We mostly relied on existing components with limited style choices, which left the UI lacking in some areas. The design could be improved through better visual design, for example, using typography to give the page a stronger visual hierarchy. Another potential improvement would be adding useful illustrations to support the descriptions of more complex concepts, such as a cashless exercise and sell transaction, instead of relying on words alone.</p>
 				<p>
-					<b>Talk and test with users!</b> In hindsight, it would have been easy to find and test the product with our user type, which was simply any equity-holding public company employee. This additional work would have helped me to better refine the designs and speed up decision-making around the UI/UX.
-				</p>
-				<p>
-					<b>Get more value out of customer meetings:</b>
-		We met with our customers regularly, but we didn’t seem to get much value out of them in regards to helpful information to inform development. I wish we had sought specific and helpful information from our customers to better inform our decision-making.
-				</p>
-				<p>
-					<b>Generate more ideas:</b> With the transaction experience, I felt like I followed our existing UI patterns a little too closely. This choice resulted in a more consistent experience on the platform, but may not have resulted in the best user experience. If I could go back, I would spend more time generating a breadth of ideas and looking at comparable experiences in other apps. Along with more testing and iteration, I think this strategy would have helped me arrive at a more effective design, even if it isn't as consistent with what already exists on Carta.
+					If time permitted, I would have created a more ideal design that deviated from our component library and outlined its behavior for a future update.
 				</p>
 			</div>
 		</div>
 <div class="section-link-footer">
 	<div class="footer-link-right">
 		<p><b>Next:</b> SEC form Generation</p>
-		<a href="secforms.html">View project &#8702;</a>
+		<a href="secforms.html">View project ⟶</a>
 	</div>
 	<div>
 		<p><b>Previous:</b> HR Integrations for Employee Data</p>
-		<a href="hr-integrations.html">&#8701; View project</a>
+		<a href="hr-integrations.html">⟵ View project</a>
 	</div>
 </div>
 

@@ -8,19 +8,28 @@
 </head>
 
 <body>
-	<div id="navigation">
-		<div id="logo-and-name">
-			<a href="index.html">
-				<img id="logo" src="img/logo.png">
-			</a>	
-		</div>
-		<nav class="navigation-links">
-			<a href="https://docs.google.com/document/d/1zE9jwqzhyu-PIvRkU4uxCExN5Jv-vr0GJGPdGCpW7mI/edit?usp=sharing" target="_blank">Resume</a>
-			<a href="index.html">My Work</a>
-			<a href="index.html#aboutme">About Me</a>
+	<div class="navigation-span">	
+		<nav id="navigation" class="flex-container-align-center font-sans">
+			<div id="logo-and-name">	
+				<a href="index.html"><img id="logo" src="img/newlogo.png"></a>
+				<p class="font-light">Gian Paneda</p>
+			</div>
+		  	<ul class="navigation-links flex-container-align-center flex-justify-right">
+			  	<li><a class="navigation-link" href="index.html">Home</a></li>
+			    <li><a class="navigation-link" href="about.html">About</a></li>
+		  	</ul>
+		</nav>
+		<nav id="navigation-small" class="flex-container-align-center font-sans">
+			<div id="logo-and-name">	
+				<a href="index.html"><img id="logo" src="img/newlogo.png"></a>
+			</div>
+		  	<ul class="navigation-links flex-container-align-center flex-justify-right">
+			  	<li><a class="navigation-link" href="index.html">Home</a></li>
+			    <li><a class="navigation-link" href="about.html">About</a></li>
+		  	</ul>
 		</nav>
 	</div>
-	<div>
+	<div class="project-page-content">
 		<div class="section">
 				<h1>SEC form Generation</h1>
 				<p>Easily generate SEC forms for company insiders.</p>
@@ -89,14 +98,16 @@
 					<div class="overview-values"></div>
 				</div>
 				<p>
-					For this project, we were looking at opportunities to improve the public markets product. 
-					The team did this by examining the unique responsibilities public companies have when compared to private companies
+					For this project, we looked at opportunities to improve our newly introduced Public Markets product offering. The team did this by examining the unique needs and responsibilities of public companies.
 				</p>
 				<p>
-					One of the things we discovered was filing company insider forms for the SEC, an annoying but necessary task that public companies sometimes outsource. 
+					One thing we discovered was the process of filing forms to the SEC on behalf of company insiders, an annoying but legally required task that public companies tend to outsource.
 				</p>
 				<p>
-					We created the <em>SEC Forms</em> feature speed up and simplify the process of filling and filing the forms.
+					These forms report on the equity transactions of company insiders to ensure they are not unfairly benefitting from their insider status. Once reported, the trade information is made public on the SEC website.
+				</p>
+				<p>
+					We created the <em>SEC Forms</em> feature speed up and simplify the process of completing and filing the forms.
 				</p>
 			</div>
 		</div>
@@ -112,10 +123,10 @@
 					</p>
 				<div class="indent">
 					<p class="callout-metrics">
-						• <b>Fill and edit</b> SEC forms 3 and 4 in-app.
+						• SEC forms 3 and 4 are <b>pre-filled</b> with Carta data. Users can refine and edit the forms in-app.
 					</p>
 					<p class="callout-metrics">
-						• <b>Preview and download </b> forms in XML format for submission to the SEC
+						• <b>Preview and download </b> forms in XML format for submission to the SEC.
 
 					</p>
 					<p class="callout-metrics">
@@ -129,14 +140,13 @@
 			<div class="section-text">
 			<h2>Problem</h2>
 				<p class="callout">
-					<b>Filling</b> and <b>filing</b> SEC forms is a <b>costly and time-sensitive</b> process.
+					<b>Completing</b> and <b>filing</b> SEC forms is a <b>costly and time-sensitive</b> process.
 				</p>
-				<p>
-					These forms need to be filed within two business days of an applicable event, such as a sale of stock. Sometimes this work is outsourced to a third party, which can cost a company additional money.
-				</p>
-				<p>
-					It can take time to gather the relevant information for the forms. This is important because failing to submit the correct forms before deadlines can result in investigation and punishment from the SEC.
-				</p>
+				<p>These forms need to be filed quickly and accurately. For example, Form 4 must be filed within two business days of an event, such as a sale of stock, with the complete details of the transactions that occurred. </p>
+
+				<p>Because of the cumbersome and time-sensitive nature of the filing process, the work is often outsourced to a third party, which costs additional resources.</p>
+
+				<p>On top of that, it takes time to gather the relevant information for the forms. When outsourcing, there is often back and forth communication between a company and the third party to communicate the required form information. Failing to submit the correct forms before deadlines, can result in investigation and punishment from the SEC.</p>
 			</div>	
 		</div>
 
@@ -144,11 +154,10 @@
 			<div class="section-text">
 				<h2>Solution</h2>
 				<p class="callout">
-					<b>Support</b> the user in <b>filling forms</b> by populating forms with <b>existing</b> Carta data.
+					<b>Support</b> the user in <b>completing forms</b> by populating forms with <b>existing</b> Carta data.
 				</p>
-					With our solution, company administrators can go through a simple workflow to fill and edit forms. The forms are pre-filled with relevant data to reduce the amount of time spent gathering and inputting information that Carta already holds.
 				<p>
-					By 
+					With our solution, company administrators can go through a simple workflow to fill and edit forms. The forms are pre-filled with relevant data to reduce the amount of time spent gathering and inputting information that Carta already holds.
 				</p>
 			</div>
 		</div>
@@ -160,48 +169,38 @@
 				<img class="project-image" src="img/form4example.png">
 			</div>
 			<p class="image-caption">
-				A filled and submitted SEC Form 4
+				A completed and submitted SEC Form 4
 			</p>
 			<div class="section-text">
 				<h3><em>Research</em></h3>
 				<p>
-					I spent time researching the form filling and filing process to understand how it is normally done and looked for ways to make it easier.
+					I spent time researching the form completion and filing process to understand how it is normally done and searched for ways to make it easier. It was helpful to talk to people at Carta who filed these forms themselves to get additional context.
 				</p>
 				<p>
-					It was helpful to talk to people at Carta who filed these forms themselves to get additional context.
-				</p>
-				<p>
-					It also helped to look at real examples of filled SEC forms to get an understanding of what it looks like in its end state. Filled forms are made available to the public so I was able to find examples online.
+					It also helped to look at real examples of filled SEC forms to get an understanding of what they look like in their end states. Filled forms are made available to the public so I was able to find many examples online.
 				</p>
 			</div>	
 			<div class="section-text">
 				<h4><em>Discovery: Electronic filings were most common</em></h4>
 				<p>
-					Through my research I learned that most people filed these required forms electronically, through an SEC website. The submitted forms needed to be in XML file format.
-				</p>
-				<p>
-					We developed an XML export so that forms generated through Carta can be easily previewed, downloaded, and filed with the SEC. Users also have the option to print the forms if they prefer to submit them physically.
+					Through my research, I learned that most people filed these required forms electronically, through an SEC website. The submitted forms needed to be in XML file format.
 				</p>
 			</div>
 			<div class="section-text">
 				<h4><em>Discovery: "Explanation of responses" were time consuming to write</em></h4>
 				<p>
-					I learned that a particular part of the forms, explanation of responses, took a lot of time to write. These explanations were used to describe complex answers to parts of the form that aren't easily summed up with a simple date or number.
+					I learned that a particular part of the forms, explanation of responses, took a lot of time to write. These explanations were used for complex answers to parts of the form that aren't easily summed up with a simple date or number.
 				</p>
-				<p>
-					I looked to address this problem in the design.
-				</p>
-
 			</div>	
 			<div class="image-container">
 				<img class="project-image" src="img/explanation.png">
 			</div>
-			<p class="image-caption">
+			<p class="image-caption xlarge-margin-bottom">
 				Explanations of responses used on an SEC Form 4
 			</p>
-			<div class="section-text">
+			<div class="section-text xlarge-margin-top">
 			<h3><em>Design decisions</em></h3>
-				<p>I designed a multi-step form with the goal of addressing the users problems and making filling the forms quick and easy.</p>	
+				<p>I designed a multi-step form to make the filing process easier by addressing problem areas in the existing process.</p>	
 				<p>
 					<b>Multi-step form:</b> I broke the form up into multiple steps to reduce its cognitive load. This helps the user focus on a single or small group of inputs in a step-by-step manner, as opposed to facing a single, large, intimidating form.
 				</p>
@@ -210,32 +209,26 @@
 					<img class="project-image" src="img/formsection.png">
 				</div>
 				<p class="image-caption">
-					The forms structure and steps mirrors the actual form
+					The forms structure and steps mirrors the sections of the actual form
 				</p>
-			<div class="section-text">
-				<p>
-					I separated the form into four steps, with three steps corresponding to a specific section of the actual SEC forms, and one step for reviewing.
-				</p>
-			</div>		
-
-			<div class="section-text">
+			<div class="section-text xlarge-margin-top">
 				<p><b>Pre-fill relevant information:</b> Carta holds a lot of information relevant to the forms, including personal information, securities held, and records of transactions.</p>
 			</div>
 			<div class="image-container">
 				<img class="project-image" src="img/secforms3.png">
 			</div>
 			<p class="image-caption">
-				One step of the four-step form workflow. Relevant information from Carta is pre-filled so that the user doesn't have to do it.
+				One step of the four-step form workflow. Relevant information from Carta is automatically filled by Carta.
 			</p>
 			<div class="section-text">
 				<p>
-					To make filling the forms easier, Carta pre-fills the form with information from Carta that belongs on the form. This function helps the user complete the forms more quickly. Rather than filling it out from scratch, the user has a strong starting point.
+					To make completing the forms easier, Carta pre-fills it with the information already on the platform. Rather than filling it out from scratch, the user has a much stronger starting point.
 				</p>
 			</div>			
-			<div class="section-text">
+			<div class="section-text xlarge-margin-top">
 				<p>
 					<b>Dynamic, pre-written explanations of responses:</b> 
-					I worked with some of our form experts to create language for explanations that we can generate for the user based on the data Carta already has.
+					I worked with some of our form experts to create explanations that we can generate for the user based on Carta data.
 				</p>
 			</div>
 				<div class="image-container">
@@ -246,21 +239,24 @@
 				</div>
 			<div class="section-text">
 				<p class="image-caption">
-					Carta displays pre-written explanations of responses based on releveant user data like "date exercisable"
+					Carta displays pre-written explanations of responses based on relevant user data like "date exercisable"
 				</p>
 				<p>
-					These explanations often requires long, hand-written sentences. The language Carta generates is dynamic and based on the specific information about an insider's holdings. This function assists the user in filling out one of the most complex parts of the form.
+					These explanations often require long, hand-written sentences. The explanation Carta generates is dynamic and based on the specific information about an insider's holdings. This function assists the user in filling out one of the most complex parts of the form.
+				</p>
+				<p>
+					Upon completing this workflow, users can preview and export their filled form in XML format to submit to the SEC.
 				</p>
 			</div>
 		<div class="section">
 			<div class="section-text">
 				<h2>Reflection</h2>
 				<p>
-					I'm happy we were able to build and ship this in the time we had. Learning about the approach to the real life processes of form filing made it easier to see the opportunities for improvement. It was helpful to look at how the forms are normally filled and filed to understand the types of design decisions that would significantly improve the process for the user. 
+					I'm happy we were able to build and ship this in the time we had. Learning about the approach to the real-life processes of form filing made it easier for me to see the opportunities for improvement. It was helpful to look at how the forms are typically handled to understand the types of design decisions that would significantly improve the process for the user.
 				</p>
 				<h3><em>What I would have done differently</em></h3>
 				<p>
-					<b>Actively seek feedback from beta users:</b> This feature didn’t see much use from our beta users. I would have liked for us to be more proactive in seeking feedback from them. I would have used that feedback to evaluate the effectiveness of the design and inform possible improvements.
+					<b>Actively seek feedback from beta users:</b> This feature didn’t see much use from our beta users. I would have liked for us to be more proactive in seeking feedback to evaluate the effectiveness of the design and inform possible improvements.
 				</p>
 
 		</div>
@@ -268,11 +264,11 @@
 		<div class="section-link-footer">
 			<div class="footer-link-right">
 				<p><b>Next:</b> lexico (personal project)</p>
-				<a href="lexico.html">View project &#8702;</a>
+				<a href="lexico.html">View project ⟶</a>
 			</div>
 			<div>
 				<p><b>Previous:</b> Public Company Equity Transactions</p>
-				<a href="puma.html">&#8701; View project</a>
+				<a href="puma.html">⟵ View project</a>
 			</div>
 		</div>
 </body>
