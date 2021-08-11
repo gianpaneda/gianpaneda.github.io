@@ -64,7 +64,8 @@ button {
   max-width: 904px; }
 
 .max-width-640 {
-  max-width: 640px !important; }
+  max-width: 640px !important;
+  margin-top: 0px; }
 
 .project-page-content {
   max-width: 1200px; }
@@ -299,7 +300,8 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 600px; }
+  max-width: 600px;
+  margin-bottom: 0; }
 
 .image-row {
   /*	flex-wrap: wrap;
@@ -444,7 +446,9 @@ footer {
   	box-shadow: 10px 10px 37px -14px rgba(255,33,33,0.75);*/
   /*	-webkit-box-shadow: 10px 13px 37px -10px rgba(255,33,33,0.75);
   	-moz-box-shadow: 10px 13px 37px -10px rgba(255,33,33,0.75);
-  	box-shadow: 10px 13px 37px -10px rgba(255,33,33,0.75);*/
+  	box-shadow: 10px 13px 37px -10px rgba(255,33,33,0.75);*/ }
+
+.drop-shadow, .image, .project-image {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
@@ -488,7 +492,7 @@ footer {
     margin: 0; }
 
 a {
-  /*color: $link-color;*/
+  color: #002686;
   transition: all 0.2s ease; }
   a:visited {
     color: #002686; }
@@ -635,11 +639,11 @@ a {
 
 .footer-link-right {
   text-align: right;
-  max-width: 320px; }
+  /*max-width: 320px;*/ }
 
 .footer-link-left {
   text-align: left;
-  max-width: 320px; }
+  /*max-width: 320px;*/ }
 
 .link-span {
   position: absolute;
