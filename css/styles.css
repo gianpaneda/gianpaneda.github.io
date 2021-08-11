@@ -317,7 +317,8 @@ button {
   /*width: 100%;*/
   height: auto;
   margin-right: 0px;
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  /*@extend .drop-shadow;*/ }
 
 .max-width-text {
   /*max-width: 434px;*/ }
@@ -450,7 +451,7 @@ footer {
   	-moz-box-shadow: 10px 13px 37px -10px rgba(255,33,33,0.75);
   	box-shadow: 10px 13px 37px -10px rgba(255,33,33,0.75);*/ }
 
-.drop-shadow, .image, .project-image {
+.drop-shadow, .project-image {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
