@@ -25,10 +25,7 @@ button {
 #navigation-small {
   display: none; }
 
-@media screen and (max-width: 400px) {
-  body, .page-content, .max-width-640, .project-page-content, .image-grid, .project-page-content {
-    font-size: 16px !important; }
-
+@media screen and (max-width: 420px) {
   h1 {
     font-size: 36px !important; }
 
@@ -39,7 +36,10 @@ button {
     font-size: 28px !important; }
 
   h4 {
-    font-size: 24px !important; }
+    font-size: 24px !important; } }
+@media screen and (max-width: 400px) {
+  body, .page-content, .max-width-640, .project-page-content, .image-grid, .project-page-content {
+    font-size: 16px !important; }
 
   #navigation {
     display: none; }
@@ -313,7 +313,8 @@ button {
 .image {
   max-width: 600px;
   width: 100%;
-  height: auto;
+  height: 100%;
+  /*height: auto;*/
   margin-right: 0px;
   margin-bottom: 80px; }
 

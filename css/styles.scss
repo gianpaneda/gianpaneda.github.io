@@ -49,10 +49,7 @@ button {
 	display: none;
 }
 
-@media screen and (max-width: 400px) {
-	body, .page-content, .project-page-content {
-		font-size: $body-font-size-smaller !important;
-	}
+@media screen and (max-width: 420px) {
 	h1 {
 		font-size: 36px !important;
 	}
@@ -64,6 +61,12 @@ button {
 	}
 	h4 {
 		font-size: 24px !important;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	body, .page-content, .project-page-content {
+		font-size: $body-font-size-smaller !important;
 	}
 	#navigation {
 		display: none;
@@ -405,7 +408,8 @@ button {
 .image {
 	max-width: 600px;
 	width: 100%;
-	height: auto;
+	height: 100%;
+	/*height: auto;*/
 	margin-right: 0px;
 	margin-bottom: 80px;
 	@extend .drop-shadow;
