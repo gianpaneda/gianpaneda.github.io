@@ -94,6 +94,7 @@ button {
 .max-width-640 {
 	@extend .page-content;
 	max-width: 640px !important;
+	margin-top: 0px;
 }
 
 .project-page-content {
@@ -390,6 +391,7 @@ button {
 	flex-direction: column;
 	justify-content: center;
 	max-width: 600px;
+	margin-bottom: 0;
 }
 
 .image-row {
@@ -406,6 +408,7 @@ button {
 	height: auto;
 	margin-right: 0px;
 	margin-bottom: 80px;
+	@extend .drop-shadow;
 }
 
 .max-width-text {
@@ -569,9 +572,13 @@ footer {
 /*	-webkit-box-shadow: 10px 13px 37px -10px rgba(255,33,33,0.75);
 	-moz-box-shadow: 10px 13px 37px -10px rgba(255,33,33,0.75);
 	box-shadow: 10px 13px 37px -10px rgba(255,33,33,0.75);*/
- 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
- 	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
- 	-moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+ 	@extend .drop-shadow;
+}
+
+.drop-shadow {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .project-image-no-shadow {
@@ -621,7 +628,7 @@ footer {
 }
 
 a {
-	/*color: $link-color;*/
+	color: $link-color;
 	transition: all 0.2s ease;
 	&:visited {
 		color: $link-color;
@@ -807,12 +814,12 @@ a {
 
 .footer-link-right {
 	text-align: right;
-	max-width: 320px;
+	/*max-width: 320px;*/
 }
 
 .footer-link-left {
 	text-align: left;
-	max-width: 320px;
+	/*max-width: 320px;*/
 }
 
 .link-span {
