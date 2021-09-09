@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:wght@400;800&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:wght@400;800&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&Inter:wght@400;800&display=swap');
 
 $primary-dark: #042352;
 $primary-light: #FAF8F8;
@@ -8,7 +10,8 @@ $primary-on-dark: #F5F9FF;
 /*$visited-link-color: #8216A8;*/
 $secondary-text-color: #2B5546; 
 $header-font-family: "DM Serif Display", Georgia, sans-serif;
-$body-font-family: "Karla", Arial, serif;
+/*$body-font-family: "Karla", Arial, serif;*/
+$body-font-family: "Inter", Arial, serif;
 $subheader-font-size: 24px;
 $body-font-size: 20px;
 $body-font-size-smaller: 16px;
@@ -52,6 +55,7 @@ button {
 @media screen and (max-width: 420px) {
 	h1 {
 		font-size: 36px !important;
+		font-weight: 400;
 	}
 	h2 {
 		font-size: 32px !important;
@@ -627,7 +631,7 @@ footer {
 	flex-direction: row;
 	align-items: center;
 	p {
-		width: 95px;
+		width: 100px;
 		margin: 0;
 	}
 }

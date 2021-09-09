@@ -1,6 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:wght@400;800&display=swap");
+/*@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:wght@400;800&display=swap');*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&Inter:wght@400;800&display=swap");
 /*$link-color: #0032AF;*/
 /*$visited-link-color: #8216A8;*/
+/*$body-font-family: "Karla", Arial, serif;*/
 html {
   margin: 0;
   padding: 0; }
@@ -27,7 +29,8 @@ button {
 
 @media screen and (max-width: 420px) {
   h1 {
-    font-size: 36px !important; }
+    font-size: 36px !important;
+    font-weight: 400; }
 
   h2 {
     font-size: 32px !important; }
@@ -55,7 +58,7 @@ button {
   .callout {
     font-size: 16px !important; } }
 .page-content, .max-width-640, .project-page-content, .image-grid {
-  font-family: "Karla", Arial, serif;
+  font-family: "Inter", Arial, serif;
   font-size: 20px;
   color: #042352;
   margin: 160px auto;
@@ -82,7 +85,7 @@ button {
   justify-content: right; }
 
 .font-sans {
-  font-family: "Karla", Arial, serif; }
+  font-family: "Inter", Arial, serif; }
 
 .font-serif {
   font-family: "DM Serif Display", Georgia, sans-serif; }
@@ -212,7 +215,7 @@ button {
 
 .primary-button {
   display: block;
-  font-family: "Karla", Arial, serif;
+  font-family: "Inter", Arial, serif;
   font-size: 20px;
   text-decoration: none;
   color: #FAF8F8 !important;
@@ -491,7 +494,7 @@ footer {
   flex-direction: row;
   align-items: center; }
   #logo-and-name p {
-    width: 95px;
+    width: 100px;
     margin: 0; }
 
 a {
