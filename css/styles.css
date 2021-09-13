@@ -15,6 +15,15 @@ body {
 #background-about {
   background: radial-gradient(94.45% 94.45% at 20.45% 7.85%, #FDE1FE 0%, #FFEFFF 0.01%, #FFF1F1 31.25%, #FFF8F3 69.79%, #FFE6CF 100%); }
 
+#now {
+  /*background-color: white;*/
+  border-radius: 16px;
+  outline: 1px solid #042352;
+  padding: 16px 16px 8px 16px; }
+  #now h4 {
+    margin-top: 0;
+    margin-bottom: 8px; }
+
 .transition, button, .project-card, .project-card img, .primary-button {
   transition: all 0.2s ease; }
 
@@ -272,8 +281,14 @@ button {
 .spacer {
   margin-top: 16px; }
 
+.no-margin-top {
+  margin-top: 0px; }
+
 .spacer-right {
   margin-right: 32px; }
+
+.small-margin-bottom {
+  margin-bottom: 8px; }
 
 .medium-margin-bottom {
   margin-bottom: 16px; }
@@ -589,6 +604,7 @@ p {
 
 .attention-callout {
   background-color: #F7E1FF;
+  border-radius: 16px;
   outline: thick double #786CFF;
   padding-left: 16px;
   padding-right: 16px;
