@@ -469,6 +469,12 @@ footer {
   	-moz-box-shadow: 10px 13px 37px -10px rgba(255,33,33,0.75);
   	box-shadow: 10px 13px 37px -10px rgba(255,33,33,0.75);*/ }
 
+.project-image-noshadow {
+  width: 100%;
+  min-width: 240px;
+  margin-bottom: 14px;
+  height: auto; }
+
 .drop-shadow, .project-image {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);

@@ -120,32 +120,6 @@
 				</p>
 			</div>
 		</div>
-
-		<div class="section">
-			<div class="section-text ">
-					<h2>Results and metrics</h2>
-					<p class="callout-metrics">
-						<b>• 48 Enterprise companies</b> created an HR integration.
-					</p>
-					<p class="callout-metrics">
-						• Syncing personal employee data for <b>26k+ employees.</b>
-					</p>
-					<p class="callout-metrics">
-						• Users can now:
-					</p>
-				<div class="indent">
-					<p class="callout-metrics">
-						• <b>Create</b> data integrations with 2 HR providers.
-					</p>
-					<p class="callout-metrics">
-						• <b>Review and confirm</b> data changes from HR systems.
-					</p>
-					<p class="callout-metrics">
-						• <b>Manually sync</b> to get the latest updates from HR systems.
-					</p>
-				</div>
-			</div>	
-		</div>
 		<div class="section">
 			<div class="section-text">
 			<h2>Problem</h2>
@@ -156,6 +130,60 @@
 				<p>The same updates must then be made on Carta to keep both systems current. The problem of maintaining these systems worsens for our Enterprise customers, who have hundreds or thousands of employees.</p>
 				<p>This process creates additional, unnecessary work for company admins and we sought to make this process easier.</p>
 			</div>	
+		</div>
+
+		<div class="section">
+			<div class="section-text large-margin-bottom">
+			<h2>Process</h2>
+	<!-- 			</div>
+					<div class="image-container">
+						<img class="project-image" src="img/earlymock1.png">
+					</div>
+					<div class="image-container">
+						<img class="project-image" src="img/earlymock3.png">
+					</div>
+					<div class="image-container">
+						<img class="project-image" src="img/earlymock2.png">
+					</div>
+				<div class="section-text">				<p class="image-caption">
+						Low-fidelity mocks used for feedback sessions	
+					</p> --> 
+
+					<p>
+					Before I jumped into design tools, I sought to gain as much context as possible surrounding the problem and project.</p>
+
+					<p>I worked closely with my product manager and engineers from the beginning project to ensure I understood the problem, requirements, and constraints and eventually moved onto creating low-fidelity designs to explore initial ideas. I refined them as our requirements evolved during some exploratory work from the engineers.</p>
+					<p>
+						We explored a few different options to address the problem:
+					</p>
+			</div>
+			<div class="section">
+				<div class="image-container">
+					<img class="project-image" src="img/spreadsheettemplate.png">
+				</div>
+				<div class="image-container"><img class="project-image" src="img/spreadsheetui.png"></div>
+				<div class="section-text large-margin-bottom">
+					<p>
+						<b>1. Spreadsheet template</b>. With this solution, users would download a structured spreadsheet, fill in their employees data, and reupload it. Carta would then would read the spreadsheet and update their data accordingly. Although quick and easy to build, this still required a lot of effort on the user's part and didn't significantly improve the data update experience.
+					</p>
+				</div>
+			<div class="image-container">
+				<img class="project-image-noshadow" src="img/sftp.png">
+			</div>
+			<div class="section-text large-margin-bottom">
+				<p>
+					<b>2. SFTP Integration.</b> This was a way for us to securely connect to our customers' HR providers. Once connected, a file containing employee updates would be sent to Carta once a day. We found this process to be overly complicated and costly, so we explored other options.
+				</p>
+			</div>
+			<div class="image-container">
+				<img class="project-image" src="img/apiintegrations.png">
+			</div>
+			<div class="section-text">
+				<p>
+					<b>3. API Integration.</b> This was the last option we explored and ultimately the solution we built. We found that it was both simple to set up and we could support a sizable percentage of our customers by building for a few specific HR providers.
+				</p>
+			</div>
+			</div>
 		</div>
 
 		<div class="section">
@@ -181,42 +209,21 @@
 				</p>
 			</div>
 			<div class="image-container">
-				<img class="project-image" src="img/integrations setup.png">
+				<img class="project-image" src="img/intstep1.png">
 			</div>
 			<div class="image-container">
-				<img class="project-image" src="img/integrations setup step 2.png">
+				<img class="project-image" src="img/intstep2.png">
 			</div>
 			<div class="image-container">
-				<img class="project-image" src="img/integrations setup step 3.png">
+				<img class="project-image" src="img/intstep3.png">
 			</div>
 		</div>
 
 		<div class="section">
 			<div class="section-text">
-				<h2>Process (highlights)</h2>
-<!-- 			</div>
-				<div class="image-container">
-					<img class="project-image" src="img/earlymock1.png">
-				</div>
-				<div class="image-container">
-					<img class="project-image" src="img/earlymock3.png">
-				</div>
-				<div class="image-container">
-					<img class="project-image" src="img/earlymock2.png">
-				</div>
-			<div class="section-text"> -->
-<!-- 				<p class="image-caption">
-					Low-fidelity mocks used for feedback sessions	
-				</p> -->
-
-				<p>
-				Before I jumped into design tools, I sought to gain as much context as possible surrounding the problem and project.</p>
-
-				<p>I worked closely with my product manager and engineers from the beginning project to ensure I understood the problem, requirements, and constraints and eventually moved onto creating low-fidelity designs to explore initial ideas. I refined them as our requirements evolved.</p>
-
-				<p class="xlarge-margin-bottom">After getting early design feedback from various teammates, including designers outside of my team, I created a high-fidelity interactive prototype to test with prospective customers. Through both user interviews and usability testing, we gained key insights that informed my design decisions.</p>
 
 				<h3><em>Key Insights and Design Decisions</em></h3>
+				<p>After getting early design feedback from various teammates, including designers outside of my team, I created a high-fidelity interactive prototype to test with prospective customers. Through both user interviews and usability testing, we gained key insights that informed my design decisions.
 			</div>	
 			<div class="image-container">
 				<img class="project-image" src="img/showchange.png">
@@ -242,7 +249,7 @@
 				<p>
 					<b>Insight: Employee ID is an expected part of employee records</b> Pairing employee IDs with employee names makes it easy for users to identify specific employee records across systems. Employee IDs are unique numerical identifiers associated with people in HR systems. Users expect to see an employee ID whenever they're dealing with employee data.					
 				</p>
-					<p><b>Design Decision: Display Employee ID in the UI alongside employee names.</b> This matches user expectations for employee records and to make finding the specific individual records easier</p>
+					<p><b>Design Decision: Display Employee ID in the UI alongside employee names.</b> This matches user expectations for employee records and makes finding specific individual records easier</p>
 			</div>
 			<div class="image-container">
 				<img class="project-image" src="img/bulkgif.gif">
@@ -255,6 +262,31 @@
 					<b>Design Decision: Allow for bulk confirmation of updates.</b> This pain point that we discovered reinforced our hypothesis that bulk actions would be valuable to develop, so we prioritized their implementation for our v1.
 				</p>
 			</div>
+		<div class="section">
+			<div class="section-text ">
+					<h2>Results and metrics</h2>
+					<p class="callout-metrics">
+						<b>• 48 Enterprise companies</b> created an HR integration.
+					</p>
+					<p class="callout-metrics">
+						• Syncing personal employee data for <b>26k+ employees.</b>
+					</p>
+					<p class="callout-metrics">
+						• Users can now:
+					</p>
+				<div class="indent">
+					<p class="callout-metrics">
+						• <b>Create</b> data integrations with 2 HR providers.
+					</p>
+					<p class="callout-metrics">
+						• <b>Review and confirm</b> data changes from HR systems.
+					</p>
+					<p class="callout-metrics">
+						• <b>Manually sync</b> to get the latest updates from HR systems.
+					</p>
+				</div>
+			</div>	
+		</div>
 		<div class="section">
 			<div class="section-text large-margin-bottom">
 				<h2><em>Reflection</em></h2>
