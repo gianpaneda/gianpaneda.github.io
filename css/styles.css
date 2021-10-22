@@ -15,12 +15,12 @@ body {
 #background-about {
   background: radial-gradient(94.45% 94.45% at 20.45% 7.85%, #FDE1FE 0%, #FFEFFF 0.01%, #FFF1F1 31.25%, #FFF8F3 69.79%, #FFE6CF 100%); }
 
-#now {
+.callout-box {
   /*background-color: white;*/
   border-radius: 16px;
   outline: 1px solid #042352;
   padding: 16px 16px 8px 16px; }
-  #now h4 {
+  .callout-box h4 {
     margin-top: 0;
     margin-bottom: 8px; }
 
