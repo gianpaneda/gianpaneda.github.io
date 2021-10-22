@@ -35,7 +35,7 @@ body {
 	background: radial-gradient(94.45% 94.45% at 20.45% 7.85%, #FDE1FE 0%, #FFEFFF 0.01%, #FFF1F1 31.25%, #FFF8F3 69.79%, #FFE6CF 100%);
 }
 
-#now {
+.callout-box {
 	/*background-color: white;*/
 	border-radius: 16px;
 	outline: 1px solid $primary-dark;
@@ -45,6 +45,8 @@ body {
 		margin-bottom: 8px;
 	}
 }
+
+
 
 .transition {
 	transition: all 0.2s ease;
