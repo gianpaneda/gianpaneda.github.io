@@ -1,6 +1,9 @@
 /*@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:wght@400;800&display=swap');*/
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&Inter:wght@400;800&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&Inter:wght@400;800&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700;1&Inter:wght@400;800&display=swap');
+
+
 
 $primary-dark: #042352;
 $primary-light: #FAF8F8;
@@ -9,12 +12,13 @@ $primary-on-dark: #F5F9FF;
 /*$link-color: #0032AF;*/
 /*$visited-link-color: #8216A8;*/
 $secondary-text-color: #2B5546; 
-$header-font-family: "DM Serif Display", Georgia, sans-serif;
-/*$body-font-family: "Karla", Arial, serif;*/
-$body-font-family: "Inter", Arial, serif;
-$subheader-font-size: 24px;
-$body-font-size: 20px;
-$body-font-size-smaller: 16px;
+$header-font-family: "Source Serif Pro", Georgia, serif;
+/*$header-font-family: "DM Serif Display", Georgia, sans-serif;*/
+/*$body-font-family: "Inter", Arial, sans-serif;*/
+$body-font-family: "Source Serif Pro", Georgia, serif;
+$subheader-font-size: 28px;
+$body-font-size: 22px;
+$body-font-size-smaller: 18px;
 $section-margin-bottom: 80px;
 $subsection-margin-bottom: 5px;
 $box-shadow: 0px 10px 21px 0px rgba(13,65,89,0.6);
@@ -26,6 +30,7 @@ html {
 }
 
 body {
+	font-family: $body-font-family;
 	margin: 0;
 	padding: 0;
 	background-image: radial-gradient(81.29% 81.29% at 20.45% 7.85%, #F7E1FF 0%, #EDF4FF 41.67%, #FFEAE6 74.48%, #FFE1E8 100%);
@@ -38,15 +43,13 @@ body {
 .callout-box {
 	/*background-color: white;*/
 	border-radius: 16px;
-	outline: 1px solid $primary-dark;
+	outline: 1px solid #aaa;
 	padding: 16px 16px 8px 16px;
 	h4 {
 		margin-top: 0;
 		margin-bottom: 8px;
 	}
 }
-
-
 
 .transition {
 	transition: all 0.2s ease;
@@ -92,12 +95,12 @@ button {
 		display: contents;
 	}
 	.callout-metrics {
-		font-size: 16px !important;
+		font-size: 20px !important;
 		/*font-style: italic;*/
 		margin-bottom: 12px;
 	}
 	.callout { 
-		font-size: 16px !important;
+		font-size: 18px !important;
 	}
 }
 
@@ -107,8 +110,8 @@ button {
 	color: $primary-dark;
 	margin: 160px auto;
 	padding: 24px;
-	line-height: 1.9;
-	max-width: 904px;
+	line-height: 1.5;
+	max-width: 704px;
 }
 
 .max-width-640 {
@@ -688,12 +691,14 @@ h1, h2, h3{
 	font-family: $header-font-family;
 	/*width: 700px;*/
 	line-height: 1.45;
+	line-height: 1.2;
 }
 
 
 
 h1 {
 	margin-bottom: 8px;
+	line-height: 1.2;
 	margin: 0;
 }
 
