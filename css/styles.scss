@@ -671,6 +671,7 @@ footer {
 a {
 	color: $link-color;
 	transition: all 0.2s ease;
+	text-decoration: none;
 	&:visited {
 		color: $link-color;
 	}
@@ -746,7 +747,7 @@ p {
 }
 
 .subheader {
-	font-size: $subheader-font-size;
+	font-size: 24px;
 }
 
 .overview {
@@ -799,7 +800,7 @@ p {
 
 .callout-metrics {
 	font-size: $subheader-font-size;
-	font-style: italic;
+	/*font-style: italic;*/
 	margin-bottom: 12px;
 }
 

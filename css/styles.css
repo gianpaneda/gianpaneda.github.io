@@ -523,7 +523,8 @@ footer {
 
 a {
   color: #002686;
-  transition: all 0.2s ease; }
+  transition: all 0.2s ease;
+  text-decoration: none; }
   a:visited {
     color: #002686; }
   a:hover {
@@ -579,7 +580,7 @@ p {
     margin-top: 16px; }
 
 .subheader {
-  font-size: 28px; }
+  font-size: 24px; }
 
 .overview {
   display: flex;
@@ -624,7 +625,7 @@ p {
 
 .callout-metrics {
   font-size: 28px;
-  font-style: italic;
+  /*font-style: italic;*/
   margin-bottom: 12px; }
 
 .indent {
