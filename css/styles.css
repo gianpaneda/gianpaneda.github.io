@@ -1,13 +1,16 @@
 /*@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:wght@400;800&display=swap');*/
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&Inter:wght@400;800&display=swap");
+/*@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&Inter:wght@400;800&display=swap');*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700;1&Inter:wght@400;800&display=swap");
 /*$link-color: #0032AF;*/
 /*$visited-link-color: #8216A8;*/
-/*$body-font-family: "Karla", Arial, serif;*/
+/*$header-font-family: "DM Serif Display", Georgia, sans-serif;*/
+/*$body-font-family: "Inter", Arial, sans-serif;*/
 html {
   margin: 0;
   padding: 0; }
 
 body {
+  font-family: "Source Serif Pro", Georgia, serif;
   margin: 0;
   padding: 0;
   background-image: radial-gradient(81.29% 81.29% at 20.45% 7.85%, #F7E1FF 0%, #EDF4FF 41.67%, #FFEAE6 74.48%, #FFE1E8 100%); }
@@ -18,7 +21,7 @@ body {
 .callout-box {
   /*background-color: white;*/
   border-radius: 16px;
-  outline: 1px solid #042352;
+  outline: 1px solid #aaa;
   padding: 16px 16px 8px 16px; }
   .callout-box h4 {
     margin-top: 0;
@@ -51,7 +54,7 @@ button {
     font-size: 24px !important; } }
 @media screen and (max-width: 400px) {
   body, .page-content, .max-width-640, .project-page-content, .image-grid, .project-page-content {
-    font-size: 16px !important; }
+    font-size: 18px !important; }
 
   #navigation {
     display: none; }
@@ -60,20 +63,20 @@ button {
     display: contents; }
 
   .callout-metrics {
-    font-size: 16px !important;
+    font-size: 20px !important;
     /*font-style: italic;*/
     margin-bottom: 12px; }
 
   .callout {
-    font-size: 16px !important; } }
+    font-size: 18px !important; } }
 .page-content, .max-width-640, .project-page-content, .image-grid {
-  font-family: "Inter", Arial, serif;
-  font-size: 20px;
+  font-family: "Source Serif Pro", Georgia, serif;
+  font-size: 22px;
   color: #042352;
   margin: 160px auto;
   padding: 24px;
-  line-height: 1.9;
-  max-width: 904px; }
+  line-height: 1.5;
+  max-width: 704px; }
 
 .max-width-640 {
   max-width: 640px !important;
@@ -94,10 +97,10 @@ button {
   justify-content: right; }
 
 .font-sans {
-  font-family: "Inter", Arial, serif; }
+  font-family: "Source Serif Pro", Georgia, serif; }
 
 .font-serif {
-  font-family: "DM Serif Display", Georgia, sans-serif; }
+  font-family: "Source Serif Pro", Georgia, serif; }
 
 .font-light {
   color: #FAF8F8; }
@@ -146,7 +149,7 @@ button {
   .navigation-links li:hover {
     border-radius: 8px; }
   .navigation-links a:link {
-    font-size: 20px;
+    font-size: 22px;
     text-decoration: none;
     color: #FAF8F8;
     display: inline-block;
@@ -224,8 +227,8 @@ button {
 
 .primary-button {
   display: block;
-  font-family: "Inter", Arial, serif;
-  font-size: 20px;
+  font-family: "Source Serif Pro", Georgia, serif;
+  font-size: 22px;
   text-decoration: none;
   color: #FAF8F8 !important;
   background: radial-gradient(73.26% 104.41% at 50% 50%, #2D4C9A 7.81%, #294A68 45.31%, #042352 100%, #1342B9 100%);
@@ -394,7 +397,7 @@ footer {
 
 .tag {
   color: #042352;
-  font-size: 16px;
+  font-size: 18px;
   padding: 4px;
   margin-left: 4px;
   margin-top: 0;
@@ -405,7 +408,7 @@ footer {
 
 .tag {
   color: #042352;
-  font-size: 16px;
+  font-size: 18px;
   padding: 4px;
   margin-left: 4px;
   margin-top: 0;
@@ -532,12 +535,14 @@ a {
   padding: 0; }
 
 h1, h2, h3 {
-  font-family: "DM Serif Display", Georgia, sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   /*width: 700px;*/
-  line-height: 1.45; }
+  line-height: 1.45;
+  line-height: 1.2; }
 
 h1 {
   margin-bottom: 8px;
+  line-height: 1.2;
   margin: 0; }
 
 h2 {
@@ -574,7 +579,7 @@ p {
     margin-top: 16px; }
 
 .subheader {
-  font-size: 24px; }
+  font-size: 28px; }
 
 .overview {
   display: flex;
@@ -604,7 +609,7 @@ p {
   min-width: 280px; }
 
 .callout {
-  font-size: 24px;
+  font-size: 28px;
   font-style: italic;
   margin-bottom: 12px; }
 
@@ -618,7 +623,7 @@ p {
   padding-bottom: 8px; }
 
 .callout-metrics {
-  font-size: 24px;
+  font-size: 28px;
   font-style: italic;
   margin-bottom: 12px; }
 
