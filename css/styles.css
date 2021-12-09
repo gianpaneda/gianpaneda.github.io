@@ -1,10 +1,9 @@
 /*@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:wght@400;800&display=swap');*/
 /*@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&Inter:wght@400;800&display=swap');*/
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700;1&Inter:wght@400;800&display=swap");
+/*@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700;1&Inter:wght@400;800&display=swap');*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 /*$link-color: #0032AF;*/
 /*$visited-link-color: #8216A8;*/
-/*$header-font-family: "DM Serif Display", Georgia, sans-serif;*/
-/*$body-font-family: "Inter", Arial, sans-serif;*/
 html {
   margin: 0;
   padding: 0; }
@@ -528,7 +527,8 @@ a {
   a:visited {
     color: #002686; }
   a:hover {
-    /*font-style: italic;*/ }
+    /*font-style: italic;*/
+    text-decoration: underline; }
 
 .margin-x-zero {
   margin-top: 0;
@@ -547,7 +547,7 @@ h1 {
   margin: 0; }
 
 h2 {
-  font-size: 48px;
+  font-size: 42px;
   margin-bottom: 0px;
   padding-bottom: 0px; }
 
