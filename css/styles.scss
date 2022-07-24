@@ -312,6 +312,31 @@ button {
 	}
 }
 
+.password-field {
+	height: 32px;
+	font-size: 24px;
+	width: 256px;
+}
+
+.alt-primary-button {
+	display: block;
+	margin-top: 16px;
+	margin-bottom: 8px;
+	font-family: $body-font-family;
+	font-size: $body-font-size;
+	text-decoration: none;
+	color: $primary-light !important;
+	background: radial-gradient(73.26% 104.41% at 50% 50%, #2D4C9A 7.81%, #294A68 45.31%, #042352 100%, #1342B9 100%);
+	padding: 8px 16px 8px 16px;
+	border: 0;
+	width: max-content;
+	@extend .transition;
+	&:hover {
+		border-radius: 8px;
+			cursor: pointer;
+	}
+}
+
 /*
 #navigation {
 	background-color: #002686;
@@ -365,6 +390,10 @@ button {
 
 .spacer {
 	margin-top: 16px;
+}
+
+.small-spacer {
+	margin-top: 8px;
 }
 
 .no-margin-top {

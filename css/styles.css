@@ -26,7 +26,7 @@ body {
     margin-top: 0;
     margin-bottom: 8px; }
 
-.transition, button, .project-card, .project-card img, .primary-button {
+.transition, button, .project-card, .project-card img, .primary-button, .alt-primary-button {
   transition: all 0.2s ease; }
 
 button {
@@ -236,6 +236,27 @@ button {
   .primary-button:hover {
     border-radius: 8px; }
 
+.password-field {
+  height: 32px;
+  font-size: 24px;
+  width: 256px; }
+
+.alt-primary-button {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-family: "Source Serif Pro", Georgia, serif;
+  font-size: 22px;
+  text-decoration: none;
+  color: #FAF8F8 !important;
+  background: radial-gradient(73.26% 104.41% at 50% 50%, #2D4C9A 7.81%, #294A68 45.31%, #042352 100%, #1342B9 100%);
+  padding: 8px 16px 8px 16px;
+  border: 0;
+  width: max-content; }
+  .alt-primary-button:hover {
+    border-radius: 8px;
+    cursor: pointer; }
+
 /*
 #navigation {
 	background-color: #002686;
@@ -282,6 +303,9 @@ button {
 
 .spacer {
   margin-top: 16px; }
+
+.small-spacer {
+  margin-top: 8px; }
 
 .no-margin-top {
   margin-top: 0px; }
