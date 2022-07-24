@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Gian Paneda | Product Designer</title>
+	<link rel="stylesheet" href="css/styles.css">
+<!-- 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> -->
+	<link rel="icon" href="favicon.ico?" type="image/x-icon">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script type="text/javascript" src="script.js"></script>
+<title>Login page</title>
+</head>
+<body>
+  <div class="navigation-span">
+  <nav id="navigation" class="flex-container-align-center font-sans">
+    <div id="logo-and-name">
+      <a href="index.html"><img id="logo" src="img/newlogo.png"></a>
+      <p class="font-light">Gian Paneda</p>
+    </div>
+      <ul class="navigation-links flex-container-align-center flex-justify-right">
+        <li><a class="navigation-link" href="index.html">Home</a></li>
+        <li><a class="navigation-link" href="about.html">About</a></li>
+      </ul>
+  </nav>
+  <nav id="navigation-small" class="flex-container-align-center font-sans">
+    <div id="logo-and-name">
+      <a href="index.html"><img id="logo" src="img/newlogo.png"></a>
+    </div>
+      <ul class="navigation-links flex-container-align-center flex-justify-right">
+        <li><a class="navigation-link" href="index.html">Home</a></li>
+        <li><a class="navigation-link" href="about.html">About</a></li>
+      </ul>
+  </nav>
+</div>
+  <div class="page-content">
+
+  <div class="section">
+    <div class="section-text">
+    <h3 class="medium-margin-bottom">Library Redesign - Case Study Preview</h3>
+    <div class="attention-callout large-margin-bottom">
+      <p>The full case study (with additional details and pictures) is password protected due to an NDA.</p>
+      <p>Email me at <em>panedagian@gmail.com</em> for the password.</p>
+      <p>Password</p>
+      <form>
+      <input class="password-field" type="password" id="pswd">
+      <input class="alt-primary-button" type="button" value="Submit" onclick="checkPswd();" />
+      </form>
+    </div>
+    <p class="callout">
+      <a href="https://www.presencelearning.com//">PresenceLearning</a> is an online special education therapy platform where special education therapists or "providers" connect with students with special needs via video calls to help them achieve their goals.
+    </p>
+    <p>Providers contract with PresenceLearning and remotely connect with students to help schools meet their special education needs.</p>
+      <div class="section-text overview">
+        <div class="overview-pair flex-row">
+          <div class="overview-text-left">Role</div>
+          <div class="overview-text-right flex-column">Product Designer</div>
+        </div>
+        <div class="overview-pair flex-row">
+          <div class="overview-text-left">Responsibilities</div>
+          <div class="overview-text-right flex-column">
+            Creating low/high-fidelity prototypes <br>
+            Writing user research plan <br>
+            Conducting usability tests <br>
+            Documenting research and test findings <br>
+            Compiling user feedback</div>
+        </div>
+        <div class="overview-pair flex-row">
+          <div class="overview-text-left">Other collaborators</div>
+          <div class="overview-text-right flex-column">
+            Clinical team
+          </div>
+        </div>
+        <div class="overview-pair flex-row">
+          <div class="overview-text-left">Project type</div>
+          <div class="overview-text-right flex-column">Redesign</div>
+        </div>
+        <div class="overview-pair flex-row">
+          <div class="overview-text-left">Platform</div>
+          <div class="overview-text-right flex-column">Web</div>
+        </div>
+        <div class="overview-values"></div>
+      </div>
+      <p>
+        The Library is where special education therapists can find activities, like worksheets and videos, to use with their students with special needs in the Virtual Therapy Room.
+      </p>
+      <p>
+        Access to the content library is a large selling point for the product, but had a lot of room for improvement.
+      </p>
+      <p>
+        We started a redesign of the Library to address its usability issues and improve a core part of the platform.
+      </p>
+      <h4>Summary of what I did for this project:</h4>
+      <ul>
+        <li> I talked to our <b>clinical team</b> to better understand the Library and how it's used. </li>
+        <li> I reviewed <b>relevant user feedback</b> from various internal sources. </li>
+        <li> I defined <b>user end goals</b> (alongside the expert clinical team) to give direction for the redesign efforts. </li>
+        <li> I measured the existing design against the user end goals to evaluate its effectiveness and <b>expose areas of improvement.</b> </li>
+        <li> I explored various designs in low-fidelity and created an <b>interactive prototype</b> of an improved version of the Library for testing. </li>
+        <li> I ran <b>usability tests</b> with special education therapists to validate the design and understand the highest impact items for development. </li>
+        <li> I created a <b>high-fidelity prototype</b> with components from Material Design, Google's design system that the company is adopting for newer projects. </li>
+        <li> I <b>established a process</b> for usability testing designs and documented the procedures for the rest of the team. Usability testing is now integrated the design process. </li>
+        <li> I defined a <b>visually accessible </b>Material Design theme to ensure a consistent visual style as the company adopts Material. </li>
+        <li> I compiled relevant customer feedback from various sources into a single document as a resource for the team. </li>
+      </ul>
+    </div>
+  </div>
+  <div class="section-link-footer">
+    <div class="footer-link-right">
+      <a href="puma.html">Next project ⟶</a>
+    </div>
+    <div class="footer-link-left">
+      <a href="hr-integrations.html">⟵ Previous project</a>
+    </div>
+  </div>
+</div>
+
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+function checkPswd() {
+    var confirmPassword = "openup";
+    var password = document.getElementById("pswd").value;
+    if (password == confirmPassword) {
+         window.location="library.html";
+    }
+    else{
+        alert("Passwords do not match.");
+    }
+}
+</script>
+</body>
+</html>
