@@ -142,11 +142,12 @@ button {
     height: 40px;
     width: 33%;
     max-width: 304px;
+    border-radius: 8px;
     border: 1px solid #FAF8F8;
     transition: all 0.2s ease;
     min-width: 80px; }
   .navigation-links li:hover {
-    border-radius: 8px; }
+    border-radius: 16px; }
   .navigation-links a:link {
     font-size: 22px;
     text-decoration: none;
@@ -202,19 +203,24 @@ button {
   background-color: #FAF8F8;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   margin: 8px 8px 32px 8px;
-  padding: 24px; }
+  padding: 24px;
+  border-radius: 16px; }
   .project-card img {
     margin-bottom: 8px;
     max-width: 800px;
-    width: 100%; }
+    width: 100%;
+    border-radius: 8px; }
+  .project-card img:hover {
+    border-radius: 16px; }
   .project-card p {
     padding: 0; }
   .project-card:hover {
-    border-radius: 8px;
+    border-radius: 16px;
     /*box-shadow: 1px 2px 32px 4px rgba(203,0,199,0.75);
     -webkit-box-shadow: 1px 2px 32px 4px rgba(203,0,199,0.75);
     -moz-box-shadow: 1px 2px 32px 4px rgba(203,0,199,0.75);*/
-    box-shadow: 0px 4px 4px rgba(19, 99, 157, 0.25), 0px 2px 1px rgba(43, 204, 255, 0.12), 0px 1px 1px rgba(0, 255, 163, 0.14), 0px 1px 35px rgba(60, 255, 185, 0.64); }
+    box-shadow: 0px 12px 50px 2px rgba(0, 215, 255, 0.5);
+    -webkit-box-shadow: 0px 12px 50px 2px rgba(0, 215, 255, 0.5); }
     .project-card:hover .primary-button, .project-card:hover img {
       border-radius: 8px; }
 
@@ -232,9 +238,10 @@ button {
   color: #FAF8F8 !important;
   background: radial-gradient(73.26% 104.41% at 50% 50%, #2D4C9A 7.81%, #294A68 45.31%, #042352 100%, #1342B9 100%);
   padding: 16px;
+  border-radius: 8px;
   width: max-content; }
   .primary-button:hover {
-    border-radius: 8px; }
+    border-radius: 16px; }
 
 .password-field {
   height: 32px;
