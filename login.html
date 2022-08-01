@@ -41,9 +41,9 @@
       <p>The full case study (with additional details and pictures) is password protected due to an NDA.</p>
       <p>Email me at <em>panedagian@gmail.com</em> for the password.</p>
       <p>Password</p>
-      <form>
-      <input class="password-field" type="password" id="pswd">
-      <input class="alt-primary-button" type="button" value="Submit" onclick="checkPswd();" />
+      <form onsubmit="checkPswd();">
+	      <input class="password-field" type="text" id="pswd">
+	      <input class="alt-primary-button" type="button" value="Submit" onclick="checkPswd();" />
       </form>
     </div>
     <p class="callout">
@@ -116,16 +116,25 @@
 
 <!--Function to check password the already set password is admin-->
 <script type="text/javascript">
-function checkPswd() {
-    var confirmPassword = "openup";
-    var password = document.getElementById("pswd").value;
-    if (password == confirmPassword) {
-         window.location="library.html";
-    }
-    else{
-        alert("Passwords do not match.");
-    }
-}
+
+	document.getElementById("pswd").onkeydown = function(e){
+	   if(e.keyCode == 13){
+			 e.preventDefault();
+			 checkPswd()
+	   }
+	}
+
+	function checkPswd() {
+
+	    var confirmPassword = "openup";
+	    var password = document.getElementById("pswd").value;
+	    if (password == confirmPassword) {
+	         window.location="library.html";
+	    }
+	    else{
+	        alert("Incorrect password. Checked that you entered the password correctly");
+	    }
+	}
 </script>
 </body>
 </html>
