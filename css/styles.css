@@ -259,9 +259,10 @@ button {
   background: radial-gradient(73.26% 104.41% at 50% 50%, #2D4C9A 7.81%, #294A68 45.31%, #042352 100%, #1342B9 100%);
   padding: 8px 16px 8px 16px;
   border: 0;
+  border-radius: 8px;
   width: max-content; }
   .alt-primary-button:hover {
-    border-radius: 8px;
+    border-radius: 16px;
     cursor: pointer; }
 
 /*
